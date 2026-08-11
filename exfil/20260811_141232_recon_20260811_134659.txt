@@ -1,0 +1,2026 @@
+================================================================
+  PURPLE TEAM - FASE 01: DESCUBRIMIENTO
+  Base4 Security - Emulacion de Adversario
+  Ejecutado: 2026-08-11 13:46:59
+  Usuario:   BCOCOR\amarinos
+  Equipo:    BCOPAI0009
+================================================================
+
+======================================================================
+  INFORMACION DEL SISTEMA
+  MITRE ATT&CK: T1082 - System Information Discovery
+======================================================================
+
+--- Sistema Operativo ---
+  Hostname:       BCOPAI0009
+  OS:             Microsoft Windows 11 Pro 10.0.26200
+  Build:          26200
+  Arquitectura:   64 bits
+  Dominio:        bancocorrientes.local
+  Fabricante:     LENOVO
+  Modelo:         10UKS00W00
+  RAM Total:      15.88 GB
+  BIOS:           M1QKT34A
+  Ultimo Boot:    06/25/2026 19:01:43
+
+--- Hotfixes Instalados ---
+  KB5089549  06/25/2026 00:00:00  Security Update
+  KB5092762  06/08/2026 00:00:00  Security Update
+  KB5087051  06/08/2026 00:00:00  Update
+  KB5083532  03/06/2026 00:00:00  Security Update
+  KB5054156  03/06/2026 00:00:00  Update
+  KB5092427    Update
+
+--- Software Instalado (relevante) ---
+  Adobe Acrobat Reader - Español | v26.001.21483 | 20260430
+  Adobe Flash Player 9 ActiveX | v9 | 
+  Adobe Refresh Manager | v1.8.0 | 20260511
+  Aplicaciones de Microsoft 365 para negocios - es-es | v16.0.15330.20196 | 
+  Appgate SDP 6.1.2.33199 | v6.1.2.33199 | 
+  Controles para Front-End de Nexus HR | v | 
+  Copilot | v150.0.4078.96 | 20260804
+  CrowdStrike Device Control | v7.35.20865.0 | 20260604
+  CrowdStrike Firmware Analysis | v7.14.18456.0 | 20260505
+  CrowdStrike Sensor Platform | v7.39.21108.0 | 20260810
+  CrowdStrike Windows Sensor | v7.39.21108.0 | 20260810
+  CrowdStrike Windows Sensor | v7.38.21003.0 | 20260810
+  Eclipse Temurin JDK con Hotspot 11.0.29+7 (x64) | v11.0.29.7 | 20260113
+  IBM Personal Communications | v12.0.0 | 20250612
+  IBM WinCollect 10 | v10.0.2.62 | 20241127
+  Intech timeAware 2 (cliente) | v1.0.0.0 | 20250612
+  InvGate Asset Management Agent | v3.53.0 | 20260624
+  Java 8 Update 77 | v8.0.770.3 | 20250612
+  Java Auto Updater | v2.8.77.3 | 20250612
+  KeePass Password Safe 2.58 | v2.58 | 20250624
+  Lexmark Scan Center | v1.4.1.0 | 20230726
+  Microsoft Edge | v151.0.4129.72 | 20260115
+  Microsoft OLE DB Driver for SQL Server | v18.7.4.0 | 20250801
+  Microsoft SQL Server Native Client | v9.00.4035.00 | 20250612
+  Microsoft Teams Meeting Add-in for Microsoft Office | v1.26.16801 | 20260804
+  Microsoft Update Health Tools | v5.72.0.0 | 20240516
+  Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219 | v10.0.40219 | 20250801
+  Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219 | v10.0.40219 | 20250801
+  Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211 | v14.44.35211.0 | 
+  Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211 | v14.44.35211 | 20250722
+  Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211 | v14.44.35211 | 20250722
+  Microsoft Visual Studio 2010 Tools for Office Runtime (x64) | v10.0.60915 | 20250801
+  Microsoft Visual Studio 2010 Tools for Office Runtime (x64) | v10.0.60910 | 
+  Microsoft Visual Studio 2010 Tools for Office Runtime (x64) Language Pack - ESN | v10.0.60910 | 20250801
+  Mozilla Firefox (x86 es-ES) | v150.0.1 | 
+  Mozilla Maintenance Service | v150.0.1 | 
+  Office 16 Click-to-Run Extensibility Component | v16.0.15330.20158 | 20230529
+  Office 16 Click-to-Run Licensing Component | v16.0.15330.20196 | 20230529
+  Office 16 Click-to-Run Localization Component | v16.0.15128.20178 | 20230529
+  Oracle VirtualBox 7.1.12 | v7.1.12 | 20250801
+  Paquete de idioma de Microsoft Visual Studio 2010 Tools para Office Runtime (x64) - ESN | v10.0.60910 | 
+  Qualys Cloud Agent Gateway Certificates | v1.1.0 | 20250325
+  Qualys Cloud Security Agent | v6.4.1.22 | 20260404
+  Realtek Audio Driver | v6.0.9373.1 | 20230529
+  SAT Control Stage 3.4 Clientes Conexion | v3.4.51 | 20250612
+  SIOPEL | vXL (8.10.1) | 
+  SoatINI | v | 
+  Text Control | v | 
+  UltraVNC | v1.6.4.0 | 20250801
+  WebView2 Runtime de Microsoft Edge | v151.0.4129.72 | 20260811
+  WinRAR 7.20 (64-bit) | v7.20.0 | 
+
+--- Servicios de Seguridad ---
+  [Running] CSFalconService - CrowdStrike Falcon Sensor Service
+  [Running] mpssvc - Firewall de Windows Defender
+  [Running] QualysAgent - Qualys Cloud Agent
+  [Running] Sysmon64 - Sysmon64
+  [Stopped] WdNisSvc - Servicio de inspección de red de Antivirus de Microsoft Defender
+  [Stopped] WinDefend - Servicio Antivirus de Microsoft Defender
+
+--- CrowdStrike - Version del Sensor ---
+  Sensor:    7.39.21108.0
+  Producto:  7.39.21108.0
+  CrowdStrike Sensor Platform | v7.39.21108.0 | Instalado: 20260810
+  CrowdStrike Firmware Analysis | v7.14.18456.0 | Instalado: 20260505
+  CrowdStrike Device Control | v7.35.20865.0 | Instalado: 20260604
+
+--- Politicas de PowerShell ---
+  LanguageMode: FullLanguage
+  ScriptBlockLogging: 
+  Transcription:      
+  ModuleLogging:      
+
+--- WDAC / Device Guard ---
+  UMCI Enforcement: 0
+  CI Enforcement:   2
+  VBS Status:       2
+  Services Running: 2
+
+--- AppLocker - Reglas Efectivas ---
+  AppLocker no configurado o sin acceso
+
+======================================================================
+  CONFIGURACION DE RED
+  MITRE ATT&CK: T1016 - System Network Configuration Discovery
+======================================================================
+
+--- Adaptadores de Red Activos ---
+  Ethernet 2 | Realtek PCIe GbE Family Controller #2
+    MAC:  98-EE-CB-A3-1B-B5
+    IP:   10.12.33.83/24
+  vEthernet (Default Switch) | Hyper-V Virtual Ethernet Adapter
+    MAC:  00-15-5D-28-53-12
+    IP:   172.31.48.1/20
+  Ethernet 3 | VirtualBox Host-Only Ethernet Adapter
+    MAC:  0A-00-27-00-00-07
+    IP:   192.168.56.1/24
+
+--- DNS y Gateway ---
+  DNS (Ethernet 2): 10.13.99.107, 10.16.99.107
+  DNS (Wi-Fi 2): 10.16.99.107, 10.13.99.107
+  Gateway: 10.12.33.1 (Interfaz: Ethernet 2)
+
+--- Proxy Configurado ---
+  Proxy habilitado: 0
+  Proxy server:     
+  WinHTTP:
+    
+    Configuraci+¦n actual del proxy WinHTTP:
+    
+        Acceso directo (sin servidor proxy).
+    
+
+--- Contexto de Usuario ---
+  Usuario:      BCOCOR\amarinos
+  SID:          S-1-5-21-1260642052-2371227778-2976700227-17091
+  Dominio DNS:  BANCOCORRIENTES.LOCAL
+  Logon Server: \\SRW-PDC02
+
+--- Grupos del Usuario Actual ---
+  BCOCOR\Usuarios del dominio
+  Todos
+  BUILTIN\Usuarios de escritorio remoto
+  BUILTIN\Usuarios
+  NT AUTHORITY\Inicio de sesión remoto interactivo
+  NT AUTHORITY\INTERACTIVE
+  NT AUTHORITY\Usuarios autentificados
+  NT AUTHORITY\Esta compañía
+  LOCAL
+  BCOCOR\TeletrabajoFCEMS
+  Identidad afirmada de la autoridad de autenticación
+  BCOCOR\SPRecursosHumanos
+  BCOCOR\UsuariosSharepoint
+
+--- Privilegios del Usuario ---
+  SeShutdownPrivilege           Apagar el sistema                            Deshabilitado
+  SeChangeNotifyPrivilege       Omitir comprobación de recorrido             Habilitada   
+  SeUndockPrivilege             Quitar equipo de la estación de acoplamiento Deshabilitado
+  SeIncreaseWorkingSetPrivilege Aumentar el espacio de trabajo de un proceso Deshabilitado
+  SeTimeZonePrivilege           Cambiar la zona horaria                      Deshabilitado
+
+--- Conexiones Activas (Top 30) ---
+  10.12.33.83:64671 -> 172.172.255.216:443 [svchost]
+  10.12.33.83:58161 -> 10.16.99.107:49670 [lsass]
+  10.12.33.83:58160 -> 10.16.99.107:135 [lsass]
+  10.12.33.83:58159 -> 10.16.99.107:445 [System]
+  10.12.33.83:58157 -> 10.15.99.36:8080 [QualysAgent]
+  10.12.33.83:58039 -> 50.112.131.18:443 [System]
+  10.12.33.83:56400 -> 10.15.99.157:514 [WinCollect]
+  10.12.33.83:50774 -> 20.190.173.146:443 [backgroundTaskHost]
+  10.12.33.83:50768 -> 10.16.99.107:135 [backgroundTaskHost]
+  10.12.33.83:3389 -> 10.10.101.2:26029 [svchost]
+
+======================================================================
+  DESCUBRIMIENTO DE CUENTAS
+  MITRE ATT&CK: T1087 - Account Discovery
+======================================================================
+
+--- Usuarios Locales ---
+  Administrador | Habilitado: True | Ultimo logon: 06/12/2025 12:56:12
+  DefaultAccount | Habilitado: False | Ultimo logon: 
+  Invitado | Habilitado: False | Ultimo logon: 
+  WDAGUtilityAccount | Habilitado: False | Ultimo logon: 
+
+--- Grupos Locales y Miembros ---
+  [Administradores]
+    Grupo: BCOCOR\Admins. del dominio
+    Grupo: BCOCOR\Seguridad Informatica
+    Grupo: BCOCOR\Seguridad Informatica Admin
+    Grupo: BCOCOR\Soporte
+    Usuario: BCOPAI0009\Administrador
+  [IIS_IUSRS]
+    Grupo: NT AUTHORITY\IUSR
+  [Invitados]
+    Usuario: BCOPAI0009\Invitado
+  [System Managed Accounts Group]
+    Usuario: BCOPAI0009\DefaultAccount
+  [Usuarios]
+    Grupo: BCOCOR\Usuarios del dominio
+    Grupo: NT AUTHORITY\INTERACTIVE
+    Grupo: NT AUTHORITY\Usuarios autentificados
+  [Usuarios de escritorio remoto]
+    Usuario: BCOCOR\amarinos
+    Usuario: BCOCOR\gfranco
+    Grupo: BCOCOR\Seguridad Informatica
+    Grupo: BCOCOR\Seguridad Informatica Admin
+    Grupo: BCOCOR\Soporte
+    Otros: S-1-5-21-1260642052-2371227778-2976700227-17226
+
+--- Grupos de Dominio (via ADSI) ---
+  Total de grupos encontrados: 2212
+
+  [GRUPOS PRIVILEGIADOS]
+  Administradores (7 miembros):
+    - LDAP Impresoras
+    - Ldapvpn Autenticacion Ldap Vpn SSL
+    - AdminsServidores
+    - Cuenta adintar
+    - Backup98
+    - Admins. del dominio
+    - testbanco
+  Admins. del dominio (11 miembros):
+    - Servicio SAT AAR
+    - Servicio Qradar
+    - Servicio Ivanti Landesk
+    - Servicio SAT RR
+    - Servicio SAT FG
+    - Servicio SAT RZ
+    - Servicio Adselfservice
+    - Servicio SAT GD
+    - Backup98
+    - Cuenta Barcelona
+    - testbanco
+
+--- Usuarios de Dominio (Top 50, sin cuentas de servicio) ---
+  Cuentas encontradas: 1237 | Filtradas (no svc): 50 | Excluidas: 1
+
+  AdministradorBco | Test Banco Test Banco |  | 
+    OU:  | Ultimo logon: Nunca
+    Grupos: Administradores de esquema, Administradores de organización, Administradores, Admins. del dominio, Propietarios del creador de directivas de grupo
+
+  ctabarcelona | Cuenta Barcelona |  | 
+    OU: Servicios | Ultimo logon: 2024-11-19 02:29
+    Grupos: Admins. del dominio
+
+  cadintar | Cuenta adintar |  | 
+    OU: Servicios | Ultimo logon: Nunca
+    Grupos: Administradores
+
+  serviciosatgd | Servicio SAT GD |  | 
+    OU: Cierre de Sesion2 | Ultimo logon: 2026-08-11 12:34
+    Grupos: AdministradoresPAIenDEV, Seguridad Informatica Admin, cartero, abuse, Opers. de servidores, Administradores de esquema, Usuarios de escritorio remoto, Administradores de organización, Admins. del dominio
+
+  servicioad | Servicio Adselfservice |  | 
+    OU: Servicios | Ultimo logon: 2026-08-11 13:42
+    Grupos: SoloInterno, Admins. del dominio
+
+  serviciosatdm | Servicio SAT DM |  | 
+    OU: Cierre de Sesion1 | Ultimo logon: 2026-08-09 00:17
+    Grupos: AdministradoresPAIenDEV, MepSeguridad, Seguridad Informatica Admin, SatCS, cartero, abuse, Administradores de esquema, Usuarios de escritorio remoto, Administradores de organización
+
+  serviciosatta | Servicio SAT TA |  | 
+    OU: Cierre de Sesion1 | Ultimo logon: 2026-08-09 00:17
+    Grupos: AdministradoresPAIenDEV, Seguridad Informatica Admin, SatCS, Administradores de esquema, Usuarios de escritorio remoto, Administradores de organización, Exchange Organization Administrators
+
+  serviciosatrz | Servicio SAT RZ |  | 
+    OU: Cierre de Sesion1 | Ultimo logon: 2026-08-10 12:10
+    Grupos: AdministradoresPAIenDEV, Seguridad Informatica Admin, SatCS, Usuarios de escritorio remoto, Opers. de cuentas, Admins. del dominio
+
+  serviciosatmm | Servicio SAT MM |  | 
+    OU: Cierre de Sesion2 | Ultimo logon: 2026-08-11 13:37
+    Grupos: Mantenimiento FileServer, Sistemas, AdminsServidores, Administradores de esquema, Administradores de organización, Organization Management, Exchange Organization Administrators
+
+  serviciosatdz | Servicio SAT DZ |  | 
+    OU: Cierre de Sesion1 | Ultimo logon: 2026-08-09 00:17
+    Grupos: AdministradoresPAIenDEV, Seguridad Informatica Admin, cartero, abuse, Administradores de esquema, Usuarios de escritorio remoto, Administradores de organización, Organization Management
+
+  serviciosatfg | Servicio SAT FG |  | 
+    OU: Cierre de Sesion1 | Ultimo logon: 2026-08-09 00:17
+    Grupos: AdministradoresPAIenDEV, Seguridad Informatica Admin, SatCS, Usuarios de escritorio remoto, Opers. de cuentas, Admins. del dominio
+
+  serviciosatrr | Servicio SAT RR |  | 
+    OU: Cierre de Sesion1 | Ultimo logon: 2026-08-09 00:17
+    Grupos: AdministradoresPAIenDEV, Seguridad Informatica Admin, SatCS, Usuarios de escritorio remoto, Admins. del dominio
+
+  usrw-piva | Servicio Ivanti Landesk |  | 
+    OU: Servicios | Ultimo logon: 2024-03-06 00:01
+    Grupos: Admins. del dominio
+
+  serviciosatsf | Servicio SAT SF |  | 
+    OU: Cierre de Sesion2 | Ultimo logon: 2026-08-11 11:18
+    Grupos: Administradores de DHCP\ , AdminsDB, Administradores de esquema, Administradores de organización
+
+  serviciosatap | Servicio SAT AP |  | 
+    OU: Cierre de Sesion2 | Ultimo logon: 2026-08-11 13:29
+    Grupos: AdminsDB, Administradores de esquema, Administradores de organización, Organization Management
+
+  serviciosatwb | Servicio SAT WB |  | 
+    OU: Cierre de Sesion2 | Ultimo logon: 2026-08-09 18:02
+    Grupos: Mantenimiento FileServer, Sistemas, AdminsServidores, Administradores de esquema, Administradores de organización, Organization Management, Exchange Organization Administrators
+
+  serviciosathf | Servicio SAT HF |  | 
+    OU: Cierre de Sesion2 | Ultimo logon: 2026-08-11 13:29
+    Grupos: Mantenimiento FileServer, Sistemas, AdminsServidores, Administradores de esquema, Administradores de organización, Organization Management, Exchange Organization Administrators
+
+  Ldapvpn | Ldapvpn Autenticacion Ldap Vpn SSL |  | 
+    OU: AccesoVPN | Ultimo logon: Nunca
+    Grupos: SoloInterno, Administradores
+
+  usrw-pimp | LDAP Impresoras |  | 
+    OU: Servicios | Ultimo logon: Nunca
+    Grupos: Administradores
+
+  IWAM_BCO98DC01 | Cuenta para el proceso de inicio de IIS |  | 
+    OU:  | Ultimo logon: Nunca
+    Grupos: IIS_WPG
+
+  IWAM_BCO98DC02 | Cuenta para el proceso de inicio de IIS |  | 
+    OU:  | Ultimo logon: Nunca
+    Grupos: IIS_WPG
+
+  2620romero | Lorena Romero Sanchez |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 08:09
+    Grupos: MastercardEsc, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, Tarjeta de Credito, SPInstitucionalVisitantes, Permisionaria, RepBTBandejaEscritura, Comedor Lavalle, spComedorLavalle, PasesMoraLect, TarjeterasSinMod, InterfTarjetaLectura, InterfTarjetaEscritura, AdintarRecHisLect, AdintarSendLect, CentralTarjetas, TarjetasEscritura, ConsTarjetasCreditoLectura, OperacionesEsc, Escaneo, Navegacion3, ConsultAS, Adintar, ConsOperacionesLectura, Cuentas Banco de Corrientes, Cuentas Capital Banco de Corrientes, Irrestricto
+
+  2845aguerre | Carolina E. Aguerre |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 11:02
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, PerdidaEsperadaBT_Esc, Lavalle-Laboratorio2025, Aprobaciones Gerencia de Contabilidad, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, TeletrabajoFCEMS, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, Niif Calculo PD, Cuentas Fondos Unificados, ResvarLec, Consolidados, ContabAsientosEscritura, InterfacesContabilidadLectura, GestionRI_NiifTestingEsc, Contab-Fideicomisos, niif, InfComFiscalizadoraContabilidadEscritura, RegInfBalanceTrimLec, RiesgoOContabEstadosContablesEsc, ImpNiffEscritura, ContabDominioEscritura, GesJudContabilidadLec, ContabilBienesDeUsoEsc, ContabAsientosFechaValorContableEscritura, Gallo_RI_Lectura, ACMLectura, HonorariosContabilEsc, ConsolEscritura, RTEscritura, GestionRegInfCrearLect, RIDeudoresLecturaCreacion, SpoolBCRAEsc, Escaneo, Navegacion2, BaseFinanciacionesLectura, FideicomisoLect, GestionRegInfEsc, ConsolidadosBTEsc, ConsultAS, UnidatoEntradaEscritura, Unidato, Cuentas Banco de Corrientes, IrrestrictoConAdjuntos, GestionRegInfLect, Cuentas Capital Banco de Corrientes, ContabilEsc, UnidatoSalidaEscritura, ConsContabilidadLectura, UnidatoEntradaLectura, Irrestricto, Contabilidad, Partes Contables, Mayores Contables, Tango
+
+  2699miranda | Jorge Miranda |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-04 14:49
+    Grupos: BANCOMFA, CapacitacionSmartfense, SNP_Pruebas_Esc, Lavalle-Laboratorio2025, Recepcion Sitaci, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, TeletrabajoFCEMS, RepositorioBTLinkEsc, Garantias, Anses, Debin, SNP, Asientos contables con errores, Clarive_sponsor, Clarive, SPInstitucionalVisitantes, Mep_Recibidos, RepBTBandejaEscritura, Rol_Supervisor, Comedor Lavalle, spComedorLavalle, Coparticipacion Banco de Corrientes SA, AdminCarteraEsc, ConsultorMEPCtest, BancaI, RepBTCopaLec, Servicios Especiales Oficios Judiciales, RepositorioBTiericEsc, OperacioCentGobSSEE, DgrRenRepBTLectura, CMEPcontabilizador, ComerciaAvisosLinkCryptEsc, Servicios Especiales Debitos Directos Banco de Corrientes S.A., RepositorioBTAcredHaberesLectura, RepBTAnsesEscritura, AntEventOperacionesServEspEscritura, Control Constatacion Supervivencia, ACMLectura, FilmacionesLectura, mep, TransfereciaArchivosOperaciones, Copar-Titulos, AdmcarEscritura, AnsesSupervisores, Sisconv, CoelsaContingenciaEscritura, CoelsaFTP, OperacioCentGobLecEsc, ConsRRHHLectura, GadesA3Lectura, OperacionesEsc, CoelsaImportadoEscritura, MovBancEscritura, CoelsaLectura, CoelsaEnviado-bcsaLectura, Avisos, CoelsaRecibido-bcsaLectura, Navegacion1, ProdLectura, LinkEntradaEsc, SpoolPruebasGenEscritura, Cuentas Banco de Corrientes, PruGenLectura, PasivLectura, TestingLectura, Reinformatizacion, Operaciones, Cuentas Capital Banco de Corrientes, SpoolPreprodEscritura, Cobinpro, CamaraLectura, ExtractProvincanjeLectura, SnpEscritura, ServLectura, Irrestricto, Servicios
+
+  2895sandobal | Ramiro Emilio Sandobal |  | 
+    OU: Salida sin proxy | Ultimo logon: 2026-08-11 07:50
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Clarive_Analistas, Clarive_SupervisorSponsor, SNP_Pruebas_Esc, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, TeletrabajoFCEMS, Clarive_ScrumMaster, Clarive_desarrollo, Clarive, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, AnalistasFuncionales, DBTestDesa, SPtestingTD, Migración TDVisa, Chat, SpoolBTTestingDesarrollo, SpoolFactoría, SitiTestingEsc, enviosBT, GadesA3Escritura, RepositorioBTLinkLectura, SistemasFuentesOrganizativo, SistemasFuentesEscritura, Navegacion2, ProdLectura, SpoolPruebasGenEscritura, Cuentas Banco de Corrientes, PruGenLectura, PasivLectura, TestingLectura, Reinformatizacion, Cuentas Capital Banco de Corrientes, Irrestricto, Servicios
+
+  2759guglielmi | Lucrecia Guglielmi |  | 
+    OU: Sin Protector | Ultimo logon: 2026-08-11 08:43
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, FinancieTesoreriaEsc, Aprobaciones Gerencia de Finanzas, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, TeletrabajoFCEMS, InfoControlGestionLectura, SPInstitucionalVisitantes, BCRACamel2023Esc, GrpRRHHFinanzas, Rol_Supervisor, Comedor Lavalle, spComedorLavalle, ComiteDeFinanzasActasEscritura, GAEF_Esc, Dpto. Control Exterior y Cambios, BDSiopelLectura, Numerarios Bco Ctes, MepAutorizador, RIGciaFinanzasCreaLect, FinancieraBCRALect, LinkOperaciolectura, Gerencia de Finanzas, ComiteDeFinanzasLectura, ComiteDeFinanzasEscritura, Gallo_RI_Escritura, ACMLectura, tasas, operacionesfinancieras, mep, Copar-Titulos, GestionRI_PNPE_ExcelesEscritura, GestionRI_PNPLect, RepositorioBTFinancieraLectura, CtrolGestionEsc, SpoolBTPif0009If00053, SpoolFinanzasLectura, InterfacesGalloEscritura, AppGalloEscritura, TestingGalloEscritura, RTEscritura, COCAfipEscritura, RiTestLectura, Comercio Exterior, Ritest, RegInfEscritura, TestingCentralDataLectura, Financiera, Navegacion1, GestionRegInfEsc, ConsultAS, Cuentas Banco de Corrientes, IrrestrictoConAdjuntos, GestionRegInfLect, Cuentas Capital Banco de Corrientes, ConsolidadoBTLectura, ConsFinancieraLectura, Irrestricto, Partes Contables
+
+  1563coianiz | Oscar Coianiz |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-10 13:27
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, SPInstitucionalVisitantes, ConyConEscritura, FallasDeCajaLect, CoelsaLectura, Navegacion2, TMPExtractosIILectura, ProdLectura, ConsultAS, Cuentas Banco de Corrientes, PasivLectura, Casa Matriz, Cuentas Capital Banco de Corrientes, SpoolRegInfEscritura, ConsContabilidadLectura, MailsLectura, Irrestricto, Partes Contables, Pasivas
+
+  2790gonzalez | Gladis Maria Gonzalez |  | 
+    OU: Usuarios | Ultimo logon: 2026-07-31 07:57
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, SPInstitucionalVisitantes, MEP_Desarrollo, Rol_Supervisor, Comedor Lavalle, spComedorLavalle, GAEF_Esc, Numerarios Bco Ctes, MepAutorizador, FinancieraBCRALect, LinkOperaciolectura, Gerencia de Finanzas, ACMLectura, mep, RTEscritura, MepBTLect, Escaneo, Navegacion2, Financiera, GestionRegInfEsc, ConsultAS, Cuentas Banco de Corrientes, TestingConsultASLectura, IrrestrictoConAdjuntos, Cuentas Capital Banco de Corrientes, ConsolidadoBTLectura, ConsFinancieraLectura, Irrestricto, Partes Contables
+
+  2678correa | Camilo Correa |  | 
+    OU: Impuestos | Ultimo logon: 2026-08-06 08:28
+    Grupos: Tienda Mas BanCo, MastercardEsc, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, InterfacesImpuestosLec, Dpto. de Impuestos, RIOImpuestosEscritura, RepositorioBTExcepMisionesEsc, CopiaParaLibroIVALectura, InterfacesImpuestosEsc, AfipPadronEscritura, Guia100Lectura, GestionRI_ImpEsc, ACMLectura, PadronDGRCreaLect, PadronDGRLectEscritura, InterfacesContabilidadEscritura, PrestPasGestJudEscritura, Retenciones, RepBTPadronEscritura, Navegacion2, PadronEscritura, ConsultAS, Cuentas Banco de Corrientes, TestingConsultASLectura, IrrestrictoConAdjuntos, GestionRegInfLect, Cuentas Capital Banco de Corrientes, SiapContabEscritura, ConsContabilidadLectura, Impuestos, Irrestricto, Contabilidad, Partes Contables
+
+  2735longhi | Mario Longhi |  | 
+    OU: Gerencia Contabilidad | Ultimo logon: 2026-08-07 08:39
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, PerdidaEsperadaBT_Esc, Lavalle-Laboratorio2025, Aprobaciones Gerencia de Contabilidad, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, TeletrabajoFCEMS, N5_Login, Clarive, SPInstitucionalVisitantes, BCRACamel2023Esc, GrpRRHHContabilidad, Comedor Lavalle, spComedorLavalle, ResDirGciaContabilidad, SecDirGciaContabilidadEsc, InfoControlGestionTableroLec, InfoControlGestionSucurLec, InfoControlGestionLec, PaperCutReportes, ComitedeIyGEsc, Niif Calculo PD, ComiteIG, Cuentas Fondos Unificados, ResvarLec, ContabAsientosEscritura, CifradoContAdm, ContGerenciaEsc, CopiaParaLibroIVALectura, AdministracionGerencia, ACMLectura, ListaCtaSGiradaLectura, SegObservaciones, AdminFacturacionLec, TestingRiesgo, ContabilRegInf, HonorariosContabilEsc, SistemaGastos, PrestPasGestJudEscritura, ContabDeudSistFinancieroEsc, AppTestCabalLect, Escaneo, Navegacion1, CabalLectura, ConsultAS, Cuentas Banco de Corrientes, TestingConsultASLectura, BCentralTestingLectura, IrrestrictoConAdjuntos, Cuentas Capital Banco de Corrientes, ContabilEsc, SiapContabEscritura, ConsContabilidadLectura, ConsolidadoBTLectura, Impuestos, Irrestricto, Partes Contables, Tango
+
+  2771forlin | Pedro Forlin |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 07:48
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, SPTramitesPLAyFT, Control de Listas, Clarive_SupervisorSponsor, Parametria PLAFT y FPADM, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, TeletrabajoFCEMS, SolicitudCreditoBE_Lect, Clarive_sponsor, Clarive, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, Enviar como actualizacion, Actualizacion, AntilavadoRegInfoEsc, AntilavadoSegAlertEsc, UPLDRegRepEsc, RoiAnexoLectura, IdeaUPLD, Gallo_RI_Lectura, AppIdea, AntilavadoUPLDEscritura, LinkLectura, AppGalloEscritura, SRO_Esc, RTEscritura, Navegacion2, ConsultAS, Cuentas Banco de Corrientes, UPLDLectura, Cuentas Capital Banco de Corrientes, Antilavado, Irrestricto
+
+  2586diaz | Fabian Diaz |  | 
+    OU: Usuarios Cadena de cierre y produccion | Ultimo logon: 2026-08-11 13:04
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, TeletrabajoFCEMS, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, TransferenciasOpCierreLecEsc, DeposDeChequesInteligentes, ChequesFS-Escritura, OperadoresControl-M, RepBTLinkCBUEscritura, RepositorioBTDocumElectronicosEscritura, AntilavadoRepBTAlertasLegajoLectura, CoparticipacionEsc, AntilavadoSpoolEsc, TicketsLinkLectura, Procesamiento de datos, TicketsExCombatientesLectura, ListadosEscritura, ProcesamientoEscritura, OperadoresCargaImagenes, ComexNewLectura, AvisosLinkDesdeEscritura, Auditoría ATM, SpoolEscritura, Navegacion2, AuditoriaAtmEscritura, Adelantos Dorados, Adintar, LinkEntradaEsc, MigracionTxt, AfipEscritura, Cuentas Banco de Corrientes, InterbnkEntradaEsc, OperadoresSis, LinkSalidaEsc, IrrestrictoConAdjuntos, Cuentas Capital Banco de Corrientes, Sistemas, ProdEscritura, ListadosBTEsc, CamaraEscritura, Irrestricto, Partes Contables
+
+  1912bogado | Ricardo Bogado |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-10 13:27
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, Asientos contables con errores, SPInstitucionalVisitantes, ACMLectura, ConyConEscritura, Navegacion2, TestingCentralDataLectura, ConsultAS, Gcia Sucursales, Cuentas Banco de Corrientes, Cuentas Capital Banco de Corrientes, ContabilEsc, ConsContabilidadLectura, ConsolidadoBTLectura, SoloInterno, Contabilidad, Partes Contables
+
+  2257bozzini | Mariana Bozzini |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 08:50
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, PerdidaEsperadaBT_Esc, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, TeletrabajoFCEMS, RepBTContabLec, Asientos contables con errores, SPInstitucionalVisitantes, CendeuEsc, Comedor Lavalle, spComedorLavalle, ContabPerdidaEsperadaEsc, Niif Calculo PD, ContabAsientosEscritura, ListadosContabilidadLect, niif, RITMipymesLec, ROContabilidadRelacionesTecnicas, RepositorioBTContabConsultas, RegimenesInfoLectura, ContabilBienesDeUsoEsc, ContabContingenciaRegInf, Gallo_RI_Lectura, ACMLectura, ListaCtaSGiradaLectura, ContabilRegInf, ContabDeudSistFinancieroEsc, RTEscritura, GestionRegInfCrearLect, BaseFinanciacionesEscritura, Navegacion2, GestionRegInfEsc, ConsultAS, Unidato, Cuentas Banco de Corrientes, TestingConsultASLectura, IrrestrictoConAdjuntos, GestionRegInfLect, Cuentas Capital Banco de Corrientes, ContabilEsc, ConsContabilidadLectura, Irrestricto, Contabilidad, Partes Contables
+
+  2686escobar | Maria Eugenia Escobar |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-10 13:28
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, N5_Login, Clarive_sponsor, Clarive, SPInstitucionalVisitantes, Riesgo Crediticio, Comedor Lavalle, spComedorLavalle, InfRiesgoCredEscritura, AdintarLectura, ConsRiesgoCrediticioLectura, Riesgo Credicticio, Navegacion1, ConsultAS, Cuentas Banco de Corrientes, Cuentas Capital Banco de Corrientes, Irrestricto
+
+  2955romero | Miriam Romero |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 10:21
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, SPTramitesAuditoria, Auditoria Continua, Lavalle-Laboratorio2025, Auditoria Interna, Aprobaciones Gerencia de Auditoría Interna, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, TeletrabajoFCEMS, Inspeccion_gcaEsc, SPInstitucionalVisitantes, BCRACamel2023Esc, GrpRRHHAuditoriaInterna, Comedor Lavalle, spComedorLavalle, SecDirGciaAuditoriaInternaEsc, InfoControlGestionTableroLec, InfoControlGestionSucurLec, InfoControlGestionLec, Auditoria, Niif Calculo PD, AuditInternaComiteEsc, AuditoriaPAILect, niif, InfComFiscalizadoraAuditoriaEscritura, infComFiscalizadoraLec, ComiteAuditoriaEsc, InformesDefinitivosEscritura, SegObservaciones, AppIdea, BienesTesting, SatCS, AppTestingLectura, Escaneo, Navegacion1, ConsultAS, Cuentas Banco de Corrientes, TestingConsultASLectura, IrrestrictoConAdjuntos, GestionRegInfLect, Cuentas Capital Banco de Corrientes, Sistema Legales, Irrestricto, Partes Contables
+
+  2473escobar | José Manuel Escobar |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 08:31
+    Grupos: BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, Garantias, Asientos contables con errores, Clarive_sponsor, Clarive, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, Migración TDVisa, RepBTBandejaLectura, notificacioneslink, RiesgoOperacionalDptoControlEsc, LinkOperaciolectura, ACMLectura, BCRA, compensacionlink, incidentesatm, OperacioInstructivos, OperacionesEsc, Navegacion3, LinkEscritura, BanTotal, ConsultAS, ConsOperacionesLectura, LinkEntradaEsc, Cuentas Banco de Corrientes, TestingConsultASLectura, Reinformatizacion, Operaciones, Cuentas Capital Banco de Corrientes, TestingEscritura, ProdEscritura, Irrestricto, Partes Contables
+
+  2954sanchez | Natalia Sanchez |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 11:05
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, PerdidaEsperadaBT_Lec, Lavalle-Laboratorio2025, Aprobaciones Gerencia de Riesgos Corporativos, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, TeletrabajoFCEMS, GrpRRHHRiesgosIntegrales, SPInstitucionalVisitantes, ResDirectorioBCRAesc, Comedor Lavalle, spComedorLavalle, SecDirGciaRiesgosEsc, SecDirComiteRiesgoEsc, InfoControlGestionTableroLec, Niif Calculo PD, Consolidados, ResDirectorioGciaRiesgosLec, RiesgosLiqTasLectura, RIGciaRiesgosLectura, DivRiesgoDeFraudeEsc, ACMLectura, RepositorioBTFinancieraUROLectura, InformesDefinitivosLectura, AppGalloEscritura, ComRiesgo, RTEscritura, Escaneo, RiesgoOperacionalEscritura, Navegacion2, ConsultAS, Cuentas Banco de Corrientes, IrrestrictoConAdjuntos, GestionRegInfLect, Cuentas Capital Banco de Corrientes, Antilavado, ConsolidadoBTLectura, Irrestricto, Partes Contables
+
+  2873Cieplinski | Mariana Cieplinski Pedro |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-10 14:07
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Clarive_SupervisorSponsor, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, TeletrabajoFCEMS, N5_Login, Clarive_sponsor, Clarive, SPInstitucionalVisitantes, ResDirectorioBCRAesc, Comedor Lavalle, spComedorLavalle, SecDirGciaFinanzasEsc, SecDirComiteFinanzasEsc, SecretariaComiteFinanzasEsc, InfoControlGestionTableroLec, ComiteDeFinanzasActasEscritura, GAEF_Esc, Consolidados, BDSiopelLectura, RIGciaFinanzasCreaLect, InfComFiscalizadoraFinanzas, InfComFiscalizadoraComiteFinanzasEscritura, FinancieraBCRALect, Gerencia de Finanzas, ComiteDeFinanzasEscritura, Gallo_RI_Escritura, ACMLectura, tasas, RepositorioBTFinancieraLectura, InterfacesGalloEscritura, AppGalloEscritura, TestingGalloEscritura, RTEscritura, Escaneo, Financiera, Navegacion1, ConsolidadosBTEsc, ConsultAS, Cuentas Banco de Corrientes, TestingConsultASLectura, IrrestrictoConAdjuntos, GestionRegInfLect, Cuentas Capital Banco de Corrientes, ConsFinancieraLectura, Irrestricto, Partes Contables
+
+  2875nava | Mariano Nava |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-10 14:45
+    Grupos: swift_FIN, Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Clarive_SupervisorSponsor, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, Asientos contables con errores, Clarive_sponsor, Clarive, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, FinancieGciaGralBcraEsc, Dpto. Control Exterior y Cambios, ACMLectura, RepositorioBTFinancieraLectura, RTEscritura, COCAfipEscritura, Comercio Exterior, Ritest, Financiera, Navegacion1, GestionRegInfEsc, ConsultAS, Cuentas Banco de Corrientes, IrrestrictoConAdjuntos, GestionRegInfLect, Cuentas Capital Banco de Corrientes, ConsolidadoBTLectura, ConsFinancieraLectura, Irrestricto, Partes Contables
+
+  2818perduca | Corina Alejandra Perduca |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 07:57
+    Grupos: swift_FIN, Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Clarive_SupervisorSponsor, Lavalle-Laboratorio2025, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, Asientos contables con errores, Clarive_sponsor, Clarive, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, FinancieGciaGralBcraEsc, Consolidados, Dpto. Control Exterior y Cambios, InfComFiscalizadoraFinanzas, InfComFiscalizadoraComiteFinanzasEscritura, Gerencia de Finanzas, ACMLectura, TecnicaEscritura, RepositorioBTFinancieraLectura, RTEscritura, COCAfipEscritura, Comercio Exterior, COMEXnewEscritura, Escaneo, Financiera, Navegacion1, GestionRegInfEsc, ConsultAS, Rt, Cuentas Banco de Corrientes, IrrestrictoConAdjuntos, GestionRegInfLect, Cuentas Capital Banco de Corrientes, ConsFinancieraLectura, Irrestricto, Partes Contables
+
+  2884cutro | Luis Alfonso Cutro |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-05 09:26
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Auditoria Continua, Lavalle-Laboratorio2025, Auditoria Interna, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, N5_Login, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, AuditInternaComiteLec, AuditoriaPAILect, SatCS, GadesA3Lectura, Navegacion2, AuditInternaEscritura, Cuentas Banco de Corrientes, Cuentas Capital Banco de Corrientes, Irrestricto
+
+  2258romero | Alvaro Romero |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-10 15:25
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, Asientos contables con errores, SPInstitucionalVisitantes, AdminRecaEscritura, Conciliacion y Control, ConyConEscritura, FallasDeCaja, AdminRecaLectura, Escaneo, Navegacion2, ConsultAS, Cuentas Banco de Corrientes, Cuentas Capital Banco de Corrientes, ConsContabilidadLectura, Irrestricto, Contabilidad, Partes Contables
+
+  2543dossantos | Mercedes Dos Santos |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-10 14:19
+    Grupos: Precalificados GGRC, Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, FacultadesCrediticiasLec, FacultadesComercialCreditosEsc, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, CreditomercedesTempEsc, N5_Login, SPInstitucionalVisitantes, ResDirectorioBCRAesc, Comedor Lavalle, spComedorLavalle, SecDirComiteCreditosEsc, InfoControlGestionSucurLec, Enviar como Capacitacion Creditos, Capacitaciones Creditos Bco Ctes SA, ComiteDeCreditosSesionesEsc, InfComFiscalizadoraComiteCreditoEscritura, Banca Individuos, ACMLectura, ComiteDeCreditosEscritura, BancaIndividuoEscritura, AdintarLectura, APPGyFLec, Escaneo, Navegacion2, Cuentas Banco de Corrientes, IrrestrictoConAdjuntos, Cuentas Capital Banco de Corrientes, Comercia, Irrestricto
+
+  2909fernandez | Noelia Cynthia Fernandez |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-07 15:01
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, FacultadesCrediticiasLec, FacultadesComercialCreditosEsc, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, N5_Login, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, Enviar como Capacitacion Creditos, Capacitaciones Creditos Bco Ctes SA, ComiteDeCreditosSesionesEsc, RepBTReportePrecalificadoLec, Banca Individuos, RepbTCreditosScoringEscritura, ACMLectura, BancaIndividuoEscritura, CreditosConsulta, AdintarLectura, Escaneo, Navegacion3, ConsComercialLectura, Cuentas Banco de Corrientes, Cuentas Capital Banco de Corrientes, Comercia, Irrestricto
+
+  2687moray | Andres Moray |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 11:02
+    Grupos: Tienda Mas BanCo, BANCOMFA, SPBancoAlaEscuelaMiembros, CapacitacionSmartfense, Lavalle-Laboratorio2025, FacultadesCrediticiasLec, FacultadesComercialCreditosEsc, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, N5_Login, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, SolicitudCreditoBE_Esc, InfRiesgoCredEscritura, Banca Empresa, BcaEmpresaEscritura, Escaneo, Navegacion2, ConsultAS, Cuentas Banco de Corrientes, IrrestrictoConAdjuntos, Cuentas Capital Banco de Corrientes, Comercia, Irrestricto
+
+  2893taffarel | Florencia Judith Taffarel |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-11 10:10
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, FacultadesCrediticiasLec, FacultadesComercialCreditosEsc, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, N5_Login, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, SolicitudCreditoBE_Esc, InfRiesgoCredEscritura, ComiteDeCreditosSesionesEsc, Banca Empresa, BcaEmpresaEscritura, Escaneo, Navegacion2, ConsultAS, Cuentas Banco de Corrientes, Cuentas Capital Banco de Corrientes, Comercia, Irrestricto
+
+  2831romerobarreto | Juan C. Romero Barreto |  | 
+    OU: Salida sin proxy | Ultimo logon: 2026-08-11 12:40
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, ConexAS, Clarive_SupervisorProgramacion, Lavalle-Laboratorio2025, Aprobaciones Gerencia de Sistemas - Taller de Demanda, Aprobaciones Gerencia de Sistemas, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC2, TeletrabajoFCEMS, Clarive_TallerDeDemanda, Clarive_ScrumMaster, Clarive_desarrollo, Clarive, SPInstitucionalVisitantes, Comedor Lavalle, spComedorLavalle, ProyectosAgilesBancaWebLec, DBTestDesa, SPtestingTD, Migración TDVisa, Chat, MigracionReinf, Niif Calculo PD, FactoriaApacheTomcat, WifiEmpleados, RepBTAnsesEscritura, TecnologiaInfGestionEsc, DesarrolloEsc, ACMLectura, MigracionSicec, LinkLectura, enviosBT, emerix_batch, GadesA3Escritura, SpoolPreprodLect, GadesEscritura, ConsSistemasLectura, SistemasFuentesEscritura, Navegacion2, MigracionTxt, ArchBanTotalEsc, SpoolPruebasGenEscritura, Cuentas Banco de Corrientes, TecnologiaEsc, Reinformatizacion, IrrestrictoConAdjuntos, Cuentas Capital Banco de Corrientes, Programadores, Irrestricto, Migracion
+
+  2894corrales | Jorge Corrales Saiach |  | 
+    OU: Salida sin proxy | Ultimo logon: 2026-08-11 06:59
+    Grupos: Analisis de Fraudes, BANCOMFA, CapacitacionSmartfense, SPPrestamosCartera, Lavalle-Laboratorio2025, SpoolRRHHOpeEsc, Aprobaciones Gerencia de Operaciones, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, TeletrabajoFCEMS, Clearing, Interbanking, Transferencias MEP, Garantias, Anses, Debin, SNP, GastosLegalesLec, Asientos contables con errores, Clarive_ProductOwner, Clarive, SPInstitucionalVisitantes, MEP_Desarrollo, Mep_Recibidos, GrpRRHHOperaciones, Comedor Lavalle, spComedorLavalle, AnalistasFuncionales, GciaRRHHOperacionesEsc, Coparticipacion Banco de Corrientes SA, DBTestDesa, Chat, Niif Calculo PD, Servicios Especiales Oficios Judiciales, Administración de Carteras Banco de Corrientes, InterfTarjetaEscritura, niif, ImpNiffEscritura, AppGalloEscritura, enviosBT, TestingGalloEscritura, GadesA3Escritura, SistemasFuentesOrganizativo, ConsSistemasLectura, SistemasFuentesEscritura, Navegacion1, ProdLectura, ConsultAS, Cuentas Banco de Corrientes, PagosBHNLectura, Reinformatizacion, IrrestrictoConAdjuntos, Cuentas Capital Banco de Corrientes, Irrestricto, Activas
+
+  2507munoz | Juan Carlos Munoz |  | 
+    OU: Usuarios | Ultimo logon: 2026-08-10 00:09
+    Grupos: Tienda Mas BanCo, BANCOMFA, CapacitacionSmartfense, Lavalle-Laboratorio2025, Aprobaciones Subgerencia General Comercial, FacultadesComercialCreditosEsc, MesadeAyuda, spSorteoColaboradores, Sorteo Colaboradores Banco de Corrientes, SPInscripcionesC1, TeletrabajoFCEMS, GrpRRHHSubGciaGralComercial, N5_Login, SPInstitucionalVisitantes, ResolDirectorioSubGcia-Gral-ComercialLect, TallerGestionClimaEsc, InspeccionCB2023, EquipoEnlace, GrpRRHHComercial, GrpSubGerenteGeneral, Comedor Lavalle, spComedorLavalle, SecDirSubGciaGralEsc, SecDirDptoRecuperacionCrediticiaEsc, SubGGResolDirectorio, InfoControlGestionTableroLec, InfoControlGestionSucurLec, InfoControlGestionLec, GrpWpWeb, InfRiesgoCredEscritura, Enviar como Capacitacion Creditos, Capacitaciones Creditos Bco Ctes SA, ComiteDeFinanzasActasEscritura, ComiteDeCreditosSesionesEsc, CircularesGeneralesEsc, AnalisisDeRentabilidadEsc, ComitedeIyGEsc, CifradoCreditos, Comercial, notificacioneslink, InfComFiscalizadoraCreditosEscritura, ComiteDeFinanzasLectura, ComiteDeFinanzasEscritura, ACMLectura, ComiteDeCreditoLectura, SegObservaciones, BcaEmpresaEscritura, BancaIndividuoLectura, Escaneo, Navegacion1, ProdLectura, ConsComercialLectura, ConsultAS, Cobranzas, Cuentas Banco de Corrientes, PagosBHNLectura, Reinformatizacion, IrrestrictoConAdjuntos, Cuentas Capital Banco de Corrientes, Comercia, Irrestricto, Activas
+
+
+======================================================================
+  DESCUBRIMIENTO DE SISTEMAS REMOTOS
+  MITRE ATT&CK: T1018 - Remote System Discovery
+======================================================================
+
+--- Controladores de Dominio ---
+  SRW-PDC02 | srw-pdc02.bancocorrientes.local | Windows Server 2016 Datacenter 10.0 (14393)
+  SRW-PDC01 | srw-pdc01.bancocorrientes.local | Windows Server 2016 Datacenter 10.0 (14393)
+
+--- Servidores del Dominio (objectClass=computer, Server OS) ---
+  Total servidores encontrados: 162
+  BCO98DC01 | bco98dc01.bancocorrientes.local | Windows Server 2008 R2 Enterprise | 
+  BCO98DC02-OLD | BCO98DC02-old.bancocorrientes.local | Windows Server 2008 R2 Enterprise | 
+  SRW-PDC02 | srw-pdc02.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  BCO98CA01 | BCO98CA01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  BCO98APP01 | bco98app01.bancocorrientes.local | Windows Server 2003 | 
+  BCO98BAR01 | bco98bar01.bancocorrientes.local | Windows Server 2003 | 
+  BCO98APP02 | BCO98APP02.bancocorrientes.local | Windows Server 2003 | Servidor de aplicaciones de Contingencia
+  BCO98DE03 | BCO98DE03.bancocorrientes.local | Windows Server 2008 R2 Enterprise | 
+  BCO98SHA02 | BCO98SHA02.bancocorrientes.local | Windows Server 2008 R2 Enterprise | 
+  BCO98BCK03 | BCO98BCK03.bancocorrientes.local | Windows Server 2008 R2 Enterprise | 
+  BCO98BCK02 | BCO98BCK02.bancocorrientes.local | Windows Server 2008 R2 Enterprise | 
+  BCO98APP04 | BCO98APP04.bancocorrientes.local | Windows Server 2008 R2 Enterprise | 
+  BCO98TEST06 | BCO98TEST06.bancocorrientes.local | Windows Server 2012 Standard | 
+  BCO98BTAPP03 | BCO98BTAPP03.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98BTAPP06 | BCO98BTAPP06.bancocorrientes.local | Windows Server 2012 Datacenter | OU=CPA,OU=Servidores,OU=Computers Servidores,DC=bancocorrientes,DC=local
+  BCO98BTAPP05 | BCO98BTAPP05.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98APP05 | BCO98APP05.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98BAR03 | BCO98BAR03.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  BCO98FS01 | bco98fs01.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  BCO98IMPBT04 | BCO98IMPBT04.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98NIW02 | BCO98NIW02.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98COM03 | BCO98COM03.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  BCO98GADES01 | BCO98GADES01.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98CTLM02 | BCO98CTLM02.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98CTLM01 | BCO98CTLM01.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98CTLM04 | BCO98CTLM04.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98CTLM03 | BCO98CTLM03.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98CAM02 | BCO98CAM02.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98ISOL01 | BCO98ISOL01.bancocorrientes.local | Windows Server 2008 R2 Enterprise | 
+  BCO98COM04 | BCO98COM04.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  BCO98KAS01 | bco98kas01.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  BCO98ISOL02 | BCO98ISOL02.bancocorrientes.local | Windows Server 2008 R2 Enterprise | 
+  SRW-PVMAIL01 | srw-pvmail01.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  SRW-PGXLIC01 | srw-pgxlic01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PMAE02 | srw-pmae02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PMOODLE01 | srw-pmoodle01.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  SRW-PMAE03 | srw-pmae03.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PADFS02 | SRW-PADFS02.bancocorrientes.local | Windows Server 2008 R2 Datacenter | 
+  SRW-PGXSERVER01 | srw-pgxserver01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PSGUARD01 | srw-psguard01.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  BCO98VSREP01 | bco98vsrep01.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  BCO98CLUS01 | BCO98CLUS01.bancocorrientes.local | Windows Server 2012 Datacenter | Cuenta de nombre de red virtual de clúster de conmut. por error
+  SRW-PIVAN01 | srw-pivan01.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  SRW-PAPP01 | srw-papp01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PSAT01 | srw-psat01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PSAT02 | srw-psat02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PEX01 | srw-pex01.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-PEX02 | srw-pex02.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-TRRHH01 | srw-trrhh01.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-TAPP01 | srw-tapp01.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-TISOL01 | srw-tisol01.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-TCTM01 | srw-tctm01.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-PISOL01 | srw-pisol01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-TVU01 | srw-tvu01.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-PRRHH01 | srw-prrhh01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-TBT01 | srw-tbt01.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-TBT02 | srw-tbt02.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-PAPP02 | srw-papp02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  BCO98VS15 | bco98vs15.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  SRW-PVS20 | srw-pvs20.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  SRW-PCTM01 | SRW-PCTM01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PCTM02 | srw-pctm02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  BCO98VS05 | BCO98VS05.bancocorrientes.local | Hyper-V Server 2012 | 
+  SRW-PVS18 | srw-pvs18.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  BCO98VS08 | bco98vs08.bancocorrientes.local | Hyper-V Server 2012 | 
+  SRW-TBT03 | srw-tbt03.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-TBT04 | srw-tbt04.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  BCO98VSCLUS03 | bco98vsclus03.bancocorrientes.local | Windows Server 2012 R2 Datacenter | Cuenta de nombre de red virtual de clúster de conmut. por error
+  bco98shdb01 | bco98shdb01.bancocorrientes.local | Windows Server 2012 Standard | 
+  SRW-PBCKREP01 | srw-pbckrep01.bancocorrientes.local | Windows Server 2016 Standard | 
+  BCO98VS16 | bco98vs16.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  SRW-PBCKREP02 | srw-pbckrep02.bancocorrientes.local | Windows Server 2016 Standard | 
+  BCO98VS14 | bco98vs14.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  bco98vsrep02 | bco98vsrep02.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  BCO98DBCLUS01 | bco98dbclus01.bancocorrientes.local | Windows Server 2012 Standard | Cuenta de nombre de red virtual de clúster de conmut. por error
+  BCO98VSCLUS02 | bco98vsclus02.bancocorrientes.local | Windows Server 2012 R2 Datacenter | Cuenta de nombre de red virtual de clúster de conmut. por error
+  BCO98VS17 | bco98vs17.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  bco98vsrep03 | bco98vsrep03.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  SRW-PDC01 | srw-pdc01.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-PVS21 | srw-pvs21.bancocorrientes.local | Windows Server 2012 R2 Datacenter | 
+  SRW-PRDS01 | srw-prds01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  VOPER01 | voper01.bancocorrientes.local | Windows Server 2016 Standard | 
+  VOPER01DC | voper01dc.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-POPER01 | srw-poper01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PRDP01 | srw-prdp01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBTS01 | srw-pbts01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-TCTM02 | SRW-TCTM02.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRL-TAPP01 | srl-tapp01 | Ubuntu Server | 
+  SRW-PBWFRONT01 | srw-pbwfront01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWFRONT02 | srw-pbwfront02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWMID01 | srw-pbwmid01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWMID02 | srw-pbwmid02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-TBT05 | SRW-TBT05.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  SRW-TBT06 | SRW-TBT06.bancocorrientes.local | Windows Server 2012 Datacenter | 
+  SRW-TSHA01 | srw-tsha01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWBTS01 | srw-pbwbts01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWBTS02 | srw-pbwbts02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PELASTIC01 | srw-pelastic01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWMID03 | srw-pbwmid03.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWBTS03 | srw-pbwbts03.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWBTS04 | srw-pbwbts04.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWMID04 | srw-pbwmid04.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  BCO98SOP02 | bco98sop02.bancocorrientes.local | Windows Server 2016 Standard | 
+  SRW-PBCKREP03 | srw-pbckrep03.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-TDB01 | srw-tdb01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-DDB01 | srw-ddb01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PDB02 | srw-pdb02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PPAPER01 | srw-ppaper01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PDOM01 | srw-pdom01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-TDOM01 | srw-tdom01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PASJ01 | srw-pasj01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PIDEA01 | srw-pidea01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PNOTIF01 | srw-pnotif01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-TAUTO01 | srw-tauto01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PAUTO01 | srw-pauto01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PADMIN01 | srw-padmin01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PADCON01 | srw-padcon01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PAUTOA01 | srw-pautoa01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PRDP02 | srw-prdp02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PILEG01 | srw-pileg01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PHISTO01 | srw-phisto01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PQUALYS01 | srw-pqualys01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PDB03 | srw-pdb03.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PDB04 | srw-pdb04.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PLOGS01 | srw-plogs01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  bco98dbclus02 | bco98dbclus02.bancocorrientes.local | Windows Server 2019 Datacenter | Cuenta de nombre de red virtual de clúster de conmut. por error
+  SRW-PFS01 | srw-pfs01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PIMP01 | srw-pimp01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PPAS01 | srw-ppas01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PPAS02 | srw-ppas02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PVISION01 | srw-pvision01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PTANGO01 | srw-ptango01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PRIESGO01 | srw-priesgo01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PSWIFT03 | srw-pswift03.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PSWIFT04 | srw-pswift04.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  BCO98SOP01 | BCO98SOP01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PLINK01 | srw-plink01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PKBGX01 | srw-pkbgx01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PLINK02 | srw-plink02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PIGATE01 | srw-pigate01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PWEBREDES01 | srw-pwebredes01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PGLPI01 | srw-pglpi01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PIMP04 | srw-pimp04.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PDGATE01 | srw-pdgate01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PDNS02 | SRW-PDNS02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PDNS01 | srw-pdns01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PNOS01 | srw-pnos01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBTAPP02 | srw-pbtapp02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PVONE01 | srw-pvone01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PCAM01 | srw-pcam01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PAPP03 | SRW-PAPP03.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBTAPP01 | srw-pbtapp01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PAPP04 | SRW-PAPP04.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-POPER02 | srw-poper02.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PBWBTS05 | srw-pbwbts05.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-PBWBTS06 | srw-pbwbts06.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-PBWMID05 | srw-pbwmid05.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  SRW-PBWMID06 | srw-pbwmid06.bancocorrientes.local | Windows Server 2016 Datacenter | 
+  BCO98SOP03 | BCO98SOP03.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PEMEX01 | srw-pemex01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PEMEAPP01 | srw-pemeapp01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+  SRW-PEMEPEN01 | srw-pemepen01.bancocorrientes.local | Windows Server 2019 Datacenter | 
+
+--- Equipos del Dominio (resumen) ---
+  Total workstations en el dominio: 1404
+
+--- Recursos Compartidos Visibles ---
+  \\\\SRW-PDC02\NETLOGON | Accesible: False
+  \\\\SRW-PDC02\SYSVOL | Accesible: False
+  \\BANCOCORRIENTES.LOCAL\SYSVOL | Accesible: True
+
+======================================================================
+  DESCUBRIMIENTO DE SERVICIOS DE RED
+  MITRE ATT&CK: T1046 - Network Service Discovery
+======================================================================
+
+--- Puertos en Escucha (este equipo) ---
+  :135 [svchost] (::)
+  :135 [svchost] (0.0.0.0)
+  :139 [System] (192.168.56.1)
+  :139 [System] (172.31.48.1)
+  :139 [System] (10.12.33.83)
+  :445 [System] (::)
+  :2179 [vmms] (::)
+  :2179 [vmms] (0.0.0.0)
+  :3389 [svchost] (::)
+  :3389 [svchost] (0.0.0.0)
+  :5040 [svchost] (0.0.0.0)
+  :5800 [winvnc] (0.0.0.0)
+  :5900 [winvnc] (0.0.0.0)
+  :7680 [svchost] (::)
+  :49664 [lsass] (::)
+  :49664 [lsass] (0.0.0.0)
+  :49665 [wininit] (0.0.0.0)
+  :49665 [wininit] (::)
+  :49666 [svchost] (::)
+  :49666 [svchost] (0.0.0.0)
+  :49667 [svchost] (0.0.0.0)
+  :49667 [svchost] (::)
+  :49668 [svchost] (0.0.0.0)
+  :49668 [svchost] (::)
+  :49669 [lsass] (::)
+  :49669 [lsass] (0.0.0.0)
+  :49670 [spoolsv] (0.0.0.0)
+  :49670 [spoolsv] (::)
+  :49761 [services] (::)
+  :49761 [services] (0.0.0.0)
+  :49766 [svchost] (::)
+  :49766 [svchost] (0.0.0.0)
+  :52955 [plasrv] (0.0.0.0)
+  :52955 [plasrv] (::)
+  :56395 [plasrv] (::)
+  :56395 [plasrv] (0.0.0.0)
+  :56398 [svchost] (::)
+  :56398 [svchost] (0.0.0.0)
+
+--- Servicios Corriendo ---
+  AdobeARMservice | Adobe Acrobat Update Service | RunAs: LocalSystem
+  appgatedriver | Appgate SDP Driver Control | RunAs: LocalSystem
+  AppgateUpdateService | Appgate SDP Update Service | RunAs: LocalSystem
+  Appinfo | Información de la aplicación | RunAs: LocalSystem
+  AudioEndpointBuilder | Compilador de extremo de audio de Windows | RunAs: LocalSystem
+  Audiosrv | Audio de Windows | RunAs: NT AUTHORITY\LocalService
+  BFE | Motor de filtrado de base | RunAs: NT AUTHORITY\LocalService
+  BrokerInfrastructure | Servicio de infraestructura de tareas en segundo plano | RunAs: LocalSystem
+  camsvc | Servicio Administrador de funcionalidad de acceso | RunAs: LocalSystem
+  CDPSvc | Servicio de plataforma de dispositivos conectados | RunAs: NT AUTHORITY\LocalService
+  CertPropSvc | Propagación de certificados | RunAs: LocalSystem
+  ClickToRunSvc | Microsoft Office Click-to-Run Service | RunAs: LocalSystem
+  ClipSVC | Servicio de licencia de cliente (ClipSVC) | RunAs: LocalSystem
+  COMSysApp | Aplicación del sistema COM+ | RunAs: LocalSystem
+  CoreMessagingRegistrar | CoreMessaging | RunAs: NT AUTHORITY\LocalService
+  cphs | Intel(R) Content Protection HECI Service | RunAs: LocalSystem
+  cplspcon | Intel(R) Content Protection HDCP Service | RunAs: LocalSystem
+  CryptSvc | Servicios de cifrado | RunAs: NT Authority\NetworkService
+  DcomLaunch | Iniciador de procesos de servidor DCOM | RunAs: LocalSystem
+  DeviceAssociationService | Servicio de asociación de dispositivos | RunAs: LocalSystem
+  DeviceInstall | Servicio de instalación de dispositivos | RunAs: LocalSystem
+  Dhcp | Cliente DHCP | RunAs: NT Authority\LocalService
+  DispBrokerDesktopSvc | Servicio de directivas de pantallas | RunAs: NT AUTHORITY\LocalService
+  DisplayEnhancementService | Servicio de mejora de visualización | RunAs: LocalSystem
+  Dnscache | Cliente DNS | RunAs: NT AUTHORITY\NetworkService
+  DoSvc | Optimización de distribución | RunAs: NT Authority\NetworkService
+  DPS | Servicio de directivas de diagnóstico | RunAs: NT AUTHORITY\LocalService
+  DsSvc | Servicio de uso compartido de datos | RunAs: LocalSystem
+  DusmSvc | Uso de datos | RunAs: NT Authority\LocalService
+  EFS | Sistema de cifrado de archivos (EFS) | RunAs: LocalSystem
+  EventLog | Registro de eventos de Windows | RunAs: NT AUTHORITY\LocalService
+  EventSystem | Sistema de eventos COM+ | RunAs: NT AUTHORITY\LocalService
+  FontCache | Servicio de caché de fuentes de Windows | RunAs: NT AUTHORITY\LocalService
+  gpsvc | Cliente de directiva de grupo | RunAs: LocalSystem
+  HNS | Servicio de red de host | RunAs: LocalSystem
+  HvHost | Servicio de host HV | RunAs: LocalSystem
+  igccservice | Intel(R) Graphics Command Center Service | RunAs: LocalSystem
+  igfxCUIService2.0.0.0 | Intel(R) HD Graphics Control Panel Service | RunAs: LocalSystem
+  IKEEXT | Módulos de creación de claves de IPsec para IKE y AuthIP | RunAs: LocalSystem
+  InstallService | Servicio de instalación de Microsoft Store | RunAs: LocalSystem
+  InventorySvc | Servicio de inventario y compatibilidad de proveedores | RunAs: LocalSystem
+  InvGate-Insight-Agent | InvGate Asset Management Agent | RunAs: LocalSystem
+  iphlpsvc | Aplicación auxiliar IP | RunAs: LocalSystem
+  KeyIso | Aislamiento de claves CNG | RunAs: LocalSystem
+  LanmanServer | Servidor | RunAs: LocalSystem
+  LanmanWorkstation | Estación de trabajo | RunAs: NT AUTHORITY\NetworkService
+  lfsvc | Servicio de geolocalización | RunAs: LocalSystem
+  LicenseManager | Servicio de administrador de licencias de Windows | RunAs: NT Authority\LocalService
+  lmhosts | Aplicación auxiliar de NetBIOS sobre TCP/IP | RunAs: NT AUTHORITY\LocalService
+  LSM | LSM | RunAs: 
+  mpssvc | Firewall de Windows Defender | RunAs: NT Authority\LocalService
+  MSDTC | Coordinador de transacciones distribuidas | RunAs: NT AUTHORITY\NetworkService
+  NcbService | Agente de conexión de red | RunAs: LocalSystem
+  Netlogon | Net Logon | RunAs: LocalSystem
+  netprofm | Servicio de lista de redes | RunAs: NT AUTHORITY\NetworkService
+  NetSetupSvc | NetSetupSvc | RunAs: 
+  NgcCtnrSvc | Contenedor de Microsoft Passport | RunAs: NT AUTHORITY\LocalService
+  nsi | Servicio Interfaz de almacenamiento en red | RunAs: NT Authority\LocalService
+  nvagent | Servicio de virtualización de red | RunAs: LocalSystem
+  PcaSvc | Servicio Asistente para la compatibilidad de programas | RunAs: LocalSystem
+  PlugPlay | Plug and Play | RunAs: LocalSystem
+  PolicyAgent | Agente de directiva IPsec | RunAs: NT Authority\NetworkService
+  Power | Energía | RunAs: LocalSystem
+  ProfSvc | Servicio de perfil de usuario | RunAs: LocalSystem
+  QualysAgent | Qualys Cloud Agent | RunAs: LocalSystem
+  RmSvc | Servicio de administración de radio | RunAs: NT AUTHORITY\LocalService
+  RpcEptMapper | Asignador de extremos de RPC | RunAs: NT AUTHORITY\NetworkService
+  RpcSs | Llamada a procedimiento remoto (RPC) | RunAs: NT AUTHORITY\NetworkService
+  RstMwService | Intel(R) Storage Middleware Service | RunAs: LocalSystem
+  RtkAudioUniversalService | Realtek Audio Universal Service | RunAs: LocalSystem
+  SamSs | Administrador de cuentas de seguridad | RunAs: LocalSystem
+  ScDeviceEnum | Servicio de enumeración de dispositivos de tarjeta inteligente | RunAs: LocalSystem
+  Schedule | Programador de tareas | RunAs: LocalSystem
+  SecurityHealthService | Servicio Seguridad de Windows | RunAs: LocalSystem
+  SENS | Servicio de notificación de eventos de sistema | RunAs: LocalSystem
+  SensorService | Servicio de sensores | RunAs: LocalSystem
+  SessionEnv | Configuración de Escritorio remoto | RunAs: localSystem
+  SharedAccess | Conexión compartida a Internet (ICS) | RunAs: LocalSystem
+  ShellHWDetection | Detección de hardware shell | RunAs: LocalSystem
+  Spooler | Cola de impresión | RunAs: LocalSystem
+  SSDPSRV | Detección SSDP | RunAs: NT AUTHORITY\LocalService
+  StateRepository | Servicio de repositorio de estado | RunAs: LocalSystem
+  StorSvc | Servicio de almacenamiento | RunAs: LocalSystem
+  Sysmon64 | Sysmon64 | RunAs: LocalSystem
+  SystemEventsBroker | Agente de eventos del sistema | RunAs: LocalSystem
+  TermService | Servicios de Escritorio remoto | RunAs: NT Authority\NetworkService
+  TextInputManagementService | Servicio de administración de entrada de texto | RunAs: LocalSystem
+  Themes | Temas | RunAs: LocalSystem
+  TimeBrokerSvc | Agente de eventos de tiempo | RunAs: NT AUTHORITY\LocalService
+  TokenBroker | Administrador de cuentas web | RunAs: LocalSystem
+  TrustedInstaller | Instalador de módulos de Windows | RunAs: localSystem
+  UmRdpService | Redirector de puerto en modo usuario de Servicios de Escritorio remoto | RunAs: localSystem
+  UserManager | Administrador de usuarios | RunAs: LocalSystem
+  UsoSvc | Servicio orquestador de actualizaciones | RunAs: LocalSystem
+  uvnc_service | uvnc_service | RunAs: LocalSystem
+  VaultSvc | Administrador de credenciales | RunAs: LocalSystem
+  vmcompute | Servicio de proceso de host de Hyper-V | RunAs: LocalSystem
+  vmms | Administración de máquinas virtuales de Hyper-V | RunAs: LocalSystem
+  W32Time | Hora de Windows | RunAs: NT AUTHORITY\LocalService
+  Wcmsvc | Administrador de conexiones de Windows | RunAs: NT Authority\LocalService
+  wcncsvc | Registrador de configuración de Windows Connect Now | RunAs: NT AUTHORITY\LocalService
+  WdiServiceHost | Host del servicio de diagnóstico | RunAs: NT AUTHORITY\LocalService
+  WdiSystemHost | Host de sistema de diagnóstico | RunAs: LocalSystem
+  webthreatdefsvc | Servicio de defensa contra amenazas web | RunAs: NT AUTHORITY\LocalService
+  whesvc | Estado y experiencias optimizadas de Windows | RunAs: LocalSystem
+  WinCollect | IBM WinCollect | RunAs: LocalSystem
+  WinHttpAutoProxySvc | Servicio de detección automática de proxy web WinHTTP | RunAs: NT AUTHORITY\LocalService
+  Winmgmt | Instrumental de administración de Windows | RunAs: localSystem
+  WlanSvc | Configuración automática de WLAN | RunAs: LocalSystem
+  wlidsvc | Ayudante para el inicio de sesión de cuenta Microsoft | RunAs: LocalSystem
+  wmiApSrv | Adaptador de rendimiento de WMI | RunAs: localSystem
+  WpnService | Servicio del sistema de notificaciones de inserción de Windows | RunAs: LocalSystem
+  WSAIFabricSvc | WSAIFabricSvc | RunAs: NT AUTHORITY\LocalService
+  wscsvc | Centro de seguridad | RunAs: NT AUTHORITY\LocalService
+  WSearch | Windows Search | RunAs: LocalSystem
+  wuqisvc | Insights de calidad y uso de Microsoft | RunAs: NT AUTHORITY\LocalService
+  cbdhsvc_5088546 | Servicio de usuario del portapapeles_5088546 | RunAs: 
+  CDPUserSvc_5088546 | Servicio de usuario de plataforma de dispositivos conectados_5088546 | RunAs: 
+  OneSyncSvc_5088546 | Sincronizar host_5088546 | RunAs: 
+  PimIndexMaintenanceSvc_5088546 | Datos de contactos_5088546 | RunAs: 
+  UdkUserSvc_5088546 | Servicio de usuario de Udk_5088546 | RunAs: 
+  UnistoreSvc_5088546 | Almacenamiento de datos de usuarios_5088546 | RunAs: 
+  UserDataSvc_5088546 | Acceso a datos de usuarios_5088546 | RunAs: 
+  webthreatdefusersvc_5088546 | Servicio de usuario de defensa contra amenazas web_5088546 | RunAs: 
+  WpnUserService_5088546 | Servicio de usuario de notificaciones de inserción de Windows_5088546 | RunAs: 
+  cbdhsvc_c4859b0f | Servicio de usuario del portapapeles_c4859b0f | RunAs: 
+  CDPUserSvc_c4859b0f | Servicio de usuario de plataforma de dispositivos conectados_c4859b0f | RunAs: 
+  OneSyncSvc_c4859b0f | Sincronizar host_c4859b0f | RunAs: 
+  PimIndexMaintenanceSvc_c4859b0f | Datos de contactos_c4859b0f | RunAs: 
+  UdkUserSvc_c4859b0f | Servicio de usuario de Udk_c4859b0f | RunAs: 
+  UnistoreSvc_c4859b0f | Almacenamiento de datos de usuarios_c4859b0f | RunAs: 
+  UserDataSvc_c4859b0f | Acceso a datos de usuarios_c4859b0f | RunAs: 
+  webthreatdefusersvc_c4859b0f | Servicio de usuario de defensa contra amenazas web_c4859b0f | RunAs: 
+  WpnUserService_c4859b0f | Servicio de usuario de notificaciones de inserción de Windows_c4859b0f | RunAs: 
+  cbdhsvc_c4b759c0 | Servicio de usuario del portapapeles_c4b759c0 | RunAs: 
+  CDPUserSvc_c4b759c0 | Servicio de usuario de plataforma de dispositivos conectados_c4b759c0 | RunAs: 
+  OneSyncSvc_c4b759c0 | Sincronizar host_c4b759c0 | RunAs: 
+  PimIndexMaintenanceSvc_c4b759c0 | Datos de contactos_c4b759c0 | RunAs: 
+  UdkUserSvc_c4b759c0 | Servicio de usuario de Udk_c4b759c0 | RunAs: 
+  UnistoreSvc_c4b759c0 | Almacenamiento de datos de usuarios_c4b759c0 | RunAs: 
+  UserDataSvc_c4b759c0 | Acceso a datos de usuarios_c4b759c0 | RunAs: 
+  webthreatdefusersvc_c4b759c0 | Servicio de usuario de defensa contra amenazas web_c4b759c0 | RunAs: 
+  WpnUserService_c4b759c0 | Servicio de usuario de notificaciones de inserción de Windows_c4b759c0 | RunAs: 
+  CSFalconService | CrowdStrike Falcon Sensor Service | RunAs: LocalSystem
+
+--- SPN de Servicios Criticos (via ADSI) ---
+  [HTTP] (3 encontrados):
+    server (server): HTTP/btgalloprod.bancocorrientes.local, HTTP/btgalloprod.bancocorrientes.local:53443, HTTP/bt.bcoctes
+    Usuario Servicio Gallo K (usrw-pgallok): HTTP/bt.bcoctes:14443
+    Servicio ISOL Desarrollo (servicioisoldesa): HTTP/srw-tisol01.dev.local, HTTP/srw-tisol01
+  [LDAP] (2 encontrados):
+    SRW-PDC01 (SRW-PDC01$): ldap/srw-pdc01.bancocorrientes.local/ForestDnsZones.bancocorrientes.local, ldap/srw-pdc01.bancocorrientes.local/DomainDnsZones.bancocorrientes.local, ldap/srw-pdc01.bancocorrientes.local/BCOCOR
+    SRW-PDC02 (SRW-PDC02$): ldap/SRW-PDC02/BCOCOR, ldap/fe2ae56f-68e8-4727-ba13-c4aeb2e129d3._msdcs.bancocorrientes.local, ldap/srw-pdc02.bancocorrientes.local/BCOCOR
+  [DNS] (4 encontrados):
+    BCO98DC01 (BCO98DC01$): DNS/bco98dc01.bancocorrientes.local
+    BCO98DC02-OLD (BCO98DC02-OLD$): DNS/BCO98DC02-old.bancocorrientes.local
+    SRW-PDC01 (SRW-PDC01$): DNS/srw-pdc01.bancocorrientes.local
+    SRW-PDC02 (SRW-PDC02$): DNS/srw-pdc02.bancocorrientes.local
+  [SMTP] (2 encontrados):
+    SRW-PEX01 (SRW-PEX01$): SMTP/SRW-PEX01, SMTP/srw-pex01.bancocorrientes.local
+    SRW-PEX02 (SRW-PEX02$): SMTP/SRW-PEX02, SMTP/srw-pex02.bancocorrientes.local
+  [IMAP] (2 encontrados):
+    SRW-PEX01 (SRW-PEX01$): IMAP/SRW-PEX01, IMAP/srw-pex01.bancocorrientes.local
+    SRW-PEX02 (SRW-PEX02$): IMAP/SRW-PEX02, IMAP/srw-pex02.bancocorrientes.local
+  [POP3] (2 encontrados):
+    SRW-PEX01 (SRW-PEX01$): POP3/SRW-PEX01, POP3/srw-pex01.bancocorrientes.local
+    SRW-PEX02 (SRW-PEX02$): POP3/SRW-PEX02, POP3/srw-pex02.bancocorrientes.local
+  [CIFS] (2 encontrados):
+    bcomacsis0001 (bcomacsis0001$): cifs/bcomacsis0001.bancocorrientes.local
+    bcosis0014 (bcosis0014$): cifs/bcosis0014.bancocorrientes.local
+  [TERMSRV] (1000 encontrados):
+    BCO010001 (BCO010001$): TERMSRV/BCO010001, TERMSRV/BCO010001.bancocorrientes.local
+    BCO010002 (BCO010002$): TERMSRV/BCO010002, TERMSRV/BCO010002.bancocorrientes.local
+    BCO010003 (BCO010003$): TERMSRV/BCO010003, TERMSRV/BCO010003.bancocorrientes.local
+    BCO010004 (BCO010004$): TERMSRV/BCO010004, TERMSRV/BCO010004.bancocorrientes.local
+    BCO010006 (BCO010006$): TERMSRV/BCO010006, TERMSRV/bco010006.bancocorrientes.local
+    BCO010010 (BCO010010$): TERMSRV/BCO010010, TERMSRV/BCO010010.bancocorrientes.local
+    BCO010012 (BCO010012$): TERMSRV/BCO010012, TERMSRV/BCO010012.bancocorrientes.local
+    BCO010013 (BCO010013$): TERMSRV/BCO010013, TERMSRV/BCO010013.bancocorrientes.local
+    BCO010014 (BCO010014$): TERMSRV/BCO010014, TERMSRV/BCO010014.bancocorrientes.local
+    BCO010015 (BCO010015$): TERMSRV/BCO010015, TERMSRV/BCO010015.bancocorrientes.local
+    BCO010016 (BCO010016$): TERMSRV/BCO010016, TERMSRV/BCO010016.bancocorrientes.local
+    BCO010017 (BCO010017$): TERMSRV/BCO010017.bancocorrientes.local, TERMSRV/BCO010017
+    BCO010018 (BCO010018$): TERMSRV/BCO010018, TERMSRV/BCO010018.bancocorrientes.local
+    BCO010019 (BCO010019$): TERMSRV/BCO010019, TERMSRV/BCO010019.bancocorrientes.local
+    BCO010020 (BCO010020$): TERMSRV/BCO010020.bancocorrientes.local, TERMSRV/BCO010020
+    BCO010021 (BCO010021$): TERMSRV/BCO010021, TERMSRV/BCO010021.bancocorrientes.local
+    BCO010022 (BCO010022$): TERMSRV/BCO010022.bancocorrientes.local, TERMSRV/BCO010022
+    BCO010025 (BCO010025$): TERMSRV/BCO010025, TERMSRV/BCO010025.bancocorrientes.local
+    BCO010026 (BCO010026$): TERMSRV/BCO010026, TERMSRV/BCO010026.bancocorrientes.local
+    BCO01EFLOW01 (BCO01EFLOW01$): TERMSRV/BCO01EFLOW01, TERMSRV/BCO01EFLOW01.bancocorrientes.local
+    BCO01EFLOW02 (BCO01EFLOW02$): TERMSRV/BCO01EFLOW02, TERMSRV/BCO01EFLOW02.bancocorrientes.local
+    BCO01EFLOW04 (BCO01EFLOW04$): TERMSRV/BCO01EFLOW04.bancocorrientes.local, TERMSRV/BCO01EFLOW04
+    BCO020001 (BCO020001$): TERMSRV/BCO020001, TERMSRV/BCO020001.bancocorrientes.local
+    BCO020002 (BCO020002$): TERMSRV/BCO020002, TERMSRV/BCO020002.bancocorrientes.local
+    BCO020005 (BCO020005$): TERMSRV/BCO020005, TERMSRV/BCO020005.bancocorrientes.local
+    BCO020006 (BCO020006$): TERMSRV/BCO020006, TERMSRV/BCO020006.bancocorrientes.local
+    BCO020009 (BCO020009$): TERMSRV/BCO020009, TERMSRV/BCO020009.bancocorrientes.local
+    BCO020014 (BCO020014$): TERMSRV/BCO020014, TERMSRV/BCO020014.bancocorrientes.local
+    BCO020015 (BCO020015$): TERMSRV/BCO020015, TERMSRV/BCO020015.bancocorrientes.local
+    BCO02EFLOW01 (BCO02EFLOW01$): TERMSRV/BCO02EFLOW01, TERMSRV/BCO02EFLOW01.bancocorrientes.local
+    BCO02EFLOW02 (BCO02EFLOW02$): TERMSRV/BCO02EFLOW02, TERMSRV/bco02eflow02.bancocorrientes.local
+    BCO030002 (BCO030002$): TERMSRV/BCO030002, TERMSRV/BCO030002.bancocorrientes.local
+    BCO030003 (BCO030003$): TERMSRV/BCO030003, TERMSRV/bco030003.bancocorrientes.local
+    BCO030007 (BCO030007$): TERMSRV/BCO030007, TERMSRV/BCO030007.bancocorrientes.local
+    BCO030008 (BCO030008$): TERMSRV/BCO030008, TERMSRV/BCO030008.bancocorrientes.local
+    BCO030009 (BCO030009$): TERMSRV/BCO030009, TERMSRV/BCO030009.bancocorrientes.local
+    BCO030010 (BCO030010$): TERMSRV/BCO030010.bancocorrientes.local, TERMSRV/BCO030010
+    BCO030011 (BCO030011$): TERMSRV/BCO030011, TERMSRV/BCO030011.bancocorrientes.local
+    BCO030013 (BCO030013$): TERMSRV/BCO030013, TERMSRV/BCO030013.bancocorrientes.local
+    BCO03EFLOW01 (BCO03EFLOW01$): TERMSRV/BCO03EFLOW01, TERMSRV/BCO03EFLOW01.bancocorrientes.local
+    BCO03EFLOW04 (BCO03EFLOW04$): TERMSRV/BCO03EFLOW04, TERMSRV/BCO03EFLOW04.bancocorrientes.local
+    BCO040001 (BCO040001$): TERMSRV/BCO040001, TERMSRV/BCO040001.bancocorrientes.local
+    BCO040006 (BCO040006$): TERMSRV/BCO040006.bancocorrientes.local, TERMSRV/BCO040006
+    BCO040007 (BCO040007$): TERMSRV/BCO040007, TERMSRV/BCO040007.bancocorrientes.local
+    BCO040008 (BCO040008$): TERMSRV/BCO040008, TERMSRV/BCO040008.bancocorrientes.local
+    BCO040009 (BCO040009$): TERMSRV/BCO040009, TERMSRV/BCO040009.bancocorrientes.local
+    BCO040010 (BCO040010$): TERMSRV/BCO040010, TERMSRV/BCO040010.bancocorrientes.local
+    BCO04EFLOW01 (BCO04EFLOW01$): TERMSRV/BCO04EFLOW01, TERMSRV/bco04eflow01.bancocorrientes.local
+    BCO04EFLOW02 (BCO04EFLOW02$): TERMSRV/BCO04EFLOW02, TERMSRV/bco04eflow02.bancocorrientes.local
+    BCO050002 (BCO050002$): TERMSRV/BCO050002, TERMSRV/BCO050002.bancocorrientes.local
+    BCO050004 (BCO050004$): TERMSRV/BCO050004, TERMSRV/BCO050004.bancocorrientes.local
+    BCO050008 (BCO050008$): TERMSRV/BCO050008, TERMSRV/BCO050008.bancocorrientes.local
+    BCO050011 (BCO050011$): TERMSRV/BCO050011.bancocorrientes.local, TERMSRV/BCO050011
+    BCO050012 (BCO050012$): TERMSRV/BCO050012, TERMSRV/BCO050012.bancocorrientes.local
+    BCO050016 (BCO050016$): TERMSRV/BCO050016, TERMSRV/BCO050016.bancocorrientes.local
+    BCO050018 (BCO050018$): TERMSRV/BCO050018, TERMSRV/BCO050018.bancocorrientes.local
+    BCO050020 (BCO050020$): TERMSRV/BCO050020, TERMSRV/BCO050020.bancocorrientes.local
+    BCO050022 (BCO050022$): TERMSRV/BCO050022, TERMSRV/BCO050022.bancocorrientes.local
+    BCO050023 (BCO050023$): TERMSRV/BCO050023, TERMSRV/BCO050023.bancocorrientes.local
+    BCO050024 (BCO050024$): TERMSRV/BCO050024, TERMSRV/BCO050024.bancocorrientes.local
+    BCO050025 (BCO050025$): TERMSRV/BCO050025, TERMSRV/BCO050025.bancocorrientes.local
+    BCO050026 (BCO050026$): TERMSRV/BCO050026, TERMSRV/BCO050026.bancocorrientes.local
+    BCO050027 (BCO050027$): TERMSRV/BCO050027, TERMSRV/BCO050027.bancocorrientes.local
+    BCO050028 (BCO050028$): TERMSRV/BCO050028.bancocorrientes.local, TERMSRV/BCO050028
+    BCO050029 (BCO050029$): TERMSRV/BCO050029, TERMSRV/BCO050029.bancocorrientes.local
+    BCO050030 (BCO050030$): TERMSRV/BCO050030, TERMSRV/BCO050030.bancocorrientes.local
+    BCO050031 (BCO050031$): TERMSRV/BCO050031, TERMSRV/BCO050031.bancocorrientes.local
+    BCO050032 (BCO050032$): TERMSRV/BCO050032, TERMSRV/BCO050032.bancocorrientes.local
+    BCO050033 (BCO050033$): TERMSRV/BCO050033, TERMSRV/BCO050033.bancocorrientes.local
+    BCO050034 (BCO050034$): TERMSRV/BCO050034, TERMSRV/BCO050034.bancocorrientes.local
+    BCO050037 (BCO050037$): TERMSRV/BCO050037, TERMSRV/BCO050037.bancocorrientes.local
+    BCO050052 (BCO050052$): TERMSRV/BCO050052, TERMSRV/BCO050052.bancocorrientes.local
+    BCO050053 (BCO050053$): TERMSRV/BCO050053.bancocorrientes.local, TERMSRV/BCO050053
+    BCO050054 (BCO050054$): TERMSRV/BCO050054, TERMSRV/BCO050054.bancocorrientes.local
+    BCO050055 (BCO050055$): TERMSRV/BCO050055, TERMSRV/BCO050055.bancocorrientes.local
+    BCO050056 (BCO050056$): TERMSRV/BCO050056, TERMSRV/BCO050056.bancocorrientes.local
+    BCO050058 (BCO050058$): TERMSRV/BCO050058, TERMSRV/BCO050058.bancocorrientes.local
+    BCO050059 (BCO050059$): TERMSRV/BCO050059.bancocorrientes.local, TERMSRV/BCO050059
+    BCO05EFLOW01 (BCO05EFLOW01$): TERMSRV/BCO05EFLOW01, TERMSRV/BCO05EFLOW01.bancocorrientes.local
+    BCO05EFLOW02 (BCO05EFLOW02$): TERMSRV/BCO05EFLOW02, TERMSRV/BCO05EFLOW02.bancocorrientes.local
+    BCO05EFLOW03 (BCO05EFLOW03$): TERMSRV/BCO05EFLOW03, TERMSRV/BCO05EFLOW03.bancocorrientes.local
+    BCO05EFLOW04 (BCO05EFLOW04$): TERMSRV/BCO05EFLOW04, TERMSRV/bco05eflow04.bancocorrientes.local
+    BCO05EFLOW07 (BCO05EFLOW07$): TERMSRV/BCO05EFLOW07, TERMSRV/BCO05EFLOW07.bancocorrientes.local
+    BCO060001 (BCO060001$): TERMSRV/BCO060001, TERMSRV/BCO060001.bancocorrientes.local
+    BCO060002 (BCO060002$): TERMSRV/BCO060002, TERMSRV/BCO060002.bancocorrientes.local
+    BCO060003 (BCO060003$): TERMSRV/BCO060003, TERMSRV/BCO060003.bancocorrientes.local
+    BCO060004 (BCO060004$): TERMSRV/BCO060004.bancocorrientes.local, TERMSRV/BCO060004
+    BCO060005 (BCO060005$): TERMSRV/BCO060005, TERMSRV/BCO060005.bancocorrientes.local
+    BCO060006 (BCO060006$): TERMSRV/BCO060006, TERMSRV/BCO060006.bancocorrientes.local
+    BCO060007 (BCO060007$): TERMSRV/BCO060007, TERMSRV/BCO060007.bancocorrientes.local
+    BCO060008 (BCO060008$): TERMSRV/BCO060008, TERMSRV/BCO060008.bancocorrientes.local
+    BCO060009 (BCO060009$): TERMSRV/BCO060009, TERMSRV/BCO060009.bancocorrientes.local
+    BCO060011 (BCO060011$): TERMSRV/BCO060011, TERMSRV/BCO060011.bancocorrientes.local
+    BCO060016 (BCO060016$): TERMSRV/BCO060016, TERMSRV/BCO060016.bancocorrientes.local
+    BCO060018 (BCO060018$): TERMSRV/BCO060018, TERMSRV/BCO060018.bancocorrientes.local
+    BCO060023 (BCO060023$): TERMSRV/BCO060023, TERMSRV/BCO060023.bancocorrientes.local
+    BCO06EFLOW01 (BCO06EFLOW01$): TERMSRV/BCO06EFLOW01, TERMSRV/BCO06EFLOW01.bancocorrientes.local
+    BCO06EFLOW02 (BCO06EFLOW02$): TERMSRV/BCO06EFLOW02, TERMSRV/BCO06EFLOW02.bancocorrientes.local
+    BCO070001 (BCO070001$): TERMSRV/BCO070001, TERMSRV/BCO070001.bancocorrientes.local
+    BCO070002 (BCO070002$): TERMSRV/BCO070002, TERMSRV/BCO070002.bancocorrientes.local
+    BCO070003 (BCO070003$): TERMSRV/BCO070003, TERMSRV/BCO070003.bancocorrientes.local
+    BCO070006 (BCO070006$): TERMSRV/BCO070006, TERMSRV/BCO070006.bancocorrientes.local
+    BCO070012 (BCO070012$): TERMSRV/BCO070012, TERMSRV/BCO070012.bancocorrientes.local
+    BCO070013 (BCO070013$): TERMSRV/BCO070013, TERMSRV/BCO070013.bancocorrientes.local
+    BCO070016 (BCO070016$): TERMSRV/BCO070016, TERMSRV/BCO070016.bancocorrientes.local
+    BCO070017 (BCO070017$): TERMSRV/BCO070017, TERMSRV/BCO070017.bancocorrientes.local
+    BCO070018 (BCO070018$): TERMSRV/BCO070018.bancocorrientes.local, TERMSRV/BCO070018
+    BCO070021 (BCO070021$): TERMSRV/BCO070021, TERMSRV/BCO070021.bancocorrientes.local
+    BCO070022 (BCO070022$): TERMSRV/BCO070022, TERMSRV/BCO070022.bancocorrientes.local
+    BCO070023 (BCO070023$): TERMSRV/BCO070023, TERMSRV/BCO070023.bancocorrientes.local
+    BCO070024 (BCO070024$): TERMSRV/BCO070024, TERMSRV/BCO070024.bancocorrientes.local
+    BCO070025 (BCO070025$): TERMSRV/BCO070025, TERMSRV/BCO070025.bancocorrientes.local
+    BCO070027 (BCO070027$): TERMSRV/BCO070027, TERMSRV/BCO070027.bancocorrientes.local
+    BCO070028 (BCO070028$): TERMSRV/BCO070028, TERMSRV/BCO070028.bancocorrientes.local
+    BCO070032 (BCO070032$): TERMSRV/BCO070032, TERMSRV/BCO070032.bancocorrientes.local
+    BCO07EFLOW01 (BCO07EFLOW01$): TERMSRV/bco07eflow01.bancocorrientes.local, TERMSRV/BCO07EFLOW01
+    BCO07EFLOW02 (BCO07EFLOW02$): TERMSRV/bco07eflow02.bancocorrientes.local, TERMSRV/BCO07EFLOW02
+    BCO07EFLOW03 (BCO07EFLOW03$): TERMSRV/BCO07EFLOW03, TERMSRV/BCO07EFLOW03.bancocorrientes.local
+    BCO080002 (BCO080002$): TERMSRV/BCO080002, TERMSRV/BCO080002.bancocorrientes.local
+    BCO080004 (BCO080004$): TERMSRV/BCO080004, TERMSRV/BCO080004.bancocorrientes.local
+    BCO080006 (BCO080006$): TERMSRV/BCO080006, TERMSRV/BCO080006.bancocorrientes.local
+    BCO080007 (BCO080007$): TERMSRV/BCO080007, TERMSRV/BCO080007.bancocorrientes.local
+    BCO08EFLOW01 (BCO08EFLOW01$): TERMSRV/BCO08EFLOW01, TERMSRV/bco08eflow01.bancocorrientes.local
+    BCO08EFLOW02 (BCO08EFLOW02$): TERMSRV/BCO08EFLOW02, TERMSRV/bco08eflow02.bancocorrientes.local
+    BCO090002 (BCO090002$): TERMSRV/BCO090002, TERMSRV/BCO090002.bancocorrientes.local
+    BCO090005 (BCO090005$): TERMSRV/BCO090005, TERMSRV/BCO090005.bancocorrientes.local
+    BCO090007 (BCO090007$): TERMSRV/BCO090007.bancocorrientes.local, TERMSRV/BCO090007
+    BCO090008 (BCO090008$): TERMSRV/BCO090008, TERMSRV/BCO090008.bancocorrientes.local
+    BCO090009 (BCO090009$): TERMSRV/BCO090009, TERMSRV/BCO090009.bancocorrientes.local
+    BCO090010 (BCO090010$): TERMSRV/BCO090010, TERMSRV/BCO090010.bancocorrientes.local
+    BCO090012 (BCO090012$): TERMSRV/BCO090012.bancocorrientes.local, TERMSRV/BCO090012
+    BCO090013 (BCO090013$): TERMSRV/BCO090013, TERMSRV/BCO090013.bancocorrientes.local
+    BCO090015 (BCO090015$): TERMSRV/BCO090015, TERMSRV/BCO090015.bancocorrientes.local
+    BCO090016 (BCO090016$): TERMSRV/BCO090016, TERMSRV/BCO090016.bancocorrientes.local
+    BCO090017 (BCO090017$): TERMSRV/BCO090017, TERMSRV/BCO090017.bancocorrientes.local
+    BCO09EFLOW01 (BCO09EFLOW01$): TERMSRV/BCO09EFLOW01, TERMSRV/BCO09EFLOW01.bancocorrientes.local
+    BCO09EFLOW02 (BCO09EFLOW02$): TERMSRV/BCO09EFLOW02, TERMSRV/bco09eflow02.bancocorrientes.local
+    BCO100001 (BCO100001$): TERMSRV/BCO100001, TERMSRV/BCO100001.bancocorrientes.local
+    BCO100002 (BCO100002$): TERMSRV/BCO100002, TERMSRV/BCO100002.bancocorrientes.local
+    BCO100013 (BCO100013$): TERMSRV/BCO100013, TERMSRV/BCO100013.bancocorrientes.local
+    BCO100014 (BCO100014$): TERMSRV/BCO100014, TERMSRV/BCO100014.bancocorrientes.local
+    BCO100015 (BCO100015$): TERMSRV/BCO100015, TERMSRV/BCO100015.bancocorrientes.local
+    BCO100016 (BCO100016$): TERMSRV/BCO100016, TERMSRV/BCO100016.bancocorrientes.local
+    BCO100017 (BCO100017$): TERMSRV/BCO100017, TERMSRV/BCO100017.bancocorrientes.local
+    BCO100019 (BCO100019$): TERMSRV/BCO100019, TERMSRV/BCO100019.bancocorrientes.local
+    BCO100020 (BCO100020$): TERMSRV/BCO100020, TERMSRV/BCO100020.bancocorrientes.local
+    BCO100021 (BCO100021$): TERMSRV/BCO100021, TERMSRV/BCO100021.bancocorrientes.local
+    BCO100023 (BCO100023$): TERMSRV/BCO100023, TERMSRV/BCO100023.bancocorrientes.local
+    BCO100024 (BCO100024$): TERMSRV/BCO100024, TERMSRV/BCO100024.bancocorrientes.local
+    BCO10EFLOW01 (BCO10EFLOW01$): TERMSRV/BCO10EFLOW01, TERMSRV/BCO10EFLOW01.bancocorrientes.local
+    BCO10EFLOW02 (BCO10EFLOW02$): TERMSRV/BCO10EFLOW02.bancocorrientes.local, TERMSRV/BCO10EFLOW02
+    BCO110002 (BCO110002$): TERMSRV/BCO110002, TERMSRV/BCO110002.bancocorrientes.local
+    BCO110003 (BCO110003$): TERMSRV/BCO110003, TERMSRV/BCO110003.bancocorrientes.local
+    BCO110004 (BCO110004$): TERMSRV/BCO110004, TERMSRV/BCO110004.bancocorrientes.local
+    BCO110006 (BCO110006$): TERMSRV/BCO110006, TERMSRV/BCO110006.bancocorrientes.local
+    BCO110007 (BCO110007$): TERMSRV/BCO110007, TERMSRV/BCO110007.bancocorrientes.local
+    BCO110009 (BCO110009$): TERMSRV/BCO110009, TERMSRV/BCO110009.bancocorrientes.local
+    BCO110010 (BCO110010$): TERMSRV/BCO110010, TERMSRV/BCO110010.bancocorrientes.local
+    BCO110011 (BCO110011$): TERMSRV/BCO110011, TERMSRV/BCO110011.bancocorrientes.local
+    BCO110016 (BCO110016$): TERMSRV/BCO110016, TERMSRV/BCO110016.bancocorrientes.local
+    BCO110021 (BCO110021$): TERMSRV/BCO110021, TERMSRV/BCO110021.bancocorrientes.local
+    BCO110022 (BCO110022$): TERMSRV/BCO110022, TERMSRV/BCO110022.bancocorrientes.local
+    BCO110023 (BCO110023$): TERMSRV/BCO110023, TERMSRV/BCO110023.bancocorrientes.local
+    BCO11EFLOW01 (BCO11EFLOW01$): TERMSRV/BCO11EFLOW01, TERMSRV/BCO11EFLOW01.bancocorrientes.local
+    BCO11EFLOW02 (BCO11EFLOW02$): TERMSRV/BCO11EFLOW02.bancocorrientes.local, TERMSRV/BCO11EFLOW02
+    BCO120001 (BCO120001$): TERMSRV/BCO120001, TERMSRV/BCO120001.bancocorrientes.local
+    BCO120002 (BCO120002$): TERMSRV/BCO120002, TERMSRV/BCO120002.bancocorrientes.local
+    BCO120004 (BCO120004$): TERMSRV/BCO120004.bancocorrientes.local, TERMSRV/BCO120004
+    BCO120011 (BCO120011$): TERMSRV/BCO120011, TERMSRV/BCO120011.bancocorrientes.local
+    BCO120013 (BCO120013$): TERMSRV/BCO120013, TERMSRV/BCO120013.bancocorrientes.local
+    BCO120014 (BCO120014$): TERMSRV/BCO120014, TERMSRV/BCO120014.bancocorrientes.local
+    BCO120015 (BCO120015$): TERMSRV/BCO120015, TERMSRV/BCO120015.bancocorrientes.local
+    BCO120016 (BCO120016$): TERMSRV/BCO120016, TERMSRV/BCO120016.bancocorrientes.local
+    BCO120017 (BCO120017$): TERMSRV/BCO120017, TERMSRV/BCO120017.bancocorrientes.local
+    BCO120018 (BCO120018$): TERMSRV/BCO120018, TERMSRV/BCO120018.bancocorrientes.local
+    BCO120019 (BCO120019$): TERMSRV/BCO120019, TERMSRV/BCO120019.bancocorrientes.local
+    BCO120020 (BCO120020$): TERMSRV/BCO120020, TERMSRV/BCO120020.bancocorrientes.local
+    BCO120021 (BCO120021$): TERMSRV/BCO120021, TERMSRV/BCO120021.bancocorrientes.local
+    BCO120023 (BCO120023$): TERMSRV/BCO120023.bancocorrientes.local, TERMSRV/BCO120023
+    BCO12EFLOW01 (BCO12EFLOW01$): TERMSRV/BCO12EFLOW01, TERMSRV/bco12eflow01.bancocorrientes.local
+    BCO12EFLOW02 (BCO12EFLOW02$): TERMSRV/BCO12EFLOW02, TERMSRV/BCO12EFLOW02.bancocorrientes.local
+    BCO130001 (BCO130001$): TERMSRV/BCO130001, TERMSRV/BCO130001.bancocorrientes.local
+    BCO130002 (BCO130002$): TERMSRV/BCO130002, TERMSRV/BCO130002.bancocorrientes.local
+    BCO130003 (BCO130003$): TERMSRV/BCO130003, TERMSRV/BCO130003.bancocorrientes.local
+    BCO130004 (BCO130004$): TERMSRV/BCO130004, TERMSRV/BCO130004.bancocorrientes.local
+    BCO130006 (BCO130006$): TERMSRV/BCO130006, TERMSRV/BCO130006.bancocorrientes.local
+    BCO130007 (BCO130007$): TERMSRV/BCO130007, TERMSRV/BCO130007.bancocorrientes.local
+    BCO130009 (BCO130009$): TERMSRV/BCO130009, TERMSRV/BCO130009.bancocorrientes.local
+    BCO130010 (BCO130010$): TERMSRV/BCO130010, TERMSRV/BCO130010.bancocorrientes.local
+    BCO130013 (BCO130013$): TERMSRV/BCO130013, TERMSRV/BCO130013.bancocorrientes.local
+    BCO130014 (BCO130014$): TERMSRV/BCO130014, TERMSRV/BCO130014.bancocorrientes.local
+    BCO130017 (BCO130017$): TERMSRV/BCO130017, TERMSRV/BCO130017.bancocorrientes.local
+    BCO130018 (BCO130018$): TERMSRV/BCO130018, TERMSRV/BCO130018.bancocorrientes.local
+    BCO130019 (BCO130019$): TERMSRV/BCO130019, TERMSRV/BCO130019.bancocorrientes.local
+    BCO130020 (BCO130020$): TERMSRV/BCO130020, TERMSRV/BCO130020.bancocorrientes.local
+    BCO130026 (BCO130026$): TERMSRV/BCO130026, TERMSRV/BCO130026.bancocorrientes.local
+    BCO13EFLOW01 (BCO13EFLOW01$): TERMSRV/BCO13EFLOW01, TERMSRV/BCO13EFLOW01.bancocorrientes.local
+    BCO13EFLOW03 (BCO13EFLOW03$): TERMSRV/BCO13EFLOW03, TERMSRV/bco13eflow03.bancocorrientes.local
+    BCO13EFLOW05 (BCO13EFLOW05$): TERMSRV/BCO13EFLOW05, TERMSRV/BCO13EFLOW05.bancocorrientes.local
+    BCO13EFLOW06 (BCO13EFLOW06$): TERMSRV/BCO13EFLOW06.bancocorrientes.local, TERMSRV/BCO13EFLOW06
+    BCO140001 (BCO140001$): TERMSRV/BCO140001, TERMSRV/BCO140001.bancocorrientes.local
+    BCO140002 (BCO140002$): TERMSRV/BCO140002, TERMSRV/BCO140002.bancocorrientes.local
+    BCO140003 (BCO140003$): TERMSRV/BCO140003, TERMSRV/BCO140003.bancocorrientes.local
+    BCO140004 (BCO140004$): TERMSRV/bco140004.bancocorrientes.local, TERMSRV/BCO140004
+    BCO140005 (BCO140005$): TERMSRV/BCO140005, TERMSRV/BCO140005.bancocorrientes.local
+    BCO140007 (BCO140007$): TERMSRV/BCO140007, TERMSRV/BCO140007.bancocorrientes.local
+    BCO140008 (BCO140008$): TERMSRV/BCO140008, TERMSRV/BCO140008.bancocorrientes.local
+    BCO140009 (BCO140009$): TERMSRV/BCO140009, TERMSRV/BCO140009.bancocorrientes.local
+    BCO140010 (BCO140010$): TERMSRV/BCO140010, TERMSRV/BCO140010.bancocorrientes.local
+    BCO140011 (BCO140011$): TERMSRV/BCO140011, TERMSRV/BCO140011.bancocorrientes.local
+    BCO140013 (BCO140013$): TERMSRV/BCO140013, TERMSRV/BCO140013.bancocorrientes.local
+    BCO140014 (BCO140014$): TERMSRV/BCO140014, TERMSRV/BCO140014.bancocorrientes.local
+    BCO140015 (BCO140015$): TERMSRV/BCO140015, TERMSRV/BCO140015.bancocorrientes.local
+    BCO140024 (BCO140024$): TERMSRV/BCO140024.bancocorrientes.local, TERMSRV/BCO140024
+    BCO140025 (BCO140025$): TERMSRV/BCO140025, TERMSRV/BCO140025.bancocorrientes.local
+    BCO140026 (BCO140026$): TERMSRV/BCO140026, TERMSRV/BCO140026.bancocorrientes.local
+    BCO140027 (BCO140027$): TERMSRV/BCO140027, TERMSRV/BCO140027.bancocorrientes.local
+    BCO140028 (BCO140028$): TERMSRV/BCO140028, TERMSRV/BCO140028.bancocorrientes.local
+    BCO140029 (BCO140029$): TERMSRV/BCO140029.bancocorrientes.local, TERMSRV/BCO140029
+    BCO14AUTO01 (BCO14AUTO01$): TERMSRV/BCO14AUTO01, TERMSRV/BCO14AUTO01.bancocorrientes.local
+    BCO14EFLOW03 (BCO14EFLOW03$): TERMSRV/BCO14EFLOW03, TERMSRV/BCO14EFLOW03.bancocorrientes.local
+    BCO14EFLOW05 (BCO14EFLOW05$): TERMSRV/BCO14EFLOW05, TERMSRV/bco14eflow05.bancocorrientes.local
+    BCO14FS02 (BCO14FS02$): TERMSRV/BCO14FS02.bancocorrientes.local, TERMSRV/BCO14FS02
+    BCO150003 (BCO150003$): TERMSRV/BCO150003, TERMSRV/BCO150003.bancocorrientes.local
+    BCO150004 (BCO150004$): TERMSRV/BCO150004, TERMSRV/BCO150004.bancocorrientes.local
+    BCO150005 (BCO150005$): TERMSRV/BCO150005, TERMSRV/BCO150005.bancocorrientes.local
+    BCO150006 (BCO150006$): TERMSRV/BCO150006, TERMSRV/bco150006.bancocorrientes.local
+    BCO150008 (BCO150008$): TERMSRV/BCO150008, TERMSRV/BCO150008.bancocorrientes.local
+    BCO150009 (BCO150009$): TERMSRV/BCO150009.bancocorrientes.local, TERMSRV/BCO150009
+    BCO150010 (BCO150010$): TERMSRV/BCO150010, TERMSRV/BCO150010.bancocorrientes.local
+    BCO150011 (BCO150011$): TERMSRV/BCO150011.bancocorrientes.local, TERMSRV/BCO150011
+    BCO150012 (BCO150012$): TERMSRV/BCO150012.bancocorrientes.local, TERMSRV/BCO150012
+    BCO150013 (BCO150013$): TERMSRV/BCO150013, TERMSRV/BCO150013.bancocorrientes.local
+    BCO150014 (BCO150014$): TERMSRV/BCO150014, TERMSRV/BCO150014.bancocorrientes.local
+    BCO150016 (BCO150016$): TERMSRV/BCO150016.bancocorrientes.local, TERMSRV/BCO150016
+    BCO150017 (BCO150017$): TERMSRV/BCO150017.bancocorrientes.local, TERMSRV/BCO150017
+    BCO150019 (BCO150019$): TERMSRV/BCO150019, TERMSRV/BCO150019.bancocorrientes.local
+    BCO150021 (BCO150021$): TERMSRV/BCO150021, TERMSRV/BCO150021.bancocorrientes.local
+    BCO150024 (BCO150024$): TERMSRV/BCO150024, TERMSRV/BCO150024.bancocorrientes.local
+    BCO150043 (BCO150043$): TERMSRV/BCO150043, TERMSRV/BCO150043.bancocorrientes.local
+    BCO150044 (BCO150044$): TERMSRV/BCO150044, TERMSRV/BCO150044.bancocorrientes.local
+    BCO150045 (BCO150045$): TERMSRV/BCO150045.bancocorrientes.local, TERMSRV/BCO150045
+    BCO15EFLOW01 (BCO15EFLOW01$): TERMSRV/BCO15EFLOW01, TERMSRV/BCO15EFLOW01.bancocorrientes.local
+    BCO15EFLOW02 (BCO15EFLOW02$): TERMSRV/BCO15EFLOW02, TERMSRV/bco15eflow02.bancocorrientes.local
+    BCO15EFLOW03 (BCO15EFLOW03$): TERMSRV/BCO15EFLOW03, TERMSRV/bco15eflow03.bancocorrientes.local
+    BCO15FS02 (BCO15FS02$): TERMSRV/BCO15FS02, TERMSRV/BCO15FS02.bancocorrientes.local
+    BCO160005 (BCO160005$): TERMSRV/BCO160005, TERMSRV/BCO160005.bancocorrientes.local
+    BCO160006 (BCO160006$): TERMSRV/BCO160006, TERMSRV/BCO160006.bancocorrientes.local
+    BCO160007 (BCO160007$): TERMSRV/BCO160007, TERMSRV/BCO160007.bancocorrientes.local
+    BCO160008 (BCO160008$): TERMSRV/BCO160008, TERMSRV/BCO160008.bancocorrientes.local
+    BCO160009 (BCO160009$): TERMSRV/BCO160009, TERMSRV/BCO160009.bancocorrientes.local
+    BCO160011 (BCO160011$): TERMSRV/BCO160011, TERMSRV/BCO160011.bancocorrientes.local
+    BCO16FS01 (BCO16FS01$): TERMSRV/BCO16FS01, TERMSRV/BCO16FS01.bancocorrientes.local
+    BCO170001 (BCO170001$): TERMSRV/BCO170001, TERMSRV/BCO170001.bancocorrientes.local
+    BCO170003 (BCO170003$): TERMSRV/BCO170003, TERMSRV/BCO170003.bancocorrientes.local
+    BCO170006 (BCO170006$): TERMSRV/BCO170006, TERMSRV/BCO170006.bancocorrientes.local
+    BCO170007 (BCO170007$): TERMSRV/BCO170007, TERMSRV/BCO170007.bancocorrientes.local
+    BCO180001 (BCO180001$): TERMSRV/BCO180001, TERMSRV/BCO180001.bancocorrientes.local
+    BCO180002 (BCO180002$): TERMSRV/BCO180002, TERMSRV/BCO180002.bancocorrientes.local
+    BCO180004 (BCO180004$): TERMSRV/BCO180004, TERMSRV/BCO180004.bancocorrientes.local
+    BCO180008 (BCO180008$): TERMSRV/BCO180008, TERMSRV/BCO180008.bancocorrientes.local
+    BCO180009 (BCO180009$): TERMSRV/BCO180009, TERMSRV/BCO180009.bancocorrientes.local
+    BCO180010 (BCO180010$): TERMSRV/BCO180010, TERMSRV/BCO180010.bancocorrientes.local
+    BCO180011 (BCO180011$): TERMSRV/BCO180011, TERMSRV/BCO180011.bancocorrientes.local
+    BCO180012 (BCO180012$): TERMSRV/BCO180012, TERMSRV/BCO180012.bancocorrientes.local
+    BCO18EFLOW01 (BCO18EFLOW01$): TERMSRV/BCO18EFLOW01, TERMSRV/bco18eflow01.bancocorrientes.local
+    BCO18EFLOW02 (BCO18EFLOW02$): TERMSRV/BCO18EFLOW02, TERMSRV/bco18eflow02.bancocorrientes.local
+    BCO190001 (BCO190001$): TERMSRV/BCO190001, TERMSRV/BCO190001.bancocorrientes.local
+    BCO190002 (BCO190002$): TERMSRV/BCO190002, TERMSRV/BCO190002.bancocorrientes.local
+    BCO190004 (BCO190004$): TERMSRV/BCO190004.bancocorrientes.local, TERMSRV/BCO190004
+    BCO190008 (BCO190008$): TERMSRV/BCO190008, TERMSRV/BCO190008.bancocorrientes.local
+    BCO190009 (BCO190009$): TERMSRV/BCO190009.bancocorrientes.local, TERMSRV/BCO190009
+    BCO190010 (BCO190010$): TERMSRV/BCO190010, TERMSRV/BCO190010.bancocorrientes.local
+    BCO190011 (BCO190011$): TERMSRV/BCO190011.bancocorrientes.local, TERMSRV/BCO190011
+    BCO190013 (BCO190013$): TERMSRV/BCO190013, TERMSRV/BCO190013.bancocorrientes.local
+    BCO190014 (BCO190014$): TERMSRV/BCO190014, TERMSRV/BCO190014.bancocorrientes.local
+    BCO190015 (BCO190015$): TERMSRV/BCO190015, TERMSRV/BCO190015.bancocorrientes.local
+    BCO190017 (BCO190017$): TERMSRV/BCO190017, TERMSRV/BCO190017.bancocorrientes.local
+    BCO190018 (BCO190018$): TERMSRV/BCO190018, TERMSRV/BCO190018.bancocorrientes.local
+    BCO19EFLOW01 (BCO19EFLOW01$): TERMSRV/BCO19EFLOW01, TERMSRV/bco19eflow01.bancocorrientes.local
+    BCO19EFLOW02 (BCO19EFLOW02$): TERMSRV/BCO19EFLOW02, TERMSRV/bco19eflow02.bancocorrientes.local
+    BCO200003 (BCO200003$): TERMSRV/BCO200003, TERMSRV/BCO200003.bancocorrientes.local
+    BCO200007 (BCO200007$): TERMSRV/BCO200007, TERMSRV/BCO200007.bancocorrientes.local
+    BCO200011 (BCO200011$): TERMSRV/BCO200011, TERMSRV/BCO200011.bancocorrientes.local
+    BCO20EFLOW01 (BCO20EFLOW01$): TERMSRV/BCO20EFLOW01, TERMSRV/bco20eflow01.bancocorrientes.local
+    BCO20EFLOW02 (BCO20EFLOW02$): TERMSRV/BCO20EFLOW02, TERMSRV/BCO20EFLOW02.bancocorrientes.local
+    BCO210002 (BCO210002$): TERMSRV/BCO210002, TERMSRV/BCO210002.bancocorrientes.local
+    BCO210004 (BCO210004$): TERMSRV/BCO210004, TERMSRV/BCO210004.bancocorrientes.local
+    BCO210005 (BCO210005$): TERMSRV/BCO210005, TERMSRV/BCO210005.bancocorrientes.local
+    BCO210009 (BCO210009$): TERMSRV/BCO210009, TERMSRV/BCO210009.bancocorrientes.local
+    BCO21EFLOW01 (BCO21EFLOW01$): TERMSRV/BCO21EFLOW01, TERMSRV/bco21eflow01.bancocorrientes.local
+    BCO21EFLOW03 (BCO21EFLOW03$): TERMSRV/BCO21EFLOW03, TERMSRV/BCO21EFLOW03.bancocorrientes.local
+    BCO220001 (BCO220001$): TERMSRV/BCO220001, TERMSRV/BCO220001.bancocorrientes.local
+    BCO220004 (BCO220004$): TERMSRV/BCO220004, TERMSRV/BCO220004.bancocorrientes.local
+    BCO220005 (BCO220005$): TERMSRV/BCO220005, TERMSRV/BCO220005.bancocorrientes.local
+    BCO220006 (BCO220006$): TERMSRV/BCO220006, TERMSRV/BCO220006.bancocorrientes.local
+    BCO22FS02 (BCO22FS02$): TERMSRV/BCO22FS02, TERMSRV/BCO22FS02.bancocorrientes.local
+    BCO230001 (BCO230001$): TERMSRV/BCO230001, TERMSRV/BCO230001.bancocorrientes.local
+    BCO230002 (BCO230002$): TERMSRV/BCO230002, TERMSRV/BCO230002.bancocorrientes.local
+    BCO230003 (BCO230003$): TERMSRV/BCO230003, TERMSRV/BCO230003.bancocorrientes.local
+    BCO23FS02 (BCO23FS02$): TERMSRV/BCO23FS02.bancocorrientes.local, TERMSRV/BCO23FS02
+    BCO240001 (BCO240001$): TERMSRV/BCO240001, TERMSRV/BCO240001.bancocorrientes.local
+    BCO240002 (BCO240002$): TERMSRV/BCO240002, TERMSRV/BCO240002.bancocorrientes.local
+    BCO240004 (BCO240004$): TERMSRV/BCO240004, TERMSRV/BCO240004.bancocorrientes.local
+    BCO240005 (BCO240005$): TERMSRV/BCO240005, TERMSRV/BCO240005.bancocorrientes.local
+    BCO240006 (BCO240006$): TERMSRV/BCO240006, TERMSRV/BCO240006.bancocorrientes.local
+    BCO240010 (BCO240010$): TERMSRV/BCO240010, TERMSRV/BCO240010.bancocorrientes.local
+    BCO24EFLOW01 (BCO24EFLOW01$): TERMSRV/BCO24EFLOW01, TERMSRV/bco24eflow01.bancocorrientes.local
+    BCO24EFLOW02 (BCO24EFLOW02$): TERMSRV/BCO24EFLOW02, TERMSRV/bco24eflow02.bancocorrientes.local
+    BCO250004 (BCO250004$): TERMSRV/BCO250004, TERMSRV/BCO250004.bancocorrientes.local
+    BCO250005 (BCO250005$): TERMSRV/BCO250005, TERMSRV/BCO250005.bancocorrientes.local
+    BCO250007 (BCO250007$): TERMSRV/BCO250007, TERMSRV/BCO250007.bancocorrientes.local
+    BCO250008 (BCO250008$): TERMSRV/BCO250008, TERMSRV/BCO250008.bancocorrientes.local
+    BCO250009 (BCO250009$): TERMSRV/BCO250009, TERMSRV/BCO250009.bancocorrientes.local
+    BCO250010 (BCO250010$): TERMSRV/BCO250010, TERMSRV/BCO250010.bancocorrientes.local
+    BCO25EFLOW02 (BCO25EFLOW02$): TERMSRV/BCO25EFLOW02, TERMSRV/BCO25EFLOW02.bancocorrientes.local
+    BCO260004 (BCO260004$): TERMSRV/BCO260004, TERMSRV/BCO260004.bancocorrientes.local
+    BCO260006 (BCO260006$): TERMSRV/BCO260006, TERMSRV/BCO260006.bancocorrientes.local
+    BCO260007 (BCO260007$): TERMSRV/BCO260007, TERMSRV/BCO260007.bancocorrientes.local
+    BCO260009 (BCO260009$): TERMSRV/BCO260009, TERMSRV/BCO260009.bancocorrientes.local
+    BCO260010 (BCO260010$): TERMSRV/BCO260010, TERMSRV/BCO260010.bancocorrientes.local
+    BCO260011 (BCO260011$): TERMSRV/BCO260011, TERMSRV/BCO260011.bancocorrientes.local
+    BCO260012 (BCO260012$): TERMSRV/BCO260012, TERMSRV/BCO260012.bancocorrientes.local
+    BCO260013 (BCO260013$): TERMSRV/BCO260013, TERMSRV/BCO260013.bancocorrientes.local
+    BCO260014 (BCO260014$): TERMSRV/BCO260014, TERMSRV/BCO260014.bancocorrientes.local
+    BCO26EFLOW02 (BCO26EFLOW02$): TERMSRV/BCO26EFLOW02, TERMSRV/bco26eflow02.bancocorrientes.local
+    BCO26FS02 (BCO26FS02$): TERMSRV/BCO26FS02.bancocorrientes.local, TERMSRV/BCO26FS02
+    BCO270002 (BCO270002$): TERMSRV/BCO270002, TERMSRV/BCO270002.bancocorrientes.local
+    BCO270004 (BCO270004$): TERMSRV/BCO270004, TERMSRV/BCO270004.bancocorrientes.local
+    BCO270005 (BCO270005$): TERMSRV/BCO270005, TERMSRV/BCO270005.bancocorrientes.local
+    BCO27FS02 (BCO27FS02$): TERMSRV/BCO27FS02, TERMSRV/BCO27FS02.bancocorrientes.local
+    BCO280001 (BCO280001$): TERMSRV/BCO280001, TERMSRV/BCO280001.bancocorrientes.local
+    BCO280002 (BCO280002$): TERMSRV/BCO280002, TERMSRV/BCO280002.bancocorrientes.local
+    BCO280004 (BCO280004$): TERMSRV/BCO280004, TERMSRV/BCO280004.bancocorrientes.local
+    BCO280007 (BCO280007$): TERMSRV/BCO280007, TERMSRV/BCO280007.bancocorrientes.local
+    BCO280008 (BCO280008$): TERMSRV/BCO280008, TERMSRV/BCO280008.bancocorrientes.local
+    BCO280009 (BCO280009$): TERMSRV/BCO280009, TERMSRV/BCO280009.bancocorrientes.local
+    BCO280010 (BCO280010$): TERMSRV/BCO280010, TERMSRV/BCO280010.bancocorrientes.local
+    BCO280011 (BCO280011$): TERMSRV/BCO280011, TERMSRV/BCO280011.bancocorrientes.local
+    BCO280013 (BCO280013$): TERMSRV/BCO280013, TERMSRV/BCO280013.bancocorrientes.local
+    BCO280014 (BCO280014$): TERMSRV/BCO280014, TERMSRV/BCO280014.bancocorrientes.local
+    BCO280015 (BCO280015$): TERMSRV/BCO280015, TERMSRV/BCO280015.bancocorrientes.local
+    BCO280016 (BCO280016$): TERMSRV/BCO280016, TERMSRV/BCO280016.bancocorrientes.local
+    BCO280017 (BCO280017$): TERMSRV/BCO280017.bancocorrientes.local, TERMSRV/BCO280017
+    BCO280024 (BCO280024$): TERMSRV/BCO280024.bancocorrientes.local, TERMSRV/BCO280024
+    BCO280028 (BCO280028$): TERMSRV/BCO280028, TERMSRV/BCO280028.bancocorrientes.local
+    BCO280030 (BCO280030$): TERMSRV/BCO280030, TERMSRV/BCO280030.bancocorrientes.local
+    BCO280031 (BCO280031$): TERMSRV/BCO280031, TERMSRV/BCO280031.bancocorrientes.local
+    BCO280034 (BCO280034$): TERMSRV/BCO280034, TERMSRV/BCO280034.bancocorrientes.local
+    BCO280035 (BCO280035$): TERMSRV/BCO280035, TERMSRV/BCO280035.bancocorrientes.local
+    BCO28EFLOW02 (BCO28EFLOW02$): TERMSRV/BCO28EFLOW02, TERMSRV/BCO28EFLOW02.bancocorrientes.local
+    BCO28EFLOW03 (BCO28EFLOW03$): TERMSRV/BCO28EFLOW03, TERMSRV/BCO28EFLOW03.bancocorrientes.local
+    BCO28EFLOW04 (BCO28EFLOW04$): TERMSRV/BCO28EFLOW04, TERMSRV/bco28eflow04.bancocorrientes.local
+    BCO28EFLOW07 (BCO28EFLOW07$): TERMSRV/BCO28EFLOW07, TERMSRV/bco28eflow07.bancocorrientes.local
+    BCO290002 (BCO290002$): TERMSRV/BCO290002, TERMSRV/BCO290002.bancocorrientes.local
+    BCO290004 (BCO290004$): TERMSRV/BCO290004, TERMSRV/BCO290004.bancocorrientes.local
+    BCO290005 (BCO290005$): TERMSRV/BCO290005, TERMSRV/BCO290005.bancocorrientes.local
+    BCO29FS02 (BCO29FS02$): TERMSRV/BCO29FS02, TERMSRV/BCO29FS02.bancocorrientes.local
+    BCO300001 (BCO300001$): TERMSRV/BCO300001, TERMSRV/BCO300001.bancocorrientes.local
+    BCO300003 (BCO300003$): TERMSRV/BCO300003, TERMSRV/BCO300003.bancocorrientes.local
+    BCO300009 (BCO300009$): TERMSRV/BCO300009.bancocorrientes.local, TERMSRV/BCO300009
+    BCO30FS02 (BCO30FS02$): TERMSRV/BCO30FS02, TERMSRV/BCO30FS02.bancocorrientes.local
+    BCO310004 (BCO310004$): TERMSRV/BCO310004, TERMSRV/BCO310004.bancocorrientes.local
+    BCO310005 (BCO310005$): TERMSRV/BCO310005, TERMSRV/BCO310005.bancocorrientes.local
+    BCO310006 (BCO310006$): TERMSRV/BCO310006, TERMSRV/BCO310006.bancocorrientes.local
+    BCO310007 (BCO310007$): TERMSRV/BCO310007, TERMSRV/BCO310007.bancocorrientes.local
+    BCO320001 (BCO320001$): TERMSRV/BCO320001, TERMSRV/BCO320001.bancocorrientes.local
+    BCO320002 (BCO320002$): TERMSRV/BCO320002, TERMSRV/BCO320002.bancocorrientes.local
+    BCO320003 (BCO320003$): TERMSRV/BCO320003, TERMSRV/BCO320003.bancocorrientes.local
+    BCO320004 (BCO320004$): TERMSRV/BCO320004, TERMSRV/BCO320004.bancocorrientes.local
+    BCO320005 (BCO320005$): TERMSRV/BCO320005, TERMSRV/BCO320005.bancocorrientes.local
+    BCO320006 (BCO320006$): TERMSRV/BCO320006, TERMSRV/BCO320006.bancocorrientes.local
+    BCO320007 (BCO320007$): TERMSRV/BCO320007, TERMSRV/BCO320007.bancocorrientes.local
+    BCO320008 (BCO320008$): TERMSRV/BCO320008, TERMSRV/BCO320008.bancocorrientes.local
+    BCO32EFLOW01 (BCO32EFLOW01$): TERMSRV/BCO32EFLOW01, TERMSRV/bco32eflow01.bancocorrientes.local
+    BCO32EFLOW02 (BCO32EFLOW02$): TERMSRV/BCO32EFLOW02, TERMSRV/BCO32EFLOW02.bancocorrientes.local
+    BCO32EFLOW03 (BCO32EFLOW03$): TERMSRV/BCO32EFLOW03, TERMSRV/BCO32EFLOW03.bancocorrientes.local
+    BCO32FS02 (BCO32FS02$): TERMSRV/BCO32FS02, TERMSRV/BCO32FS02.bancocorrientes.local
+    BCO330001 (BCO330001$): TERMSRV/BCO330001, TERMSRV/BCO330001.bancocorrientes.local
+    BCO330002 (BCO330002$): TERMSRV/BCO330002, TERMSRV/BCO330002.bancocorrientes.local
+    BCO330003 (BCO330003$): TERMSRV/BCO330003, TERMSRV/BCO330003.bancocorrientes.local
+    BCO330004 (BCO330004$): TERMSRV/BCO330004, TERMSRV/BCO330004.bancocorrientes.local
+    BCO330006 (BCO330006$): TERMSRV/BCO330006, TERMSRV/BCO330006.bancocorrientes.local
+    BCO330007 (BCO330007$): TERMSRV/BCO330007, TERMSRV/BCO330007.bancocorrientes.local
+    BCO330008 (BCO330008$): TERMSRV/BCO330008, TERMSRV/BCO330008.bancocorrientes.local
+    BCO340001 (BCO340001$): TERMSRV/BCO340001, TERMSRV/bco340001.bancocorrientes.local
+    BCO340002 (BCO340002$): TERMSRV/BCO340002, TERMSRV/BCO340002.bancocorrientes.local
+    BCO340003 (BCO340003$): TERMSRV/BCO340003, TERMSRV/BCO340003.bancocorrientes.local
+    BCO340004 (BCO340004$): TERMSRV/BCO340004, TERMSRV/BCO340004.bancocorrientes.local
+    BCO340005 (BCO340005$): TERMSRV/BCO340005, TERMSRV/BCO340005.bancocorrientes.local
+    BCO34FS02 (BCO34FS02$): TERMSRV/BCO34FS02, TERMSRV/BCO34FS02.bancocorrientes.local
+    BCO350001 (BCO350001$): TERMSRV/BCO350001.bancocorrientes.local, TERMSRV/BCO350001
+    BCO350002 (BCO350002$): TERMSRV/BCO350002.bancocorrientes.local, TERMSRV/BCO350002
+    BCO350003 (BCO350003$): TERMSRV/BCO350003.bancocorrientes.local, TERMSRV/BCO350003
+    BCO350004 (BCO350004$): TERMSRV/BCO350004, TERMSRV/BCO350004.bancocorrientes.local
+    BCO350005 (BCO350005$): TERMSRV/BCO350005, TERMSRV/BCO350005.bancocorrientes.local
+    BCO35FS02 (BCO35FS02$): TERMSRV/BCO35FS02, TERMSRV/BCO35fs02.bancocorrientes.local
+    BCO360001 (BCO360001$): TERMSRV/BCO360001, TERMSRV/BCO360001.bancocorrientes.local
+    BCO360002 (BCO360002$): TERMSRV/BCO360002, TERMSRV/BCO360002.bancocorrientes.local
+    BCO360003 (BCO360003$): TERMSRV/BCO360003, TERMSRV/BCO360003.bancocorrientes.local
+    BCO360004 (BCO360004$): TERMSRV/BCO360004, TERMSRV/BCO360004.bancocorrientes.local
+    BCO360005 (BCO360005$): TERMSRV/BCO360005, TERMSRV/BCO360005.bancocorrientes.local
+    BCO360006 (BCO360006$): TERMSRV/BCO360006, TERMSRV/BCO360006.bancocorrientes.local
+    BCO360007 (BCO360007$): TERMSRV/BCO360007, TERMSRV/BCO360007.bancocorrientes.local
+    BCO360008 (BCO360008$): TERMSRV/BCO360008, TERMSRV/BCO360008.bancocorrientes.local
+    BCO360010 (BCO360010$): TERMSRV/BCO360010, TERMSRV/BCO360010.bancocorrientes.local
+    BCO36EFLOW01 (BCO36EFLOW01$): TERMSRV/BCO36EFLOW01, TERMSRV/bco36eflow01.bancocorrientes.local
+    BCO36EFLOW02 (BCO36EFLOW02$): TERMSRV/BCO36EFLOW02, TERMSRV/BCO36EFLOW02.bancocorrientes.local
+    BCO370001 (BCO370001$): TERMSRV/BCO370001, TERMSRV/BCO370001.bancocorrientes.local
+    BCO370002 (BCO370002$): TERMSRV/BCO370002, TERMSRV/bco370002.bancocorrientes.local
+    BCO370003 (BCO370003$): TERMSRV/BCO370003, TERMSRV/BCO370003.bancocorrientes.local
+    BCO370004 (BCO370004$): TERMSRV/BCO370004, TERMSRV/BCO370004.bancocorrientes.local
+    BCO370005 (BCO370005$): TERMSRV/BCO370005, TERMSRV/BCO370005.bancocorrientes.local
+    BCO370006 (BCO370006$): TERMSRV/BCO370006, TERMSRV/BCO370006.bancocorrientes.local
+    BCO370007 (BCO370007$): TERMSRV/BCO370007, TERMSRV/BCO370007.bancocorrientes.local
+    BCO370008 (BCO370008$): TERMSRV/BCO370008, TERMSRV/BCO370008.bancocorrientes.local
+    BCO370009 (BCO370009$): TERMSRV/BCO370009, TERMSRV/BCO370009.bancocorrientes.local
+    BCO370010 (BCO370010$): TERMSRV/BCO370010, TERMSRV/BCO370010.bancocorrientes.local
+    BCO370011 (BCO370011$): TERMSRV/BCO370011, TERMSRV/BCO370011.bancocorrientes.local
+    BCO370012 (BCO370012$): TERMSRV/BCO370012, TERMSRV/BCO370012.bancocorrientes.local
+    BCO370013 (BCO370013$): TERMSRV/BCO370013, TERMSRV/BCO370013.bancocorrientes.local
+    BCO37EFLOW01 (BCO37EFLOW01$): TERMSRV/BCO37EFLOW01, TERMSRV/bco37eflow01.bancocorrientes.local
+    BCO37EFLOW02 (BCO37EFLOW02$): TERMSRV/BCO37EFLOW02, TERMSRV/BCO37EFLOW02.bancocorrientes.local
+    BCO37EFLOW03 (BCO37EFLOW03$): TERMSRV/BCO37EFLOW03, TERMSRV/BCO37EFLOW03.bancocorrientes.local
+    BCO380001 (BCO380001$): TERMSRV/BCO380001.bancocorrientes.local, TERMSRV/BCO380001
+    BCO380003 (BCO380003$): TERMSRV/BCO380003, TERMSRV/BCO380003.bancocorrientes.local
+    BCO380004 (BCO380004$): TERMSRV/BCO380004.bancocorrientes.local, TERMSRV/BCO380004
+    BCO380005 (BCO380005$): TERMSRV/BCO380005, TERMSRV/BCO380005.bancocorrientes.local
+    BCO380006 (BCO380006$): TERMSRV/BCO380006, TERMSRV/BCO380006.bancocorrientes.local
+    BCO380007 (BCO380007$): TERMSRV/BCO380007, TERMSRV/BCO380007.bancocorrientes.local
+    BCO380008 (BCO380008$): TERMSRV/BCO380008, TERMSRV/BCO380008.bancocorrientes.local
+    BCO380009 (BCO380009$): TERMSRV/BCO380009, TERMSRV/BCO380009.bancocorrientes.local
+    BCO390003 (BCO390003$): TERMSRV/BCO390003, TERMSRV/BCO390003.bancocorrientes.local
+    BCO390005 (BCO390005$): TERMSRV/BCO390005, TERMSRV/BCO390005.bancocorrientes.local
+    BCO390006 (BCO390006$): TERMSRV/BCO390006, TERMSRV/BCO390006.bancocorrientes.local
+    BCO400001 (BCO400001$): TERMSRV/BCO400001, TERMSRV/BCO400001.bancocorrientes.local
+    BCO400003 (BCO400003$): TERMSRV/BCO400003, TERMSRV/BCO400003.bancocorrientes.local
+    BCO400006 (BCO400006$): TERMSRV/BCO400006, TERMSRV/BCO400006.bancocorrientes.local
+    BCO400007 (BCO400007$): TERMSRV/BCO400007, TERMSRV/BCO400007.bancocorrientes.local
+    BCO400008 (BCO400008$): TERMSRV/BCO400008.bancocorrientes.local, TERMSRV/BCO400008
+    BCO400009 (BCO400009$): TERMSRV/BCO400009, TERMSRV/BCO400009.bancocorrientes.local
+    BCO400010 (BCO400010$): TERMSRV/BCO400010, TERMSRV/BCO400010.bancocorrientes.local
+    BCO400011 (BCO400011$): TERMSRV/BCO400011, TERMSRV/BCO400011.bancocorrientes.local
+    BCO400012 (BCO400012$): TERMSRV/BCO400012, TERMSRV/BCO400012.bancocorrientes.local
+    BCO400013 (BCO400013$): TERMSRV/BCO400013, TERMSRV/BCO400013.bancocorrientes.local
+    BCO400014 (BCO400014$): TERMSRV/BCO400014, TERMSRV/BCO400014.bancocorrientes.local
+    BCO400015 (BCO400015$): TERMSRV/BCO400015, TERMSRV/BCO400015.bancocorrientes.local
+    BCO400016 (BCO400016$): TERMSRV/BCO400016, TERMSRV/BCO400016.bancocorrientes.local
+    BCO400017 (BCO400017$): TERMSRV/BCO400017.bancocorrientes.local, TERMSRV/BCO400017
+    BCO400018 (BCO400018$): TERMSRV/BCO400018.bancocorrientes.local, TERMSRV/BCO400018
+    BCO400019 (BCO400019$): TERMSRV/BCO400019, TERMSRV/BCO400019.bancocorrientes.local
+    BCO400020 (BCO400020$): TERMSRV/BCO400020, TERMSRV/BCO400020.bancocorrientes.local
+    BCO400021 (BCO400021$): TERMSRV/BCO400021, TERMSRV/BCO400021.bancocorrientes.local
+    BCO400022 (BCO400022$): TERMSRV/BCO400022, TERMSRV/BCO400022.bancocorrientes.local
+    BCO400023 (BCO400023$): TERMSRV/BCO400023, TERMSRV/BCO400023.bancocorrientes.local
+    BCO400024 (BCO400024$): TERMSRV/BCO400024, TERMSRV/BCO400024.bancocorrientes.local
+    BCO400025 (BCO400025$): TERMSRV/BCO400025, TERMSRV/BCO400025.bancocorrientes.local
+    BCO400026 (BCO400026$): TERMSRV/BCO400026, TERMSRV/BCO400026.bancocorrientes.local
+    BCO400027 (BCO400027$): TERMSRV/BCO400027, TERMSRV/BCO400027.bancocorrientes.local
+    BCO400028 (BCO400028$): TERMSRV/BCO400028, TERMSRV/BCO400028.bancocorrientes.local
+    BCO400029 (BCO400029$): TERMSRV/BCO400029, TERMSRV/BCO400029.bancocorrientes.local
+    BCO400030 (BCO400030$): TERMSRV/BCO400030, TERMSRV/BCO400030.bancocorrientes.local
+    BCO400031 (BCO400031$): TERMSRV/BCO400031, TERMSRV/BCO400031.bancocorrientes.local
+    BCO400032 (BCO400032$): TERMSRV/BCO400032, TERMSRV/BCO400032.bancocorrientes.local
+    BCO400033 (BCO400033$): TERMSRV/BCO400033, TERMSRV/BCO400033.bancocorrientes.local
+    BCO400034 (BCO400034$): TERMSRV/BCO400034, TERMSRV/BCO400034.bancocorrientes.local
+    BCO400035 (BCO400035$): TERMSRV/BCO400035, TERMSRV/BCO400035.bancocorrientes.local
+    BCO400036 (BCO400036$): TERMSRV/BCO400036, TERMSRV/BCO400036.bancocorrientes.local
+    BCO400037 (BCO400037$): TERMSRV/BCO400037, TERMSRV/BCO400037.bancocorrientes.local
+    BCO400038 (BCO400038$): TERMSRV/BCO400038, TERMSRV/BCO400038.bancocorrientes.local
+    BCO400039 (BCO400039$): TERMSRV/BCO400039, TERMSRV/BCO400039.bancocorrientes.local
+    BCO400040 (BCO400040$): TERMSRV/BCO400040, TERMSRV/BCO400040.bancocorrientes.local
+    BCO400041 (BCO400041$): TERMSRV/BCO400041, TERMSRV/BCO400041.bancocorrientes.local
+    BCO400042 (BCO400042$): TERMSRV/BCO400042, TERMSRV/BCO400042.bancocorrientes.local
+    BCO400043 (BCO400043$): TERMSRV/BCO400043, TERMSRV/BCO400043.bancocorrientes.local
+    BCO400044 (BCO400044$): TERMSRV/BCO400044, TERMSRV/BCO400044.bancocorrientes.local
+    BCO400045 (BCO400045$): TERMSRV/BCO400045, TERMSRV/BCO400045.bancocorrientes.local
+    BCO400046 (BCO400046$): TERMSRV/BCO400046, TERMSRV/BCO400046.bancocorrientes.local
+    BCO400047 (BCO400047$): TERMSRV/BCO400047, TERMSRV/BCO400047.bancocorrientes.local
+    BCO400048 (BCO400048$): TERMSRV/BCO400048, TERMSRV/BCO400048.bancocorrientes.local
+    BCO400049 (BCO400049$): TERMSRV/BCO400049, TERMSRV/BCO400049.bancocorrientes.local
+    BCO400050 (BCO400050$): TERMSRV/BCO400050, TERMSRV/BCO400050.bancocorrientes.local
+    BCO400051 (BCO400051$): TERMSRV/BCO400051, TERMSRV/BCO400051.bancocorrientes.local
+    BCO400052 (BCO400052$): TERMSRV/BCO400052, TERMSRV/BCO400052.bancocorrientes.local
+    BCO400053 (BCO400053$): TERMSRV/BCO400053, TERMSRV/BCO400053.bancocorrientes.local
+    BCO400054 (BCO400054$): TERMSRV/BCO400054, TERMSRV/BCO400054.bancocorrientes.local
+    BCO400055 (BCO400055$): TERMSRV/BCO400055, TERMSRV/BCO400055.bancocorrientes.local
+    BCO400056 (BCO400056$): TERMSRV/BCO400056, TERMSRV/BCO400056.bancocorrientes.local
+    BCO400057 (BCO400057$): TERMSRV/BCO400057, TERMSRV/BCO400057.bancocorrientes.local
+    BCO400058 (BCO400058$): TERMSRV/BCO400058, TERMSRV/BCO400058.bancocorrientes.local
+    BCO400059 (BCO400059$): TERMSRV/BCO400059, TERMSRV/BCO400059.bancocorrientes.local
+    BCO400060 (BCO400060$): TERMSRV/BCO400060, TERMSRV/BCO400060.bancocorrientes.local
+    BCO400061 (BCO400061$): TERMSRV/BCO400061, TERMSRV/BCO400061.bancocorrientes.local
+    BCO410001 (BCO410001$): TERMSRV/BCO410001, TERMSRV/BCO410001.bancocorrientes.local
+    BCO410002 (BCO410002$): TERMSRV/BCO410002, TERMSRV/BCO410002.bancocorrientes.local
+    BCO410003 (BCO410003$): TERMSRV/BCO410003, TERMSRV/BCO410003.bancocorrientes.local
+    BCO410004 (BCO410004$): TERMSRV/BCO410004, TERMSRV/BCO410004.bancocorrientes.local
+    BCO410005 (BCO410005$): TERMSRV/BCO410005, TERMSRV/BCO410005.bancocorrientes.local
+    BCO410006 (BCO410006$): TERMSRV/BCO410006, TERMSRV/BCO410006.bancocorrientes.local
+    BCO410007 (BCO410007$): TERMSRV/BCO410007, TERMSRV/BCO410007.bancocorrientes.local
+    BCO410008 (BCO410008$): TERMSRV/BCO410008, TERMSRV/BCO410008.bancocorrientes.local
+    BCO410009 (BCO410009$): TERMSRV/BCO410009, TERMSRV/BCO410009.bancocorrientes.local
+    BCO410010 (BCO410010$): TERMSRV/BCO410010, TERMSRV/BCO410010.bancocorrientes.local
+    BCO410011 (BCO410011$): TERMSRV/BCO410011, TERMSRV/BCO410011.bancocorrientes.local
+    BCO410012 (BCO410012$): TERMSRV/BCO410012, TERMSRV/BCO410012.bancocorrientes.local
+    BCO410013 (BCO410013$): TERMSRV/BCO410013, TERMSRV/BCO410013.bancocorrientes.local
+    BCO410014 (BCO410014$): TERMSRV/BCO410014, TERMSRV/BCO410014.bancocorrientes.local
+    BCO410015 (BCO410015$): TERMSRV/BCO410015, TERMSRV/BCO410015.bancocorrientes.local
+    BCO410016 (BCO410016$): TERMSRV/BCO410016, TERMSRV/BCO410016.bancocorrientes.local
+    BCO410017 (BCO410017$): TERMSRV/BCO410017, TERMSRV/BCO410017.bancocorrientes.local
+    BCO410018 (BCO410018$): TERMSRV/BCO410018, TERMSRV/BCO410018.bancocorrientes.local
+    BCO410019 (BCO410019$): TERMSRV/BCO410019, TERMSRV/BCO410019.bancocorrientes.local
+    BCO410020 (BCO410020$): TERMSRV/BCO410020, TERMSRV/BCO410020.bancocorrientes.local
+    BCO410021 (BCO410021$): TERMSRV/BCO410021, TERMSRV/BCO410021.bancocorrientes.local
+    BCO410022 (BCO410022$): TERMSRV/BCO410022, TERMSRV/BCO410022.bancocorrientes.local
+    BCO410023 (BCO410023$): TERMSRV/BCO410023, TERMSRV/BCO410023.bancocorrientes.local
+    BCO410025 (BCO410025$): TERMSRV/BCO410025, TERMSRV/BCO410025.bancocorrientes.local
+    BCO410026 (BCO410026$): TERMSRV/BCO410026, TERMSRV/BCO410026.bancocorrientes.local
+    BCO410028 (BCO410028$): TERMSRV/BCO410028, TERMSRV/BCO410028.bancocorrientes.local
+    BCO41EFLOW01 (BCO41EFLOW01$): TERMSRV/BCO41EFLOW01, TERMSRV/bco41eflow01.bancocorrientes.local
+    BCO41EFLOW02 (BCO41EFLOW02$): TERMSRV/BCO41EFLOW02, TERMSRV/bco41eflow02.bancocorrientes.local
+    BCO41EFLOW03 (BCO41EFLOW03$): TERMSRV/BCO41EFLOW03, TERMSRV/BCO41EFLOW03.bancocorrientes.local
+    BCO41EFLOW04 (BCO41EFLOW04$): TERMSRV/BCO41EFLOW04, TERMSRV/bco41eflow04.bancocorrientes.local
+    BCO420001 (BCO420001$): TERMSRV/BCO420001, TERMSRV/BCO420001.bancocorrientes.local
+    BCO420002 (BCO420002$): TERMSRV/BCO420002, TERMSRV/BCO420002.bancocorrientes.local
+    BCO420003 (BCO420003$): TERMSRV/BCO420003, TERMSRV/BCO420003.bancocorrientes.local
+    BCO420004 (BCO420004$): TERMSRV/BCO420004, TERMSRV/BCO420004.bancocorrientes.local
+    BCO420005 (BCO420005$): TERMSRV/BCO420005, TERMSRV/BCO420005.bancocorrientes.local
+    BCO420006 (BCO420006$): TERMSRV/BCO420006, TERMSRV/BCO420006.bancocorrientes.local
+    BCO430001 (BCO430001$): TERMSRV/BCO430001, TERMSRV/BCO430001.bancocorrientes.local
+    BCO430002 (BCO430002$): TERMSRV/BCO430002, TERMSRV/BCO430002.bancocorrientes.local
+    BCO430003 (BCO430003$): TERMSRV/BCO430003, TERMSRV/BCO430003.bancocorrientes.local
+    BCO430004 (BCO430004$): TERMSRV/BCO430004, TERMSRV/BCO430004.bancocorrientes.local
+    BCO430005 (BCO430005$): TERMSRV/BCO430005, TERMSRV/BCO430005.bancocorrientes.local
+    BCO430006 (BCO430006$): TERMSRV/BCO430006, TERMSRV/BCO430006.bancocorrientes.local
+    BCO440001 (BCO440001$): TERMSRV/BCO440001, TERMSRV/BCO440001.bancocorrientes.local
+    BCO440002 (BCO440002$): TERMSRV/BCO440002, TERMSRV/BCO440002.bancocorrientes.local
+    BCO440003 (BCO440003$): TERMSRV/BCO440003, TERMSRV/BCO440003.bancocorrientes.local
+    BCO440004 (BCO440004$): TERMSRV/BCO440004, TERMSRV/BCO440004.bancocorrientes.local
+    BCO440005 (BCO440005$): TERMSRV/BCO440005, TERMSRV/BCO440005.bancocorrientes.local
+    BCO440006 (BCO440006$): TERMSRV/BCO440006, TERMSRV/BCO440006.bancocorrientes.local
+    BCO440007 (BCO440007$): TERMSRV/BCO440007, TERMSRV/BCO440007.bancocorrientes.local
+    BCO440008 (BCO440008$): TERMSRV/BCO440008, TERMSRV/BCO440008.bancocorrientes.local
+    BCO440009 (BCO440009$): TERMSRV/BCO440009, TERMSRV/BCO440009.bancocorrientes.local
+    BCO450001 (BCO450001$): TERMSRV/BCO450001, TERMSRV/BCO450001.bancocorrientes.local
+    BCO450002 (BCO450002$): TERMSRV/BCO450002, TERMSRV/BCO450002.bancocorrientes.local
+    BCO450003 (BCO450003$): TERMSRV/BCO450003, TERMSRV/BCO450003.bancocorrientes.local
+    BCO450004 (BCO450004$): TERMSRV/BCO450004, TERMSRV/BCO450004.bancocorrientes.local
+    BCO470001 (BCO470001$): TERMSRV/BCO470001, TERMSRV/BCO470001.bancocorrientes.local
+    BCO470002 (BCO470002$): TERMSRV/BCO470002, TERMSRV/BCO470002.bancocorrientes.local
+    BCO470003 (BCO470003$): TERMSRV/BCO470003, TERMSRV/BCO470003.bancocorrientes.local
+    BCO470004 (BCO470004$): TERMSRV/BCO470004, TERMSRV/BCO470004.bancocorrientes.local
+    BCO470005 (BCO470005$): TERMSRV/BCO470005, TERMSRV/BCO470005.bancocorrientes.local
+    BCO470006 (BCO470006$): TERMSRV/BCO470006, TERMSRV/BCO470006.bancocorrientes.local
+    BCO470007 (BCO470007$): TERMSRV/BCO470007, TERMSRV/BCO470007.bancocorrientes.local
+    BCO470008 (BCO470008$): TERMSRV/BCO470008, TERMSRV/BCO470008.bancocorrientes.local
+    BCO470009 (BCO470009$): TERMSRV/BCO470009, TERMSRV/BCO470009.bancocorrientes.local
+    BCO470010 (BCO470010$): TERMSRV/BCO470010, TERMSRV/BCO470010.bancocorrientes.local
+    BCO470011 (BCO470011$): TERMSRV/BCO470011, TERMSRV/BCO470011.bancocorrientes.local
+    BCO470012 (BCO470012$): TERMSRV/BCO470012, TERMSRV/BCO470012.bancocorrientes.local
+    BCO470013 (BCO470013$): TERMSRV/BCO470013, TERMSRV/BCO470013.bancocorrientes.local
+    BCO470014 (BCO470014$): TERMSRV/BCO470014, TERMSRV/BCO470014.bancocorrientes.local
+    BCO470015 (BCO470015$): TERMSRV/BCO470015, TERMSRV/BCO470015.bancocorrientes.local
+    BCO470016 (BCO470016$): TERMSRV/BCO470016, TERMSRV/BCO470016.bancocorrientes.local
+    BCO470017 (BCO470017$): TERMSRV/BCO470017, TERMSRV/BCO470017.bancocorrientes.local
+    BCO470018 (BCO470018$): TERMSRV/BCO470018, TERMSRV/BCO470018.bancocorrientes.local
+    BCO470020 (BCO470020$): TERMSRV/BCO470020, TERMSRV/BCO470020.bancocorrientes.local
+    BCO470021 (BCO470021$): TERMSRV/BCO470021, TERMSRV/BCO470021.bancocorrientes.local
+    BCO47EFLOW01 (BCO47EFLOW01$): TERMSRV/BCO47EFLOW01, TERMSRV/BCO47EFLOW01.bancocorrientes.local
+    BCO98APP04 (BCO98APP04$): TERMSRV/BCO98APP04, TERMSRV/bco98app04.bancocorrientes.local
+    BCO98APP05 (BCO98APP05$): TERMSRV/BCO98APP05, TERMSRV/bco98app05.bancocorrientes.local
+    BCO98BAR03 (BCO98BAR03$): TERMSRV/BCO98BAR03, TERMSRV/BCO98BAR03.bancocorrientes.local
+    BCO98BCK02 (BCO98BCK02$): TERMSRV/BCO98BCK02, TERMSRV/bco98bck02.bancocorrientes.local
+    BCO98BCK03 (BCO98BCK03$): TERMSRV/BCO98BCK03, TERMSRV/bco98bck03.bancocorrientes.local
+    BCO98BTAPP03 (BCO98BTAPP03$): TERMSRV/bco98btapp03.bancocorrientes.local, TERMSRV/BCO98BTAPP03
+    BCO98BTAPP05 (BCO98BTAPP05$): TERMSRV/bco98btapp05.bancocorrientes.local, TERMSRV/BCO98BTAPP05
+    BCO98BTAPP06 (BCO98BTAPP06$): TERMSRV/bco98btapp06.bancocorrientes.local, TERMSRV/BCO98BTAPP06
+    BCO98CA01 (BCO98CA01$): TERMSRV/BCO98CA01, TERMSRV/BCO98CA01.bancocorrientes.local
+    BCO98CAM02 (BCO98CAM02$): TERMSRV/BCO98CAM02, TERMSRV/bco98cam02.bancocorrientes.local
+    BCO98COM03 (BCO98COM03$): TERMSRV/BCO98COM03, TERMSRV/bco98com03.bancocorrientes.local
+    BCO98COM04 (BCO98COM04$): TERMSRV/bco98com04.bancocorrientes.local, TERMSRV/BCO98COM04
+    BCO98CTLM01 (BCO98CTLM01$): TERMSRV/BCO98CTLM01, TERMSRV/bco98ctlm01.bancocorrientes.local
+    BCO98CTLM02 (BCO98CTLM02$): TERMSRV/bco98ctlm02.bancocorrientes.local, TERMSRV/BCO98CTLM02
+    BCO98CTLM03 (BCO98CTLM03$): TERMSRV/bco98ctlm03.bancocorrientes.local, TERMSRV/BCO98CTLM03
+    BCO98CTLM04 (BCO98CTLM04$): TERMSRV/bco98ctlm04.bancocorrientes.local, TERMSRV/BCO98CTLM04
+    BCO98DC01 (BCO98DC01$): TERMSRV/BCO98DC01, TERMSRV/BCO98DC01.bancocorrientes.local
+    BCO98DC02-OLD (BCO98DC02-OLD$): TERMSRV/BCO98DC02-old.bancocorrientes.local, TERMSRV/BCO98DC02-OLD
+    BCO98DE03 (BCO98DE03$): TERMSRV/BCO98DE03, TERMSRV/bco98de03.bancocorrientes.local
+    BCO98FS01 (BCO98FS01$): TERMSRV/bco98fs01.bancocorrientes.local, TERMSRV/BCO98FS01
+    BCO98GADES01 (BCO98GADES01$): TERMSRV/BCO98GADES01, TERMSRV/bco98gades01.bancocorrientes.local
+    BCO98IMPBT04 (BCO98IMPBT04$): TERMSRV/BCO98IMPBT04, TERMSRV/bco98impbt04.bancocorrientes.local
+    BCO98ISOL01 (BCO98ISOL01$): TERMSRV/BCO98ISOL01, TERMSRV/bco98isol01.bancocorrientes.local
+    BCO98ISOL02 (BCO98ISOL02$): TERMSRV/BCO98ISOL02, TERMSRV/bco98isol02.bancocorrientes.local
+    BCO98KAS01 (BCO98KAS01$): TERMSRV/BCO98KAS01, TERMSRV/bco98kas01.bancocorrientes.local
+    BCO98NIW02 (BCO98NIW02$): TERMSRV/bco98niw02.bancocorrientes.local, TERMSRV/BCO98NIW02
+    BCO98OPER01 (BCO98OPER01$): TERMSRV/BCO98OPER01, TERMSRV/bco98oper01.bancocorrientes.local
+    BCO98RDP02 (BCO98RDP02$): TERMSRV/BCO98RDP02, TERMSRV/bco98rdp02.bancocorrientes.local
+    BCO98SHA02 (BCO98SHA02$): TERMSRV/BCO98SHA02, TERMSRV/bco98sha02.bancocorrientes.local
+    BCO98SOP01 (BCO98SOP01$): TERMSRV/BCO98SOP01, TERMSRV/BCO98SOP01.bancocorrientes.local
+    BCO98SOP02 (BCO98SOP02$): TERMSRV/BCO98SOP02, TERMSRV/bco98sop02.bancocorrientes.local
+    BCO98SOP03 (BCO98SOP03$): TERMSRV/BCO98SOP03, TERMSRV/BCO98SOP03.bancocorrientes.local
+    BCO98TEST06 (BCO98TEST06$): TERMSRV/BCO98TEST06, TERMSRV/bco98test06.bancocorrientes.local
+    BCO98VAOMEI01 (BCO98VAOMEI01$): TERMSRV/BCO98VAOMEI01, TERMSRV/BCO98VAOMEI01.bancocorrientes.local
+    BCO98VS05 (BCO98VS05$): TERMSRV/BCO98VS05, TERMSRV/BCO98VS05.bancocorrientes.local
+    BCO98VS08 (BCO98VS08$): TERMSRV/BCO98VS08, TERMSRV/bco98vs08.bancocorrientes.local
+    BCO98VS14 (BCO98VS14$): TERMSRV/bco98vs14.bancocorrientes.local, TERMSRV/BCO98VS14
+    BCO98VS15 (BCO98VS15$): TERMSRV/BCO98VS15, TERMSRV/bco98vs15.bancocorrientes.local
+    BCO98VS16 (BCO98VS16$): TERMSRV/BCO98VS16, TERMSRV/bco98vs16.bancocorrientes.local
+    BCO98VS17 (BCO98VS17$): TERMSRV/BCO98VS17, TERMSRV/bco98vs17.bancocorrientes.local
+    BCO99CUP0003 (BCO99CUP0003$): TERMSRV/BCO99CUP0003.bancocorrientes.local, TERMSRV/BCO99CUP0003
+    BCO99CUP0008 (BCO99CUP0008$): TERMSRV/bco99cup0008.bancocorrientes.local, TERMSRV/BCO99CUP0008
+    BCO99CUP0010 (BCO99CUP0010$): TERMSRV/BCO99CUP0010, TERMSRV/bco99cup0010.bancocorrientes.local
+    BCO99CUP0012 (BCO99CUP0012$): TERMSRV/bco99cup0012.bancocorrientes.local, TERMSRV/BCO99CUP0012
+    BCO99CUP0013 (BCO99CUP0013$): TERMSRV/BCO99CUP0013, TERMSRV/bco99cup0013.bancocorrientes.local
+    BCO99CUP0017 (BCO99CUP0017$): TERMSRV/BCO99CUP0017, TERMSRV/BCO99CUP0017.bancocorrientes.local
+    BCO99CUP0021 (BCO99CUP0021$): TERMSRV/BCO99CUP0021, TERMSRV/BCO99CUP0021.bancocorrientes.local
+    BCO99CUP0022 (BCO99CUP0022$): TERMSRV/BCO99CUP0022, TERMSRV/BCO99CUP0022.bancocorrientes.local
+    BCO99CUP0023 (BCO99CUP0023$): TERMSRV/BCO99CUP0023, TERMSRV/BCO99CUP0023.bancocorrientes.local
+    BCO99CUP0026 (BCO99CUP0026$): TERMSRV/BCO99CUP0026, TERMSRV/BCO99CUP0026.bancocorrientes.local
+    BCO99CUP0028 (BCO99CUP0028$): TERMSRV/BCO99CUP0028, TERMSRV/BCO99CUP0028.bancocorrientes.local
+    BCO99CUP0030 (BCO99CUP0030$): TERMSRV/BCO99CUP0030, TERMSRV/BCO99CUP0030.bancocorrientes.local
+    BCO99CUP0044 (BCO99CUP0044$): TERMSRV/BCO99CUP0044, TERMSRV/BCO99CUP0044.bancocorrientes.local
+    BCO99CUP0049 (BCO99CUP0049$): TERMSRV/BCO99CUP0049, TERMSRV/BCO99CUP0049.bancocorrientes.local
+    BCO99CUP0058 (BCO99CUP0058$): TERMSRV/BCO99CUP0058, TERMSRV/BCO99CUP0058.bancocorrientes.local
+    BCO99CUP0065 (BCO99CUP0065$): TERMSRV/BCO99CUP0065, TERMSRV/BCO99CUP0065.bancocorrientes.local
+    BCO99CUP0066 (BCO99CUP0066$): TERMSRV/BCO99CUP0066, TERMSRV/BCO99CUP0066.bancocorrientes.local
+    BCO99TRI0010 (BCO99TRI0010$): TERMSRV/BCO99TRI0010, TERMSRV/BCO99TRI0010.bancocorrientes.local
+    BCO99TRI0011 (BCO99TRI0011$): TERMSRV/BCO99TRI0011, TERMSRV/BCO99TRI0011.bancocorrientes.local
+    BCOADM0001 (BCOADM0001$): TERMSRV/BCOADM0001, TERMSRV/BCOADM0001.bancocorrientes.local
+    BCOADM0002 (BCOADM0002$): TERMSRV/BCOADM0002, TERMSRV/BCOADM0002.bancocorrientes.local
+    BCOADM0003 (BCOADM0003$): TERMSRV/BCOADM0003, TERMSRV/BCOADM0003.bancocorrientes.local
+    BCOADM0004 (BCOADM0004$): TERMSRV/BCOADM0004, TERMSRV/BCOADM0004.bancocorrientes.local
+    BCOADM0005 (BCOADM0005$): TERMSRV/BCOADM0005.bancocorrientes.local, TERMSRV/BCOADM0005
+    BCOADM0006 (BCOADM0006$): TERMSRV/BCOADM0006, TERMSRV/BCOADM0006.bancocorrientes.local
+    BCOADM0007 (BCOADM0007$): TERMSRV/BCOADM0007.bancocorrientes.local, TERMSRV/BCOADM0007
+    BCOADM0008 (BCOADM0008$): TERMSRV/BCOADM0008.bancocorrientes.local, TERMSRV/BCOADM0008
+    BCOADM0009 (BCOADM0009$): TERMSRV/BCOADM0009, TERMSRV/BCOADM0009.bancocorrientes.local
+    BCOADM0013 (BCOADM0013$): TERMSRV/BCOADM0013, TERMSRV/BCOADM0013.bancocorrientes.local
+    BCOADM0014 (BCOADM0014$): TERMSRV/BCOADM0014, TERMSRV/BCOADM0014.bancocorrientes.local
+    BCOADM0015 (BCOADM0015$): TERMSRV/BCOADM0015.bancocorrientes.local, TERMSRV/BCOADM0015
+    BCOADM0020 (BCOADM0020$): TERMSRV/BCOADM0020.bancocorrientes.local, TERMSRV/BCOADM0020
+    BCOADM0022 (BCOADM0022$): TERMSRV/BCOADM0022, TERMSRV/BCOADM0022.bancocorrientes.local
+    BCOADM0025 (BCOADM0025$): TERMSRV/BCOADM0025, TERMSRV/BCOADM0025.bancocorrientes.local
+    BCOADM0026 (BCOADM0026$): TERMSRV/BCOADM0026, TERMSRV/BCOADM0026.bancocorrientes.local
+    BCOADM0029 (BCOADM0029$): TERMSRV/BCOADM0029, TERMSRV/BCOADM0029.bancocorrientes.local
+    BCOADM0030 (BCOADM0030$): TERMSRV/BCOADM0030, TERMSRV/BCOADM0030.bancocorrientes.local
+    BCOADM0032 (BCOADM0032$): TERMSRV/BCOADM0032, TERMSRV/BCOADM0032.bancocorrientes.local
+    BCOADM0050 (BCOADM0050$): TERMSRV/BCOADM0050, TERMSRV/BCOADM0050.bancocorrientes.local
+    BCOAEX0002 (BCOAEX0002$): TERMSRV/BCOAEX0002.bancocorrientes.local, TERMSRV/BCOAEX0002
+    BCOAEX0003 (BCOAEX0003$): TERMSRV/BCOAEX0003, TERMSRV/BCOAEX0003.bancocorrientes.local
+    BCOANT0001 (BCOANT0001$): TERMSRV/BCOANT0001, TERMSRV/BCOANT0001.bancocorrientes.local
+    BCOANT0002 (BCOANT0002$): TERMSRV/BCOANT0002, TERMSRV/BCOANT0002.bancocorrientes.local
+    BCOANT0004 (BCOANT0004$): TERMSRV/BCOANT0004, TERMSRV/BCOANT0004.bancocorrientes.local
+    BCOANT0005 (BCOANT0005$): TERMSRV/BCOANT0005, TERMSRV/BCOANT0005.bancocorrientes.local
+    BCOANT0006 (BCOANT0006$): TERMSRV/BCOANT0006, TERMSRV/BCOANT0006.bancocorrientes.local
+    BCOANT0007 (BCOANT0007$): TERMSRV/bcoant0007.bancocorrientes.local, TERMSRV/BCOANT0007
+    BCOANT0008 (BCOANT0008$): TERMSRV/BCOANT0008, TERMSRV/BCOANT0008.bancocorrientes.local
+    BCOANT0009 (BCOANT0009$): TERMSRV/BCOANT0009, TERMSRV/BCOANT0009.bancocorrientes.local
+    BCOANT0011 (BCOANT0011$): TERMSRV/BCOANT0011, TERMSRV/BCOANT0011.bancocorrientes.local
+    BCOANT0012 (BCOANT0012$): TERMSRV/BCOANT0012, TERMSRV/BCOANT0012.bancocorrientes.local
+    BCOANT0019 (BCOANT0019$): TERMSRV/BCOANT0019, TERMSRV/BCOANT0019.bancocorrientes.local
+    BCOANT0020 (BCOANT0020$): TERMSRV/BCOANT0020, TERMSRV/BCOANT0020.bancocorrientes.local
+    BCOANT0024 (BCOANT0024$): TERMSRV/BCOANT0024.bancocorrientes.local, TERMSRV/BCOANT0024
+    BCOANT0025 (BCOANT0025$): TERMSRV/BCOANT0025, TERMSRV/BCOANT0025.bancocorrientes.local
+    BCOANT0027 (BCOANT0027$): TERMSRV/BCOANT0027, TERMSRV/BCOANT0027.bancocorrientes.local
+    BCOANT0028 (BCOANT0028$): TERMSRV/BCOANT0028, TERMSRV/BCOANT0028.bancocorrientes.local
+    BCOANT0029 (BCOANT0029$): TERMSRV/BCOANT0029, TERMSRV/BCOANT0029.bancocorrientes.local
+    BCOATC0001 (BCOATC0001$): TERMSRV/BCOATC0001, TERMSRV/BCOATC0001.bancocorrientes.local
+    BCOATC0003 (BCOATC0003$): TERMSRV/BCOATC0003, TERMSRV/BCOATC0003.bancocorrientes.local
+    BCOATC0006 (BCOATC0006$): TERMSRV/BCOATC0006, TERMSRV/BCOATC0006.bancocorrientes.local
+    BCOATC0007 (BCOATC0007$): TERMSRV/BCOATC0007, TERMSRV/BCOATC0007.bancocorrientes.local
+    BCOATC0009 (BCOATC0009$): TERMSRV/BCOATC0009, TERMSRV/BCOATC0009.bancocorrientes.local
+    BCOATC0010 (BCOATC0010$): TERMSRV/BCOATC0010, TERMSRV/BCOATC0010.bancocorrientes.local
+    BCOATC0011 (BCOATC0011$): TERMSRV/BCOATC0011, TERMSRV/BCOATC0011.bancocorrientes.local
+    BCOATC0013 (BCOATC0013$): TERMSRV/BCOATC0013, TERMSRV/BCOATC0013.bancocorrientes.local
+    BCOATC0014 (BCOATC0014$): TERMSRV/BCOATC0014, TERMSRV/BCOATC0014.bancocorrientes.local
+    BCOAURUSEFLOW01 (BCOAURUSEFLOW01$): TERMSRV/BCOAURUSEFLOW01, TERMSRV/bcoauruseflow01.bancocorrientes.local
+    BCOAURUSEFLOW02 (BCOAURUSEFLOW02$): TERMSRV/BCOAURUSEFLOW02, TERMSRV/bcoauruseflow02.bancocorrientes.local
+    BCOBCRA0001 (BCOBCRA0001$): TERMSRV/BCOBCRA0001, TERMSRV/BCOBCRA0001.bancocorrientes.local
+    BCOBCRA0002 (BCOBCRA0002$): TERMSRV/BCOBCRA0002, TERMSRV/BCOBCRA0002.bancocorrientes.local
+    BCOBCRA0003 (BCOBCRA0003$): TERMSRV/BCOBCRA0003, TERMSRV/BCOBCRA0003.bancocorrientes.local
+    BCOBCRA0004 (BCOBCRA0004$): TERMSRV/BCOBCRA0004, TERMSRV/BCOBCRA0004.bancocorrientes.local
+    BCOBCRA0005 (BCOBCRA0005$): TERMSRV/BCOBCRA0005, TERMSRV/BCOBCRA0005.bancocorrientes.local
+    BCOBCRA0006 (BCOBCRA0006$): TERMSRV/BCOBCRA0006, TERMSRV/BCOBCRA0006.bancocorrientes.local
+    BCOBCRA0007 (BCOBCRA0007$): TERMSRV/BCOBCRA0007, TERMSRV/BCOBCRA0007.bancocorrientes.local
+    BCOBCRA0008 (BCOBCRA0008$): TERMSRV/BCOBCRA0008, TERMSRV/BCOBCRA0008.bancocorrientes.local
+    BCOBCRA0009 (BCOBCRA0009$): TERMSRV/BCOBCRA0009, TERMSRV/BCOBCRA0009.bancocorrientes.local
+    BCOBCRA0016 (BCOBCRA0016$): TERMSRV/BCOBCRA0016, TERMSRV/BCOBCRA0016.bancocorrientes.local
+    BCOBCRA0018 (BCOBCRA0018$): TERMSRV/BCOBCRA0018, TERMSRV/BCOBCRA0018.bancocorrientes.local
+    BCOBCRA0019 (BCOBCRA0019$): TERMSRV/BCOBCRA0019, TERMSRV/BCOBCRA0019.bancocorrientes.local
+    BCOBIP0008 (BCOBIP0008$): TERMSRV/BCOBIP0008.bancocorrientes.local, TERMSRV/BCOBIP0008
+    BCOBIP0011 (BCOBIP0011$): TERMSRV/BCOBIP0011, TERMSRV/bcobip0011.bancocorrientes.local
+    BCOBIP0012 (BCOBIP0012$): TERMSRV/BCOBIP0012, TERMSRV/BCOBIP0012.bancocorrientes.local
+    BCOBIP0013 (BCOBIP0013$): TERMSRV/BCOBIP0013, TERMSRV/BCOBIP0013.bancocorrientes.local
+    BCOCAL0001 (BCOCAL0001$): TERMSRV/BCOCAL0001, TERMSRV/BCOCAL0001.bancocorrientes.local
+    BCOCAL0002 (BCOCAL0002$): TERMSRV/BCOCAL0002, TERMSRV/BCOCAL0002.bancocorrientes.local
+    BCOCAL0003 (BCOCAL0003$): TERMSRV/BCOCAL0003, TERMSRV/BCOCAL0003.bancocorrientes.local
+    BCOCAL0004 (BCOCAL0004$): TERMSRV/BCOCAL0004, TERMSRV/BCOCAL0004.bancocorrientes.local
+    BCOCAL0005 (BCOCAL0005$): TERMSRV/BCOCAL0005, TERMSRV/BCOCAL0005.bancocorrientes.local
+    BCOCAL0006 (BCOCAL0006$): TERMSRV/BCOCAL0006, TERMSRV/BCOCAL0006.bancocorrientes.local
+    BCOCAL0007 (BCOCAL0007$): TERMSRV/BCOCAL0007, TERMSRV/BCOCAL0007.bancocorrientes.local
+    BCOCAL0008 (BCOCAL0008$): TERMSRV/BCOCAL0008, TERMSRV/BCOCAL0008.bancocorrientes.local
+    BCOCAL0009 (BCOCAL0009$): TERMSRV/BCOCAL0009, TERMSRV/BCOCAL0009.bancocorrientes.local
+    BCOCAL0010 (BCOCAL0010$): TERMSRV/BCOCAL0010, TERMSRV/BCOCAL0010.bancocorrientes.local
+    BCOCAL0011 (BCOCAL0011$): TERMSRV/BCOCAL0011, TERMSRV/BCOCAL0011.bancocorrientes.local
+    BCOCAL0013 (BCOCAL0013$): TERMSRV/BCOCAL0013, TERMSRV/BCOCAL0013.bancocorrientes.local
+    BCOCAL0014 (BCOCAL0014$): TERMSRV/BCOCAL0014, TERMSRV/BCOCAL0014.bancocorrientes.local
+    BCOCAL0015 (BCOCAL0015$): TERMSRV/BCOCAL0015, TERMSRV/BCOCAL0015.bancocorrientes.local
+    BCOCAL0016 (BCOCAL0016$): TERMSRV/BCOCAL0016, TERMSRV/BCOCAL0016.bancocorrientes.local
+    BCOCAL0017 (BCOCAL0017$): TERMSRV/BCOCAL0017, TERMSRV/BCOCAL0017.bancocorrientes.local
+    BCOCAL0018 (BCOCAL0018$): TERMSRV/BCOCAL0018, TERMSRV/BCOCAL0018.bancocorrientes.local
+    BCOCAL0019 (BCOCAL0019$): TERMSRV/BCOCAL0019, TERMSRV/BCOCAL0019.bancocorrientes.local
+    BCOCAL0020 (BCOCAL0020$): TERMSRV/BCOCAL0020.bancocorrientes.local, TERMSRV/BCOCAL0020
+    BCOCAL0021 (BCOCAL0021$): TERMSRV/BCOCAL0021, TERMSRV/BCOCAL0021.bancocorrientes.local
+    BCOCAL0022 (BCOCAL0022$): TERMSRV/BCOCAL0022, TERMSRV/BCOCAL0022.bancocorrientes.local
+    BCOCAL0023 (BCOCAL0023$): TERMSRV/BCOCAL0023, TERMSRV/BCOCAL0023.bancocorrientes.local
+    BCOCAL0024 (BCOCAL0024$): TERMSRV/BCOCAL0024, TERMSRV/BCOCAL0024.bancocorrientes.local
+    BCOCAL0025 (BCOCAL0025$): TERMSRV/BCOCAL0025, TERMSRV/BCOCAL0025.bancocorrientes.local
+    BCOCAL0026 (BCOCAL0026$): TERMSRV/BCOCAL0026, TERMSRV/BCOCAL0026.bancocorrientes.local
+    BCOCAL0027 (BCOCAL0027$): TERMSRV/BCOCAL0027, TERMSRV/BCOCAL0027.bancocorrientes.local
+    BCOCAL0028 (BCOCAL0028$): TERMSRV/BCOCAL0028, TERMSRV/BCOCAL0028.bancocorrientes.local
+    BCOCAL0029 (BCOCAL0029$): TERMSRV/BCOCAL0029, TERMSRV/BCOCAL0029.bancocorrientes.local
+    BCOCAL0030 (BCOCAL0030$): TERMSRV/BCOCAL0030, TERMSRV/BCOCAL0030.bancocorrientes.local
+    BCOCAL0031 (BCOCAL0031$): TERMSRV/BCOCAL0031, TERMSRV/BCOCAL0031.bancocorrientes.local
+    BCOCAL0032 (BCOCAL0032$): TERMSRV/BCOCAL0032, TERMSRV/BCOCAL0032.bancocorrientes.local
+    BCOCAL0033 (BCOCAL0033$): TERMSRV/BCOCAL0033, TERMSRV/BCOCAL0033.bancocorrientes.local
+    BCOCAL0034 (BCOCAL0034$): TERMSRV/BCOCAL0034, TERMSRV/BCOCAL0034.bancocorrientes.local
+    BCOCAL0035 (BCOCAL0035$): TERMSRV/BCOCAL0035, TERMSRV/BCOCAL0035.bancocorrientes.local
+    BCOCAL0036 (BCOCAL0036$): TERMSRV/BCOCAL0036, TERMSRV/BCOCAL0036.bancocorrientes.local
+    BCOCAL0037 (BCOCAL0037$): TERMSRV/BCOCAL0037, TERMSRV/BCOCAL0037.bancocorrientes.local
+    BCOCAL0038 (BCOCAL0038$): TERMSRV/BCOCAL0038, TERMSRV/BCOCAL0038.bancocorrientes.local
+    BCOCAL0039 (BCOCAL0039$): TERMSRV/BCOCAL0039, TERMSRV/BCOCAL0039.bancocorrientes.local
+    BCOCAL0040 (BCOCAL0040$): TERMSRV/BCOCAL0040, TERMSRV/BCOCAL0040.bancocorrientes.local
+    BCOCAL0041 (BCOCAL0041$): TERMSRV/BCOCAL0041, TERMSRV/BCOCAL0041.bancocorrientes.local
+    BCOCAL0042 (BCOCAL0042$): TERMSRV/BCOCAL0042, TERMSRV/BCOCAL0042.bancocorrientes.local
+    BCOCAL0043 (BCOCAL0043$): TERMSRV/BCOCAL0043, TERMSRV/BCOCAL0043.bancocorrientes.local
+    BCOCAL0044 (BCOCAL0044$): TERMSRV/BCOCAL0044, TERMSRV/BCOCAL0044.bancocorrientes.local
+    BCOCAL0045 (BCOCAL0045$): TERMSRV/BCOCAL0045, TERMSRV/BCOCAL0045.bancocorrientes.local
+    BCOCAL0046 (BCOCAL0046$): TERMSRV/BCOCAL0046, TERMSRV/BCOCAL0046.bancocorrientes.local
+    BCOCAL0047 (BCOCAL0047$): TERMSRV/BCOCAL0047, TERMSRV/BCOCAL0047.bancocorrientes.local
+    BCOCAL0048 (BCOCAL0048$): TERMSRV/BCOCAL0048, TERMSRV/BCOCAL0048.bancocorrientes.local
+    BCOCAL0049 (BCOCAL0049$): TERMSRV/BCOCAL0049, TERMSRV/BCOCAL0049.bancocorrientes.local
+    BCOCAR0001 (BCOCAR0001$): TERMSRV/BCOCAR0001, TERMSRV/BCOCAR0001.bancocorrientes.local
+    BCOCAR0006 (BCOCAR0006$): TERMSRV/BCOCAR0006, TERMSRV/BCOCAR0006.bancocorrientes.local
+    BCOCAR0007 (BCOCAR0007$): TERMSRV/BCOCAR0007, TERMSRV/BCOCAR0007.bancocorrientes.local
+    BCOCAR0008 (BCOCAR0008$): TERMSRV/BCOCAR0008.bancocorrientes.local, TERMSRV/BCOCAR0008
+    BCOCAR0009 (BCOCAR0009$): TERMSRV/BCOCAR0009.bancocorrientes.local, TERMSRV/BCOCAR0009
+    BCOCAR0010 (BCOCAR0010$): TERMSRV/BCOCAR0010.bancocorrientes.local, TERMSRV/BCOCAR0010
+    BCOCAR0011 (BCOCAR0011$): TERMSRV/BCOCAR0011, TERMSRV/BCOCAR0011.bancocorrientes.local
+    BCOCAR0012 (BCOCAR0012$): TERMSRV/BCOCAR0012, TERMSRV/BCOCAR0012.bancocorrientes.local
+    BCOCAR0013 (BCOCAR0013$): TERMSRV/BCOCAR0013.bancocorrientes.local, TERMSRV/BCOCAR0013
+    BCOCAR0014 (BCOCAR0014$): TERMSRV/BCOCAR0014, TERMSRV/BCOCAR0014.bancocorrientes.local
+    BCOCEPEFLOW01 (BCOCEPEFLOW01$): TERMSRV/BCOCEPEFLOW01, TERMSRV/BCOCEPEFLOW01.bancocorrientes.local
+    BCOCEPEFLOW02 (BCOCEPEFLOW02$): TERMSRV/BCOCEPEFLOW02, TERMSRV/bcocepeflow02.bancocorrientes.local
+    BCOCEPEFLOW03 (BCOCEPEFLOW03$): TERMSRV/bcocepeflow03.bancocorrientes.local, TERMSRV/BCOCEPEFLOW03
+    BCOCEPEFLOW04 (BCOCEPEFLOW04$): TERMSRV/BCOCEPEFLOW04, TERMSRV/BCOCEPEFLOW04.bancocorrientes.local
+    BCOCEV0002 (BCOCEV0002$): TERMSRV/BCOCEV0002, TERMSRV/BCOCEV0002.bancocorrientes.local
+    BCOCEV0007 (BCOCEV0007$): TERMSRV/BCOCEV0007, TERMSRV/BCOCEV0007.bancocorrientes.local
+    BCOCEV0008 (BCOCEV0008$): TERMSRV/BCOCEV0008, TERMSRV/BCOCEV0008.bancocorrientes.local
+    BCOCEV0009 (BCOCEV0009$): TERMSRV/BCOCEV0009, TERMSRV/BCOCEV0009.bancocorrientes.local
+    BCOCEV0010 (BCOCEV0010$): TERMSRV/BCOCEV0010, TERMSRV/bcocev0010.bancocorrientes.local
+    BCOCEV0011 (BCOCEV0011$): TERMSRV/BCOCEV0011, TERMSRV/BCOCEV0011.bancocorrientes.local
+    BCOCEV0012 (BCOCEV0012$): TERMSRV/BCOCEV0012, TERMSRV/BCOCEV0012.bancocorrientes.local
+    BCOCEVCONT0009 (BCOCEVCONT0009$): TERMSRV/BCOCEVCONT0009, TERMSRV/BCOCEVcont0009.bancocorrientes.local
+    BCOCEX0001 (BCOCEX0001$): TERMSRV/BCOCEX0001, TERMSRV/BCOCEX0001.bancocorrientes.local
+    BCOCEX0002 (BCOCEX0002$): TERMSRV/BCOCEX0002.bancocorrientes.local, TERMSRV/BCOCEX0002
+    BCOCEX0003 (BCOCEX0003$): TERMSRV/BCOCEX0003, TERMSRV/BCOCEX0003.bancocorrientes.local
+    BCOCEX0004 (BCOCEX0004$): TERMSRV/BCOCEX0004, TERMSRV/BCOCEX0004.bancocorrientes.local
+    BCOCIN0001 (BCOCIN0001$): TERMSRV/BCOCIN0001, TERMSRV/BCOCIN0001.bancocorrientes.local
+    BCOCIN0002 (BCOCIN0002$): TERMSRV/BCOCIN0002, TERMSRV/BCOCIN0002.bancocorrientes.local
+    BCOCIN0003 (BCOCIN0003$): TERMSRV/BCOCIN0003, TERMSRV/BCOCIN0003.bancocorrientes.local
+    BCOCIN0004 (BCOCIN0004$): TERMSRV/BCOCIN0004, TERMSRV/BCOCIN0004.bancocorrientes.local
+    BCOCIN0005 (BCOCIN0005$): TERMSRV/BCOCIN0005, TERMSRV/BCOCIN0005.bancocorrientes.local
+    BCOCIN0006 (BCOCIN0006$): TERMSRV/BCOCIN0006, TERMSRV/BCOCIN0006.bancocorrientes.local
+    BCOCIN0009 (BCOCIN0009$): TERMSRV/BCOCIN0009, TERMSRV/BCOCIN0009.bancocorrientes.local
+    BCOCIN0010 (BCOCIN0010$): TERMSRV/BCOCIN0010, TERMSRV/BCOCIN0010.bancocorrientes.local
+    BCOCIN0015 (BCOCIN0015$): TERMSRV/BCOCIN0015.bancocorrientes.local, TERMSRV/BCOCIN0015
+    BCOCIN0016 (BCOCIN0016$): TERMSRV/BCOCIN0016, TERMSRV/BCOCIN0016.bancocorrientes.local
+    BCOCIN0018 (BCOCIN0018$): TERMSRV/BCOCIN0018.bancocorrientes.local, TERMSRV/BCOCIN0018
+    BCOCIN0019 (BCOCIN0019$): TERMSRV/BCOCIN0019, TERMSRV/BCOCIN0019.bancocorrientes.local
+    BCOCIN0021 (BCOCIN0021$): TERMSRV/BCOCIN0021, TERMSRV/bcocin0021.bancocorrientes.local
+    BCOCIN0022 (BCOCIN0022$): TERMSRV/BCOCIN0022, TERMSRV/BCOCIN0022.bancocorrientes.local
+    BCOCIN0025 (BCOCIN0025$): TERMSRV/BCOCIN0025, TERMSRV/BCOCIN0025.bancocorrientes.local
+    BCOCIN0027 (BCOCIN0027$): TERMSRV/BCOCIN0027, TERMSRV/BCOCIN0027.bancocorrientes.local
+    BCOCIN0028 (BCOCIN0028$): TERMSRV/BCOCIN0028, TERMSRV/BCOCIN0028.bancocorrientes.local
+    BCOCIN0029 (BCOCIN0029$): TERMSRV/BCOCIN0029, TERMSRV/BCOCIN0029.bancocorrientes.local
+    BCOCIN0030 (BCOCIN0030$): TERMSRV/BCOCIN0030, TERMSRV/BCOCIN0030.bancocorrientes.local
+    BCOCIN0031 (BCOCIN0031$): TERMSRV/BCOCIN0031, TERMSRV/BCOCIN0031.bancocorrientes.local
+    BCOCIN0032 (BCOCIN0032$): TERMSRV/BCOCIN0032, TERMSRV/BCOCIN0032.bancocorrientes.local
+    BCOCMA0001 (BCOCMA0001$): TERMSRV/BCOCMA0001, TERMSRV/BCOCMA0001.bancocorrientes.local
+    BCOCMA0002 (BCOCMA0002$): TERMSRV/BCOCMA0002, TERMSRV/BCOCMA0002.bancocorrientes.local
+    BCOCMA0014 (BCOCMA0014$): TERMSRV/BCOCMA0014, TERMSRV/BCOCMA0014.bancocorrientes.local
+    BCOCMA0019 (BCOCMA0019$): TERMSRV/BCOCMA0019, TERMSRV/BCOCMA0019.bancocorrientes.local
+    BCOCMA0020 (BCOCMA0020$): TERMSRV/BCOCMA0020, TERMSRV/BCOCMA0020.bancocorrientes.local
+    BCOCMA0021 (BCOCMA0021$): TERMSRV/BCOCMA0021, TERMSRV/BCOCMA0021.bancocorrientes.local
+    BCOCMA0022 (BCOCMA0022$): TERMSRV/BCOCMA0022, TERMSRV/BCOCMA0022.bancocorrientes.local
+    BCOCMA0023 (BCOCMA0023$): TERMSRV/BCOCMA0023, TERMSRV/BCOCMA0023.bancocorrientes.local
+    BCOCMA0024 (BCOCMA0024$): TERMSRV/BCOCMA0024, TERMSRV/BCOCMA0024.bancocorrientes.local
+    BCOCMA0025 (BCOCMA0025$): TERMSRV/BCOCMA0025, TERMSRV/BCOCMA0025.bancocorrientes.local
+    BCOCMA0026 (BCOCMA0026$): TERMSRV/BCOCMA0026, TERMSRV/BCOCMA0026.bancocorrientes.local
+    BCOCMA0027 (BCOCMA0027$): TERMSRV/BCOCMA0027, TERMSRV/BCOCMA0027.bancocorrientes.local
+    BCOCMA0028 (BCOCMA0028$): TERMSRV/BCOCMA0028, TERMSRV/BCOCMA0028.bancocorrientes.local
+    BCOCMA0030 (BCOCMA0030$): TERMSRV/BCOCMA0030, TERMSRV/BCOCMA0030.bancocorrientes.local
+    BCOCMA0031 (BCOCMA0031$): TERMSRV/BCOCMA0031, TERMSRV/BCOCMA0031.bancocorrientes.local
+    BCOCMA0032 (BCOCMA0032$): TERMSRV/BCOCMA0032, TERMSRV/BCOCMA0032.bancocorrientes.local
+    BCOCMA0033 (BCOCMA0033$): TERMSRV/BCOCMA0033, TERMSRV/BCOCMA0033.bancocorrientes.local
+    BCOCMA0036 (BCOCMA0036$): TERMSRV/BCOCMA0036, TERMSRV/BCOCMA0036.bancocorrientes.local
+    BCOCMA0040 (BCOCMA0040$): TERMSRV/BCOCMA0040, TERMSRV/BCOCMA0040.bancocorrientes.local
+    BCOCMA0041 (BCOCMA0041$): TERMSRV/BCOCMA0041.bancocorrientes.local, TERMSRV/BCOCMA0041
+    BCOCMA0042 (BCOCMA0042$): TERMSRV/BCOCMA0042, TERMSRV/BCOCMA0042.bancocorrientes.local
+    BCOCMA0044 (BCOCMA0044$): TERMSRV/BCOCMA0044, TERMSRV/BCOCMA0044.bancocorrientes.local
+    BCOCMA0046 (BCOCMA0046$): TERMSRV/BCOCMA0046, TERMSRV/BCOCMA0046.bancocorrientes.local
+    BCOCMA0047 (BCOCMA0047$): TERMSRV/BCOCMA0047, TERMSRV/BCOCMA0047.bancocorrientes.local
+    BCOCMA0058 (BCOCMA0058$): TERMSRV/BCOCMA0058.bancocorrientes.local, TERMSRV/BCOCMA0058
+    BCOCMA0060 (BCOCMA0060$): TERMSRV/BCOCMA0060, TERMSRV/BCOCMA0060.bancocorrientes.local
+    BCOCMA0062 (BCOCMA0062$): TERMSRV/BCOCMA0062, TERMSRV/BCOCMA0062.bancocorrientes.local
+    BCOCMA0064 (BCOCMA0064$): TERMSRV/BCOCMA0064, TERMSRV/BCOCMA0064.bancocorrientes.local
+    BCOCMA0065 (BCOCMA0065$): TERMSRV/BCOCMA0065, TERMSRV/BCOCMA0065.bancocorrientes.local
+    BCOCMA0066 (BCOCMA0066$): TERMSRV/BCOCMA0066, TERMSRV/BCOCMA0066.bancocorrientes.local
+    BCOCMA0068 (BCOCMA0068$): TERMSRV/BCOCMA0068, TERMSRV/BCOCMA0068.bancocorrientes.local
+    BCOCMA0069 (BCOCMA0069$): TERMSRV/BCOCMA0069, TERMSRV/BCOCMA0069.bancocorrientes.local
+    BCOCMA0070 (BCOCMA0070$): TERMSRV/BCOCMA0070, TERMSRV/BCOCMA0070.bancocorrientes.local
+    BCOCMA0071 (BCOCMA0071$): TERMSRV/BCOCMA0071, TERMSRV/BCOCMA0071.bancocorrientes.local
+    BCOCMA0072 (BCOCMA0072$): TERMSRV/BCOCMA0072, TERMSRV/BCOCMA0072.bancocorrientes.local
+    BCOCMA0075 (BCOCMA0075$): TERMSRV/BCOCMA0075, TERMSRV/BCOCMA0075.bancocorrientes.local
+    BCOCMA0076 (BCOCMA0076$): TERMSRV/BCOCMA0076, TERMSRV/BCOCMA0076.bancocorrientes.local
+    BCOCMA0078 (BCOCMA0078$): TERMSRV/BCOCMA0078, TERMSRV/BCOCMA0078.bancocorrientes.local
+    BCOCMA0079 (BCOCMA0079$): TERMSRV/BCOCMA0079, TERMSRV/BCOCMA0079.bancocorrientes.local
+    BCOCMA0082 (BCOCMA0082$): TERMSRV/BCOCMA0082, TERMSRV/BCOCMA0082.bancocorrientes.local
+    BCOCMA0084 (BCOCMA0084$): TERMSRV/BCOCMA0084, TERMSRV/BCOCMA0084.bancocorrientes.local
+    BCOCMA0087 (BCOCMA0087$): TERMSRV/BCOCMA0087, TERMSRV/BCOCMA0087.bancocorrientes.local
+    BCOCMA0090 (BCOCMA0090$): TERMSRV/BCOCMA0090, TERMSRV/BCOCMA0090.bancocorrientes.local
+    BCOCMA0091 (BCOCMA0091$): TERMSRV/BCOCMA0091, TERMSRV/BCOCMA0091.bancocorrientes.local
+    BCOCMA0092 (BCOCMA0092$): TERMSRV/BCOCMA0092, TERMSRV/BCOCMA0092.bancocorrientes.local
+    BCOCMA0093 (BCOCMA0093$): TERMSRV/BCOCMA0093, TERMSRV/BCOCMA0093.bancocorrientes.local
+    BCOCMA0094 (BCOCMA0094$): TERMSRV/BCOCMA0094, TERMSRV/BCOCMA0094.bancocorrientes.local
+    BCOCMA0104 (BCOCMA0104$): TERMSRV/BCOCMA0104, TERMSRV/BCOCMA0104.bancocorrientes.local
+    BCOCMA0106 (BCOCMA0106$): TERMSRV/BCOCMA0106, TERMSRV/BCOCMA0106.bancocorrientes.local
+    BCOCMA0107 (BCOCMA0107$): TERMSRV/BCOCMA0107, TERMSRV/BCOCMA0107.bancocorrientes.local
+    BCOCMA0108 (BCOCMA0108$): TERMSRV/BCOCMA0108, TERMSRV/BCOCMA0108.bancocorrientes.local
+    BCOCMA0109 (BCOCMA0109$): TERMSRV/BCOCMA0109, TERMSRV/BCOCMA0109.bancocorrientes.local
+    BCOCMA0110 (BCOCMA0110$): TERMSRV/BCOCMA0110, TERMSRV/BCOCMA0110.bancocorrientes.local
+    BCOCOM0002 (BCOCOM0002$): TERMSRV/BCOCOM0002, TERMSRV/BCOCOM0002.bancocorrientes.local
+    BCOCOM0005 (BCOCOM0005$): TERMSRV/BCOCOM0005, TERMSRV/BCOCOM0005.bancocorrientes.local
+    BCOCOM0007 (BCOCOM0007$): TERMSRV/BCOCOM0007, TERMSRV/BCOCOM0007.bancocorrientes.local
+    BCOCOM0008 (BCOCOM0008$): TERMSRV/BCOCOM0008, TERMSRV/BCOCOM0008.bancocorrientes.local
+    BCOCOM0010 (BCOCOM0010$): TERMSRV/BCOCOM0010.bancocorrientes.local, TERMSRV/BCOCOM0010
+    BCOCOM0011 (BCOCOM0011$): TERMSRV/BCOCOM0011, TERMSRV/BCOCOM0011.bancocorrientes.local
+    BCOCOM0012 (BCOCOM0012$): TERMSRV/BCOCOM0012, TERMSRV/BCOCOM0012.bancocorrientes.local
+    BCOCOM0013 (BCOCOM0013$): TERMSRV/BCOCOM0013, TERMSRV/BCOCOM0013.bancocorrientes.local
+    BCOCOM0014 (BCOCOM0014$): TERMSRV/BCOCOM0014, TERMSRV/BCOCOM0014.bancocorrientes.local
+    BCOCOM0015 (BCOCOM0015$): TERMSRV/BCOCOM0015, TERMSRV/BCOCOM0015.bancocorrientes.local
+    BCOCOM0016 (BCOCOM0016$): TERMSRV/BCOCOM0016, TERMSRV/BCOCOM0016.bancocorrientes.local
+    BCOCOM0018 (BCOCOM0018$): TERMSRV/BCOCOM0018, TERMSRV/BCOCOM0018.bancocorrientes.local
+    BCOCOM0020 (BCOCOM0020$): TERMSRV/BCOCOM0020, TERMSRV/BCOCOM0020.bancocorrientes.local
+    BCOCOM0021 (BCOCOM0021$): TERMSRV/BCOCOM0021, TERMSRV/BCOCOM0021.bancocorrientes.local
+    BCOCOM0022 (BCOCOM0022$): TERMSRV/BCOCOM0022, TERMSRV/BCOCOM0022.bancocorrientes.local
+    BCOCOM0024 (BCOCOM0024$): TERMSRV/BCOCOM0024, TERMSRV/BCOCOM0024.bancocorrientes.local
+    BCOCOM0025 (BCOCOM0025$): TERMSRV/BCOCOM0025.bancocorrientes.local, TERMSRV/BCOCOM0025
+    BCOCOM0027 (BCOCOM0027$): TERMSRV/BCOCOM0027, TERMSRV/BCOCOM0027.bancocorrientes.local
+    BCOCOM0028 (BCOCOM0028$): TERMSRV/BCOCOM0028, TERMSRV/BCOCOM0028.bancocorrientes.local
+    BCOCOM0030 (BCOCOM0030$): TERMSRV/BCOCOM0030.bancocorrientes.local, TERMSRV/BCOCOM0030
+    BCOCOM0032 (BCOCOM0032$): TERMSRV/BCOCOM0032.bancocorrientes.local, TERMSRV/BCOCOM0032
+    BCOCOM0033 (BCOCOM0033$): TERMSRV/BCOCOM0033, TERMSRV/bcocom0033.bancocorrientes.local
+    BCOCOM0034 (BCOCOM0034$): TERMSRV/BCOCOM0034, TERMSRV/BCOCOM0034.bancocorrientes.local
+    BCOCOM0036 (BCOCOM0036$): TERMSRV/BCOCOM0036, TERMSRV/BCOCOM0036.bancocorrientes.local
+    BCOCOM0039 (BCOCOM0039$): TERMSRV/BCOCOM0039, TERMSRV/BCOCOM0039.bancocorrientes.local
+    BCOCOM0041 (BCOCOM0041$): TERMSRV/BCOCOM0041, TERMSRV/BCOCOM0041.bancocorrientes.local
+    BCOCOM0044 (BCOCOM0044$): TERMSRV/BCOCOM0044, TERMSRV/BCOCOM0044.bancocorrientes.local
+    BCOCOM0047 (BCOCOM0047$): TERMSRV/BCOCOM0047, TERMSRV/BCOCOM0047.bancocorrientes.local
+    BCOCOM0049 (BCOCOM0049$): TERMSRV/BCOCOM0049, TERMSRV/BCOCOM0049.bancocorrientes.local
+    BCOCOM0050 (BCOCOM0050$): TERMSRV/BCOCOM0050, TERMSRV/BCOCOM0050.bancocorrientes.local
+    BCOCOM0077 (BCOCOM0077$): TERMSRV/BCOCOM0077.bancocorrientes.local, TERMSRV/BCOCOM0077
+    BCOCON0002 (BCOCON0002$): TERMSRV/BCOCON0002, TERMSRV/BCOCON0002.bancocorrientes.local
+    BCOCON0004 (BCOCON0004$): TERMSRV/BCOCON0004, TERMSRV/BCOCON0004.bancocorrientes.local
+    BCOCON0005 (BCOCON0005$): TERMSRV/BCOCON0005, TERMSRV/BCOCON0005.bancocorrientes.local
+    BCOCON0007 (BCOCON0007$): TERMSRV/BCOCON0007, TERMSRV/BCOCON0007.bancocorrientes.local
+    BCOCON0008 (BCOCON0008$): TERMSRV/BCOCON0008.bancocorrientes.local, TERMSRV/BCOCON0008
+    BCOCON0009 (BCOCON0009$): TERMSRV/BCOCON0009, TERMSRV/BCOCON0009.bancocorrientes.local
+    BCOCON0010 (BCOCON0010$): TERMSRV/BCOCON0010, TERMSRV/BCOCON0010.bancocorrientes.local
+    BCOCON0013 (BCOCON0013$): TERMSRV/BCOCON0013.bancocorrientes.local, TERMSRV/BCOCON0013
+    BCOCON0016 (BCOCON0016$): TERMSRV/BCOCON0016, TERMSRV/BCOCON0016.bancocorrientes.local
+    BCOCON0019 (BCOCON0019$): TERMSRV/BCOCON0019, TERMSRV/BCOCON0019.bancocorrientes.local
+    BCOCON0021 (BCOCON0021$): TERMSRV/BCOCON0021, TERMSRV/BCOCON0021.bancocorrientes.local
+    BCOCON0022 (BCOCON0022$): TERMSRV/BCOCON0022, TERMSRV/BCOCON0022.bancocorrientes.local
+    BCOCON0023 (BCOCON0023$): TERMSRV/BCOCON0023, TERMSRV/BCOCON0023.bancocorrientes.local
+    BCOCON0025 (BCOCON0025$): TERMSRV/BCOCON0025, TERMSRV/BCOCON0025.bancocorrientes.local
+    BCOCPA0001 (BCOCPA0001$): TERMSRV/BCOCPA0001, TERMSRV/BCOCPA0001.bancocorrientes.local
+    BCOCPA0002 (BCOCPA0002$): TERMSRV/BCOCPA0002, TERMSRV/BCOCPA0002.bancocorrientes.local
+    BCOCPA0004 (BCOCPA0004$): TERMSRV/BCOCPA0004, TERMSRV/BCOCPA0004.bancocorrientes.local
+    BCOCRE0001 (BCOCRE0001$): TERMSRV/BCOCRE0001, TERMSRV/BCOCRE0001.bancocorrientes.local
+    BCOCRE0002 (BCOCRE0002$): TERMSRV/BCOCRE0002, TERMSRV/BCOCRE0002.bancocorrientes.local
+    BCOCRE0003 (BCOCRE0003$): TERMSRV/BCOCRE0003.bancocorrientes.local, TERMSRV/BCOCRE0003
+    BCOCRE0005 (BCOCRE0005$): TERMSRV/BCOCRE0005.bancocorrientes.local, TERMSRV/BCOCRE0005
+    BCOCRE0007 (BCOCRE0007$): TERMSRV/BCOCRE0007, TERMSRV/BCOCRE0007.bancocorrientes.local
+    BCOCRE0008 (BCOCRE0008$): TERMSRV/BCOCRE0008, TERMSRV/BCOCRE0008.bancocorrientes.local
+    BCOCRE0011 (BCOCRE0011$): TERMSRV/BCOCRE0011, TERMSRV/BCOCRE0011.bancocorrientes.local
+    BCOCRE0012 (BCOCRE0012$): TERMSRV/BCOCRE0012.bancocorrientes.local, TERMSRV/BCOCRE0012
+    BCOCRE0013 (BCOCRE0013$): TERMSRV/BCOCRE0013.bancocorrientes.local, TERMSRV/BCOCRE0013
+    BCOCRE0014 (BCOCRE0014$): TERMSRV/BCOCRE0014, TERMSRV/BCOCRE0014.bancocorrientes.local
+    BCOCRE0015 (BCOCRE0015$): TERMSRV/BCOCRE0015, TERMSRV/BCOCRE0015.bancocorrientes.local
+    BCOCRE0019 (BCOCRE0019$): TERMSRV/BCOCRE0019, TERMSRV/BCOCRE0019.bancocorrientes.local
+    BCOCRE0021 (BCOCRE0021$): TERMSRV/BCOCRE0021, TERMSRV/BCOCRE0021.bancocorrientes.local
+    BCOCRE0023 (BCOCRE0023$): TERMSRV/BCOCRE0023, TERMSRV/BCOCRE0023.bancocorrientes.local
+    BCOCRE0024 (BCOCRE0024$): TERMSRV/BCOCRE0024, TERMSRV/BCOCRE0024.bancocorrientes.local
+    BCOCRE0025 (BCOCRE0025$): TERMSRV/BCOCRE0025, TERMSRV/BCOCRE0025.bancocorrientes.local
+    BCOCRE0026 (BCOCRE0026$): TERMSRV/BCOCRE0026, TERMSRV/BCOCRE0026.bancocorrientes.local
+    BCOCRED0023 (BCOCRED0023$): TERMSRV/BCOCRED0023, TERMSRV/BCOCRED0023.bancocorrientes.local
+    BCOCUPEFLOW02 (BCOCUPEFLOW02$): TERMSRV/BCOCUPEFLOW02, TERMSRV/BCOCUPEFLOW02.bancocorrientes.local
+    BCOCUPEFLOW03 (BCOCUPEFLOW03$): TERMSRV/bcocupeflow03.bancocorrientes.local, TERMSRV/BCOCUPEFLOW03
+    BCOCYC0001 (BCOCYC0001$): TERMSRV/BCOCYC0001, TERMSRV/BCOCYC0001.bancocorrientes.local
+    BCOCYC0002 (BCOCYC0002$): TERMSRV/BCOCYC0002.bancocorrientes.local, TERMSRV/BCOCYC0002
+    BCOCYC0003 (BCOCYC0003$): TERMSRV/BCOCYC0003, TERMSRV/BCOCYC0003.bancocorrientes.local
+    BCOCYC0004 (BCOCYC0004$): TERMSRV/BCOCYC0004, TERMSRV/BCOCYC0004.bancocorrientes.local
+    BCOCYC0005 (BCOCYC0005$): TERMSRV/BCOCYC0005, TERMSRV/BCOCYC0005.bancocorrientes.local
+    BCOCYC0009 (BCOCYC0009$): TERMSRV/BCOCYC0009, TERMSRV/BCOCYC0009.bancocorrientes.local
+    BCOCYC0013 (BCOCYC0013$): TERMSRV/BCOCYC0013.bancocorrientes.local, TERMSRV/BCOCYC0013
+    BCOCYC0014 (BCOCYC0014$): TERMSRV/BCOCYC0014, TERMSRV/BCOCYC0014.bancocorrientes.local
+    BCOCYC0015 (BCOCYC0015$): TERMSRV/BCOCYC0015.bancocorrientes.local, TERMSRV/BCOCYC0015
+    BCOCYC0017 (BCOCYC0017$): TERMSRV/BCOCYC0017, TERMSRV/BCOCYC0017.bancocorrientes.local
+    BCODIR0001 (BCODIR0001$): TERMSRV/BCODIR0001, TERMSRV/bcodir0001.bancocorrientes.local
+    BCODIR0003 (BCODIR0003$): TERMSRV/BCODIR0003, TERMSRV/BCODIR0003.bancocorrientes.local
+    BCODIR0004 (BCODIR0004$): TERMSRV/BCODIR0004, TERMSRV/BCODIR0004.bancocorrientes.local
+    BCODIR0005 (BCODIR0005$): TERMSRV/BCODIR0005, TERMSRV/BCODIR0005.bancocorrientes.local
+    BCODIR0006 (BCODIR0006$): TERMSRV/BCODIR0006, TERMSRV/BCODIR0006.bancocorrientes.local
+    BCODIR0007 (BCODIR0007$): TERMSRV/BCODIR0007.bancocorrientes.local, TERMSRV/BCODIR0007
+    BCODIR0008 (BCODIR0008$): TERMSRV/BCODIR0008.bancocorrientes.local, TERMSRV/BCODIR0008
+    BCODIR0009 (BCODIR0009$): TERMSRV/BCODIR0009, TERMSRV/BCODIR0009.bancocorrientes.local
+    BCODIR0010 (BCODIR0010$): TERMSRV/BCODIR0010, TERMSRV/BCODIR0010.bancocorrientes.local
+    BCODIR0011 (BCODIR0011$): TERMSRV/BCODIR0011, TERMSRV/BCODIR0011.bancocorrientes.local
+    BCODIR0012 (BCODIR0012$): TERMSRV/bcodir0012.bancocorrientes.local, TERMSRV/BCODIR0012
+    BCODIR0013 (BCODIR0013$): TERMSRV/BCODIR0013, TERMSRV/BCODIR0013.bancocorrientes.local
+    BCODIR0014 (BCODIR0014$): TERMSRV/BCODIR0014, TERMSRV/bcodir0014.bancocorrientes.local
+    BCODIR0015 (BCODIR0015$): TERMSRV/BCODIR0015, TERMSRV/BCODIR0015.bancocorrientes.local
+    BCODIR0016 (BCODIR0016$): TERMSRV/BCODIR0016, TERMSRV/bcodir0016.bancocorrientes.local
+    BCODIR0017 (BCODIR0017$): TERMSRV/BCODIR0017, TERMSRV/bcodir0017.bancocorrientes.local
+    BCODIR0018 (BCODIR0018$): TERMSRV/BCODIR0018, TERMSRV/BCODIR0018.bancocorrientes.local
+    BCODIR0019 (BCODIR0019$): TERMSRV/BCODIR0019.bancocorrientes.local, TERMSRV/BCODIR0019
+    BCODIR0020 (BCODIR0020$): TERMSRV/BCODIR0020, TERMSRV/BCODIR0020.bancocorrientes.local
+    BCODIR0021 (BCODIR0021$): TERMSRV/BCODIR0021, TERMSRV/BCODIR0021.bancocorrientes.local
+    BCODIR0029 (BCODIR0029$): TERMSRV/BCODIR0029, TERMSRV/BCODIR0029.bancocorrientes.local
+    BCODIR003 (BCODIR003$): TERMSRV/BCODIR003, TERMSRV/BCODIR003.bancocorrientes.local
+    BCODIR0030 (BCODIR0030$): TERMSRV/BCODIR0030, TERMSRV/BCODIR0030.bancocorrientes.local
+    BCODIR0031 (BCODIR0031$): TERMSRV/BCODIR0031, TERMSRV/BCODIR0031.bancocorrientes.local
+    BCODIR0035 (BCODIR0035$): TERMSRV/BCODIR0035, TERMSRV/BCODIR0035.bancocorrientes.local
+    BCODIR0036 (BCODIR0036$): TERMSRV/BCODIR0036, TERMSRV/BCODIR0036.bancocorrientes.local
+    BCODIR0042 (BCODIR0042$): TERMSRV/BCODIR0042, TERMSRV/bcodir0042.bancocorrientes.local
+    BCOFID0004 (BCOFID0004$): TERMSRV/BCOFID0004, TERMSRV/BCOFID0004.bancocorrientes.local
+    BCOFID0006 (BCOFID0006$): TERMSRV/BCOFID0006.bancocorrientes.local, TERMSRV/BCOFID0006
+    BCOFID0007 (BCOFID0007$): TERMSRV/BCOFID0007, TERMSRV/BCOFID0007.bancocorrientes.local
+    BCOFID0008 (BCOFID0008$): TERMSRV/BCOFID0008.bancocorrientes.local, TERMSRV/BCOFID0008
+    BCOFID0009 (BCOFID0009$): TERMSRV/BCOFID0009, TERMSRV/BCOFID0009.bancocorrientes.local
+    BCOFID0010 (BCOFID0010$): TERMSRV/BCOFID0010, TERMSRV/BCOFID0010.bancocorrientes.local
+    BCOFID0011 (BCOFID0011$): TERMSRV/BCOFID0011, TERMSRV/BCOFID0011.bancocorrientes.local
+    BCOFID0012 (BCOFID0012$): TERMSRV/BCOFID0012.bancocorrientes.local, TERMSRV/BCOFID0012
+    BCOFID0013 (BCOFID0013$): TERMSRV/BCOFID0013, TERMSRV/BCOFID0013.bancocorrientes.local
+    BCOFIN0001 (BCOFIN0001$): TERMSRV/BCOFIN0001, TERMSRV/BCOFIN0001.bancocorrientes.local
+    BCOFIN0002 (BCOFIN0002$): TERMSRV/BCOFIN0002, TERMSRV/BCOFIN0002.bancocorrientes.local
+    BCOFIN0003 (BCOFIN0003$): TERMSRV/BCOFIN0003, TERMSRV/BCOFIN0003.bancocorrientes.local
+    BCOFIN0004 (BCOFIN0004$): TERMSRV/BCOFIN0004, TERMSRV/BCOFIN0004.bancocorrientes.local
+    BCOFIN0005 (BCOFIN0005$): TERMSRV/BCOFIN0005, TERMSRV/BCOFIN0005.bancocorrientes.local
+    BCOFIN0006 (BCOFIN0006$): TERMSRV/BCOFIN0006.bancocorrientes.local, TERMSRV/BCOFIN0006
+    BCOFIN0007 (BCOFIN0007$): TERMSRV/BCOFIN0007, TERMSRV/BCOFIN0007.bancocorrientes.local
+    BCOFIN0008 (BCOFIN0008$): TERMSRV/BCOFIN0008, TERMSRV/BCOFIN0008.bancocorrientes.local
+    BCOFIN0009 (BCOFIN0009$): TERMSRV/BCOFIN0009, TERMSRV/BCOFIN0009.bancocorrientes.local
+    BCOFIN0010 (BCOFIN0010$): TERMSRV/BCOFIN0010, TERMSRV/BCOFIN0010.bancocorrientes.local
+    BCOFIN0011 (BCOFIN0011$): TERMSRV/BCOFIN0011, TERMSRV/BCOFIN0011.bancocorrientes.local
+    BCOFIN0012 (BCOFIN0012$): TERMSRV/BCOFIN0012, TERMSRV/BCOFIN0012.bancocorrientes.local
+    BCOFIN0013 (BCOFIN0013$): TERMSRV/BCOFIN0013.bancocorrientes.local, TERMSRV/BCOFIN0013
+    BCOFIN0014 (BCOFIN0014$): TERMSRV/BCOFIN0014, TERMSRV/BCOFIN0014.bancocorrientes.local
+    BCOFIN0015 (BCOFIN0015$): TERMSRV/BCOFIN0015, TERMSRV/BCOFIN0015.bancocorrientes.local
+    BCOFIN0016 (BCOFIN0016$): TERMSRV/BCOFIN0016, TERMSRV/BCOFIN0016.bancocorrientes.local
+    BCOFIN0017 (BCOFIN0017$): TERMSRV/BCOFIN0017.bancocorrientes.local, TERMSRV/BCOFIN0017
+    BCOFIN0018 (BCOFIN0018$): TERMSRV/BCOFIN0018, TERMSRV/BCOFIN0018.bancocorrientes.local
+    BCOFIN0019 (BCOFIN0019$): TERMSRV/BCOFIN0019, TERMSRV/BCOFIN0019.bancocorrientes.local
+    BCOFIN0020 (BCOFIN0020$): TERMSRV/BCOFIN0020, TERMSRV/BCOFIN0020.bancocorrientes.local
+    BCOFIN0021 (BCOFIN0021$): TERMSRV/BCOFIN0021, TERMSRV/BCOFIN0021.bancocorrientes.local
+    BCOFIN0023 (BCOFIN0023$): TERMSRV/BCOFIN0023, TERMSRV/BCOFIN0023.bancocorrientes.local
+    BCOFIN0025 (BCOFIN0025$): TERMSRV/BCOFIN0025, TERMSRV/BCOFIN0025.bancocorrientes.local
+    BCOFIN0026 (BCOFIN0026$): TERMSRV/BCOFIN0026.bancocorrientes.local, TERMSRV/BCOFIN0026
+    BCOFIN0026D (BCOFIN0026D$): TERMSRV/bcofin0026d.bancocorrientes.local, TERMSRV/BCOFIN0026D
+    BCOFIN0027 (BCOFIN0027$): TERMSRV/BCOFIN0027, TERMSRV/BCOFIN0027.bancocorrientes.local
+    BCOFIN0028 (BCOFIN0028$): TERMSRV/BCOFIN0028, TERMSRV/BCOFIN0028.bancocorrientes.local
+    BCOFIN0034 (BCOFIN0034$): TERMSRV/BCOFIN0034, TERMSRV/BCOFIN0034.bancocorrientes.local
+    BCOFIN0035 (BCOFIN0035$): TERMSRV/BCOFIN0035.bancocorrientes.local, TERMSRV/BCOFIN0035
+    BCOFIN0038 (BCOFIN0038$): TERMSRV/BCOFIN0038, TERMSRV/BCOFIN0038.bancocorrientes.local
+    BCOFINCONT0001 (BCOFINCONT0001$): TERMSRV/BCOFINCONT0001, TERMSRV/BCOFINCONT0001.bancocorrientes.local
+    BCOFINCONT0002 (BCOFINCONT0002$): TERMSRV/BCOFINCONT0002, TERMSRV/BCOFINCONT0002.bancocorrientes.local
+    BCOFINCONT0026 (BCOFINCONT0026$): TERMSRV/BCOFINCONT0026, TERMSRV/BCOFINCONT0026.bancocorrientes.local
+    BCOGAE0001 (BCOGAE0001$): TERMSRV/BCOGAE0001, TERMSRV/BCOGAE0001.bancocorrientes.local
+    BCOGAE0002 (BCOGAE0002$): TERMSRV/bcogae0002.bancocorrientes.local, TERMSRV/BCOGAE0002
+    BCOGAE0003 (BCOGAE0003$): TERMSRV/bcogae0003.bancocorrientes.local, TERMSRV/BCOGAE0003
+    BCOGAE0006 (BCOGAE0006$): TERMSRV/BCOGAE0006, TERMSRV/BCOGAE0006.bancocorrientes.local
+    BCOGDD0001 (BCOGDD0001$): TERMSRV/BCOGDD0001, TERMSRV/BCOGDD0001.bancocorrientes.local
+    BCOGDD0002 (BCOGDD0002$): TERMSRV/BCOGDD0002, TERMSRV/BCOGDD0002.bancocorrientes.local
+    BCOGDD0003 (BCOGDD0003$): TERMSRV/BCOGDD0003, TERMSRV/BCOGDD0003.bancocorrientes.local
+    BCOGER0001 (BCOGER0001$): TERMSRV/BCOGER0001, TERMSRV/BCOGER0001.bancocorrientes.local
+    BCOGER0002 (BCOGER0002$): TERMSRV/BCOGER0002, TERMSRV/BCOGER0002.bancocorrientes.local
+    BCOGER0003 (BCOGER0003$): TERMSRV/BCOGER0003, TERMSRV/BCOGER0003.bancocorrientes.local
+    BCOGER0004 (BCOGER0004$): TERMSRV/BCOGER0004, TERMSRV/BCOGER0004.bancocorrientes.local
+  [WSMAN] (169 encontrados):
+    BCO230001 (BCO230001$): WSMAN/BCO230001, WSMAN/BCO230001.bancocorrientes.local
+    BCO410023 (BCO410023$): WSMAN/BCO410023, WSMAN/BCO410023.bancocorrientes.local
+    BCO98APP01 (BCO98APP01$): WSMAN/bco98app01.bancocorrientes.local, WSMAN/bco98app01
+    BCO98APP02 (BCO98APP02$): WSMAN/BCO98APP02, WSMAN/BCO98APP02.bancocorrientes.local
+    BCO98APP04 (BCO98APP04$): WSMAN/bco98app04.bancocorrientes.local, WSMAN/bco98app04
+    BCO98APP05 (BCO98APP05$): WSMAN/bco98app05, WSMAN/bco98app05.bancocorrientes.local
+    BCO98BAR01 (BCO98BAR01$): WSMAN/bco98bar01, WSMAN/bco98bar01.bancocorrientes.local
+    BCO98BAR03 (BCO98BAR03$): WSMAN/BCO98BAR03, WSMAN/BCO98BAR03.bancocorrientes.local
+    BCO98BCK02 (BCO98BCK02$): WSMAN/bco98bck02, WSMAN/bco98bck02.bancocorrientes.local
+    BCO98BCK03 (BCO98BCK03$): WSMAN/bco98bck03.bancocorrientes.local, WSMAN/bco98bck03
+    BCO98BTAPP03 (BCO98BTAPP03$): WSMAN/bco98btapp03, WSMAN/bco98btapp03.bancocorrientes.local
+    BCO98BTAPP05 (BCO98BTAPP05$): WSMAN/bco98btapp05, WSMAN/bco98btapp05.bancocorrientes.local
+    BCO98BTAPP06 (BCO98BTAPP06$): WSMAN/bco98btapp06, WSMAN/bco98btapp06.bancocorrientes.local
+    BCO98CA01 (BCO98CA01$): WSMAN/BCO98CA01.bancocorrientes.local, WSMAN/BCO98CA01
+    BCO98CAM02 (BCO98CAM02$): WSMAN/bco98cam02.bancocorrientes.local, WSMAN/bco98cam02
+    BCO98COM03 (BCO98COM03$): WSMAN/bco98com03, WSMAN/bco98com03.bancocorrientes.local
+    BCO98COM04 (BCO98COM04$): WSMAN/bco98com04.bancocorrientes.local, WSMAN/bco98com04
+    BCO98CTLM01 (BCO98CTLM01$): WSMAN/bco98ctlm01.bancocorrientes.local, WSMAN/bco98ctlm01
+    BCO98CTLM02 (BCO98CTLM02$): WSMAN/bco98ctlm02.bancocorrientes.local, WSMAN/bco98ctlm02
+    BCO98CTLM03 (BCO98CTLM03$): WSMAN/bco98ctlm03.bancocorrientes.local, WSMAN/bco98ctlm03
+    BCO98CTLM04 (BCO98CTLM04$): WSMAN/bco98ctlm04, WSMAN/bco98ctlm04.bancocorrientes.local
+    BCO98DC01 (BCO98DC01$): WSMAN/bco98dc01.bancocorrientes.local, WSMAN/bco98dc01
+    BCO98DC02-OLD (BCO98DC02-OLD$): WSMAN/BCO98DC02-old.bancocorrientes.local, WSMAN/BCO98DC02-OLD
+    BCO98DE03 (BCO98DE03$): WSMAN/bco98de03.bancocorrientes.local, WSMAN/bco98de03
+    BCO98FS01 (BCO98FS01$): WSMAN/bco98fs01, WSMAN/bco98fs01.bancocorrientes.local
+    BCO98GADES01 (BCO98GADES01$): WSMAN/bco98gades01, WSMAN/bco98gades01.bancocorrientes.local
+    BCO98IMPBT04 (BCO98IMPBT04$): WSMAN/bco98impbt04.bancocorrientes.local, WSMAN/bco98impbt04
+    BCO98ISOL01 (BCO98ISOL01$): WSMAN/bco98isol01, WSMAN/bco98isol01.bancocorrientes.local
+    BCO98ISOL02 (BCO98ISOL02$): WSMAN/bco98isol02, WSMAN/bco98isol02.bancocorrientes.local
+    BCO98KAS01 (BCO98KAS01$): WSMAN/bco98kas01, WSMAN/bco98kas01.bancocorrientes.local
+    BCO98NIW02 (BCO98NIW02$): WSMAN/bco98niw02, WSMAN/bco98niw02.bancocorrientes.local
+    BCO98OPER01 (BCO98OPER01$): WSMAN/bco98oper01, WSMAN/bco98oper01.bancocorrientes.local
+    BCO98RDP02 (BCO98RDP02$): WSMAN/bco98rdp02, WSMAN/bco98rdp02.bancocorrientes.local
+    BCO98SHA02 (BCO98SHA02$): WSMAN/bco98sha02, WSMAN/bco98sha02.bancocorrientes.local
+    BCO98SOP01 (BCO98SOP01$): WSMAN/BCO98SOP01, WSMAN/BCO98SOP01.bancocorrientes.local
+    BCO98SOP02 (BCO98SOP02$): WSMAN/bco98sop02, WSMAN/bco98sop02.bancocorrientes.local
+    BCO98SOP03 (BCO98SOP03$): WSMAN/BCO98SOP03, WSMAN/BCO98SOP03.bancocorrientes.local
+    BCO98TEST06 (BCO98TEST06$): WSMAN/bco98test06, WSMAN/bco98test06.bancocorrientes.local
+    BCO98VS05 (BCO98VS05$): WSMAN/BCO98VS05, WSMAN/BCO98VS05.bancocorrientes.local
+    BCO98VS08 (BCO98VS08$): WSMAN/bco98vs08.bancocorrientes.local, WSMAN/bco98vs08
+    BCO98VS14 (BCO98VS14$): WSMAN/bco98vs14.bancocorrientes.local, WSMAN/bco98vs14
+    BCO98VS15 (BCO98VS15$): WSMAN/bco98vs15, WSMAN/bco98vs15.bancocorrientes.local
+    BCO98VS16 (BCO98VS16$): WSMAN/bco98vs16, WSMAN/bco98vs16.bancocorrientes.local
+    BCO98VS17 (BCO98VS17$): WSMAN/bco98vs17, WSMAN/bco98vs17.bancocorrientes.local
+    BCOCAL0040 (BCOCAL0040$): WSMAN/BCOCAL0040, WSMAN/BCOCAL0040.bancocorrientes.local
+    BCOCIN0021 (BCOCIN0021$): WSMAN/bcocin0021, WSMAN/bcocin0021.bancocorrientes.local
+    BCOGER0008 (BCOGER0008$): WSMAN/BCOGER0008, WSMAN/BCOGER0008.bancocorrientes.local
+    BCOGSU0039 (BCOGSU0039$): WSMAN/BCOGSU0039, WSMAN/BCOGSU0039.bancocorrientes.local
+    BCOPAI0005 (BCOPAI0005$): WSMAN/BCOPAI0005, WSMAN/BCOPAI0005.bancocorrientes.local
+    BCOPAI0006 (BCOPAI0006$): WSMAN/BCOPAI0006, WSMAN/BCOPAI0006.bancocorrientes.local
+    BCOPAI0007 (BCOPAI0007$): WSMAN/BCOPAI0007, WSMAN/BCOPAI0007.bancocorrientes.local
+    BCOPAI0014 (BCOPAI0014$): WSMAN/BCOPAI0014, WSMAN/BCOPAI0014.bancocorrientes.local
+    BCOPAI0015 (BCOPAI0015$): WSMAN/BCOPAI0015, WSMAN/BCOPAI0015.bancocorrientes.local
+    BCOSEG0011 (BCOSEG0011$): WSMAN/BCOSEG0011, WSMAN/BCOSEG0011.bancocorrientes.local
+    BCOSIS0057 (BCOSIS0057$): WSMAN/BCOSIS0057, WSMAN/BCOSIS0057.bancocorrientes.local
+    BCOSIS0066 (BCOSIS0066$): WSMAN/BCOSIS0066, WSMAN/BCOSIS0066.bancocorrientes.local
+    BCOSIS0075 (BCOSIS0075$): WSMAN/BCOSIS0075, WSMAN/BCOSIS0075.bancocorrientes.local
+    BCOSIS0078 (BCOSIS0078$): WSMAN/BCOSIS0078, WSMAN/BCOSIS0078.bancocorrientes.local
+    BCOSIS0103 (BCOSIS0103$): WSMAN/BCOSIS0103, WSMAN/BCOSIS0103.bancocorrientes.local
+    SRW-DDB01 (SRW-DDB01$): WSMAN/srw-ddb01, WSMAN/srw-ddb01.bancocorrientes.local
+    SRW-PADCON01 (SRW-PADCON01$): WSMAN/srw-padcon01, WSMAN/srw-padcon01.bancocorrientes.local
+    SRW-PADFS02 (SRW-PADFS02$): WSMAN/srw-padfs02, WSMAN/srw-padfs02.bancocorrientes.local
+    SRW-PADMIN01 (SRW-PADMIN01$): WSMAN/srw-padmin01, WSMAN/srw-padmin01.bancocorrientes.local
+    SRW-PAPP01 (SRW-PAPP01$): WSMAN/srw-papp01, WSMAN/srw-papp01.bancocorrientes.local
+    SRW-PAPP02 (SRW-PAPP02$): WSMAN/srw-papp02, WSMAN/srw-papp02.bancocorrientes.local
+    SRW-PAPP03 (SRW-PAPP03$): WSMAN/SRW-PAPP03, WSMAN/SRW-PAPP03.bancocorrientes.local
+    SRW-PAPP04 (SRW-PAPP04$): WSMAN/SRW-PAPP04, WSMAN/SRW-PAPP04.bancocorrientes.local
+    SRW-PASJ01 (SRW-PASJ01$): WSMAN/srw-pasj01, WSMAN/srw-pasj01.bancocorrientes.local
+    SRW-PAUTO01 (SRW-PAUTO01$): WSMAN/srw-pauto01, WSMAN/srw-pauto01.bancocorrientes.local
+    SRW-PAUTOA01 (SRW-PAUTOA01$): WSMAN/srw-pautoa01, WSMAN/srw-pautoa01.bancocorrientes.local
+    SRW-PBCKREP01 (SRW-PBCKREP01$): WSMAN/srw-pbckrep01.bancocorrientes.local, WSMAN/SRW-PBCKREP01
+    SRW-PBCKREP02 (SRW-PBCKREP02$): WSMAN/srw-pbckrep02.bancocorrientes.local, WSMAN/srw-pbckrep02
+    SRW-PBCKREP03 (SRW-PBCKREP03$): WSMAN/srw-pbckrep03, WSMAN/srw-pbckrep03.bancocorrientes.local
+    SRW-PBTAPP01 (SRW-PBTAPP01$): WSMAN/srw-pbtapp01, WSMAN/srw-pbtapp01.bancocorrientes.local
+    SRW-PBTAPP02 (SRW-PBTAPP02$): WSMAN/srw-pbtapp02, WSMAN/srw-pbtapp02.bancocorrientes.local
+    SRW-PBTS01 (SRW-PBTS01$): WSMAN/srw-pbts01, WSMAN/srw-pbts01.bancocorrientes.local
+    SRW-PBWBTS01 (SRW-PBWBTS01$): WSMAN/srw-pbwbts01, WSMAN/srw-pbwbts01.bancocorrientes.local
+    SRW-PBWBTS02 (SRW-PBWBTS02$): WSMAN/srw-pbwbts02, WSMAN/srw-pbwbts02.bancocorrientes.local
+    SRW-PBWBTS03 (SRW-PBWBTS03$): WSMAN/srw-pbwbts03, WSMAN/srw-pbwbts03.bancocorrientes.local
+    SRW-PBWBTS04 (SRW-PBWBTS04$): WSMAN/srw-pbwbts04, WSMAN/srw-pbwbts04.bancocorrientes.local
+    SRW-PBWBTS05 (SRW-PBWBTS05$): WSMAN/srw-pbwbts05, WSMAN/srw-pbwbts05.bancocorrientes.local
+    SRW-PBWBTS06 (SRW-PBWBTS06$): WSMAN/srw-pbwbts06, WSMAN/srw-pbwbts06.bancocorrientes.local
+    SRW-PBWFRONT01 (SRW-PBWFRONT01$): WSMAN/srw-pbwfront01, WSMAN/srw-pbwfront01.bancocorrientes.local
+    SRW-PBWFRONT02 (SRW-PBWFRONT02$): WSMAN/srw-pbwfront02, WSMAN/srw-pbwfront02.bancocorrientes.local
+    SRW-PBWMID01 (SRW-PBWMID01$): WSMAN/srw-pbwmid01, WSMAN/srw-pbwmid01.bancocorrientes.local
+    SRW-PBWMID02 (SRW-PBWMID02$): WSMAN/srw-pbwmid02, WSMAN/srw-pbwmid02.bancocorrientes.local
+    SRW-PBWMID03 (SRW-PBWMID03$): WSMAN/srw-pbwmid03, WSMAN/srw-pbwmid03.bancocorrientes.local
+    SRW-PBWMID04 (SRW-PBWMID04$): WSMAN/srw-pbwmid04, WSMAN/srw-pbwmid04.bancocorrientes.local
+    SRW-PBWMID05 (SRW-PBWMID05$): WSMAN/srw-pbwmid05, WSMAN/srw-pbwmid05.bancocorrientes.local
+    SRW-PCAM01 (SRW-PCAM01$): WSMAN/srw-pcam01, WSMAN/srw-pcam01.bancocorrientes.local
+    SRW-PCTM01 (SRW-PCTM01$): WSMAN/SRW-PCTM01.bancocorrientes.local, WSMAN/SRW-PCTM01
+    SRW-PCTM02 (SRW-PCTM02$): WSMAN/srw-pctm02, WSMAN/srw-pctm02.bancocorrientes.local
+    SRW-PDB02 (SRW-PDB02$): WSMAN/srw-pdb02, WSMAN/srw-pdb02.bancocorrientes.local
+    SRW-PDB03 (SRW-PDB03$): WSMAN/srw-pdb03, WSMAN/srw-pdb03.bancocorrientes.local
+    SRW-PDB04 (SRW-PDB04$): WSMAN/srw-pdb04, WSMAN/srw-pdb04.bancocorrientes.local
+    SRW-PDC01 (SRW-PDC01$): WSMAN/srw-pdc01.bancocorrientes.local, WSMAN/srw-pdc01
+    SRW-PDC02 (SRW-PDC02$): WSMAN/srw-pdc02.bancocorrientes.local, WSMAN/srw-pdc02
+    SRW-PDGATE01 (SRW-PDGATE01$): WSMAN/srw-pdgate01, WSMAN/srw-pdgate01.bancocorrientes.local
+    SRW-PDNS01 (SRW-PDNS01$): WSMAN/srw-pdns01, WSMAN/srw-pdns01.bancocorrientes.local
+    SRW-PDNS02 (SRW-PDNS02$): WSMAN/SRW-PDNS02, WSMAN/SRW-PDNS02.bancocorrientes.local
+    SRW-PDOM01 (SRW-PDOM01$): WSMAN/srw-pdom01, WSMAN/srw-pdom01.bancocorrientes.local
+    SRW-PELASTIC01 (SRW-PELASTIC01$): WSMAN/srw-pelastic01, WSMAN/srw-pelastic01.bancocorrientes.local
+    SRW-PEMEAPP01 (SRW-PEMEAPP01$): WSMAN/srw-pemeapp01, WSMAN/srw-pemeapp01.bancocorrientes.local
+    SRW-PEMEPEN01 (SRW-PEMEPEN01$): WSMAN/srw-pemepen01, WSMAN/srw-pemepen01.bancocorrientes.local
+    SRW-PEMEX01 (SRW-PEMEX01$): WSMAN/srw-pemex01, WSMAN/srw-pemex01.bancocorrientes.local
+    SRW-PEX01 (SRW-PEX01$): WSMAN/srw-pex01.bancocorrientes.local, WSMAN/srw-pex01
+    SRW-PEX02 (SRW-PEX02$): WSMAN/srw-pex02.bancocorrientes.local, WSMAN/srw-pex02
+    SRW-PFS01 (SRW-PFS01$): WSMAN/srw-pfs01, WSMAN/srw-pfs01.bancocorrientes.local
+    SRW-PGLPI01 (SRW-PGLPI01$): WSMAN/srw-pglpi01, WSMAN/srw-pglpi01.bancocorrientes.local
+    SRW-PGXLIC01 (SRW-PGXLIC01$): WSMAN/srw-pgxlic01.bancocorrientes.local, WSMAN/srw-pgxlic01
+    SRW-PGXSERVER01 (SRW-PGXSERVER01$): WSMAN/srw-pgxserver01.bancocorrientes.local, WSMAN/srw-pgxserver01
+    SRW-PHISTO01 (SRW-PHISTO01$): WSMAN/srw-phisto01, WSMAN/srw-phisto01.bancocorrientes.local
+    SRW-PIDEA01 (SRW-PIDEA01$): WSMAN/srw-pidea01, WSMAN/srw-pidea01.bancocorrientes.local
+    SRW-PIGATE01 (SRW-PIGATE01$): WSMAN/srw-pigate01, WSMAN/srw-pigate01.bancocorrientes.local
+    SRW-PILEG01 (SRW-PILEG01$): WSMAN/srw-pileg01, WSMAN/srw-pileg01.bancocorrientes.local
+    SRW-PIMP01 (SRW-PIMP01$): WSMAN/srw-pimp01, WSMAN/srw-pimp01.bancocorrientes.local
+    SRW-PIMP04 (SRW-PIMP04$): WSMAN/srw-pimp04, WSMAN/srw-pimp04.bancocorrientes.local
+    SRW-PISOL01 (SRW-PISOL01$): WSMAN/srw-pisol01.bancocorrientes.local, WSMAN/srw-pisol01
+    SRW-PIVAN01 (SRW-PIVAN01$): WSMAN/srw-pivan01.bancocorrientes.local, WSMAN/SRW-PIVAN01
+    SRW-PKBGX01 (SRW-PKBGX01$): WSMAN/srw-pkbgx01, WSMAN/srw-pkbgx01.bancocorrientes.local
+    SRW-PLINK01 (SRW-PLINK01$): WSMAN/srw-plink01, WSMAN/srw-plink01.bancocorrientes.local
+    SRW-PLINK02 (SRW-PLINK02$): WSMAN/srw-plink02, WSMAN/srw-plink02.bancocorrientes.local
+    SRW-PLOGS01 (SRW-PLOGS01$): WSMAN/srw-plogs01, WSMAN/srw-plogs01.bancocorrientes.local
+    SRW-PMAE02 (SRW-PMAE02$): WSMAN/srw-pmae02.bancocorrientes.local, WSMAN/srw-pmae02
+    SRW-PMAE03 (SRW-PMAE03$): WSMAN/srw-pmae03.bancocorrientes.local, WSMAN/srw-pmae03
+    SRW-PMOODLE01 (SRW-PMOODLE01$): WSMAN/srw-pmoodle01, WSMAN/srw-pmoodle01.bancocorrientes.local
+    SRW-PNOS01 (SRW-PNOS01$): WSMAN/srw-pnos01, WSMAN/srw-pnos01.bancocorrientes.local
+    SRW-PNOTIF01 (SRW-PNOTIF01$): WSMAN/srw-pnotif01, WSMAN/srw-pnotif01.bancocorrientes.local
+    SRW-POPER01 (SRW-POPER01$): WSMAN/srw-poper01, WSMAN/srw-poper01.bancocorrientes.local
+    SRW-POPER02 (SRW-POPER02$): WSMAN/srw-poper02, WSMAN/srw-poper02.bancocorrientes.local
+    SRW-PPAPER01 (SRW-PPAPER01$): WSMAN/srw-ppaper01, WSMAN/srw-ppaper01.bancocorrientes.local
+    SRW-PPAS01 (SRW-PPAS01$): WSMAN/srw-ppas01, WSMAN/srw-ppas01.bancocorrientes.local
+    SRW-PPAS02 (SRW-PPAS02$): WSMAN/srw-ppas02, WSMAN/srw-ppas02.bancocorrientes.local
+    SRW-PRDP01 (SRW-PRDP01$): WSMAN/srw-prdp01, WSMAN/srw-prdp01.bancocorrientes.local
+    SRW-PRDP02 (SRW-PRDP02$): WSMAN/srw-prdp02, WSMAN/srw-prdp02.bancocorrientes.local
+    SRW-PRDS01 (SRW-PRDS01$): WSMAN/srw-prds01, WSMAN/srw-prds01.bancocorrientes.local
+    SRW-PRIESGO01 (SRW-PRIESGO01$): WSMAN/srw-priesgo01, WSMAN/srw-priesgo01.bancocorrientes.local
+    SRW-PRRHH01 (SRW-PRRHH01$): WSMAN/srw-prrhh01.bancocorrientes.local, WSMAN/srw-prrhh01
+    SRW-PSAT01 (SRW-PSAT01$): WSMAN/srw-psat01, WSMAN/srw-psat01.bancocorrientes.local
+    SRW-PSAT02 (SRW-PSAT02$): WSMAN/srw-psat02.bancocorrientes.local, WSMAN/srw-psat02
+    SRW-PSGUARD01 (SRW-PSGUARD01$): WSMAN/srw-psguard01.bancocorrientes.local, WSMAN/srw-psguard01
+    SRW-PSWIFT03 (SRW-PSWIFT03$): WSMAN/srw-pswift03, WSMAN/srw-pswift03.bancocorrientes.local
+    SRW-PSWIFT04 (SRW-PSWIFT04$): WSMAN/srw-pswift04, WSMAN/srw-pswift04.bancocorrientes.local
+    SRW-PTANGO01 (SRW-PTANGO01$): WSMAN/srw-ptango01, WSMAN/srw-ptango01.bancocorrientes.local
+    SRW-PVISION01 (SRW-PVISION01$): WSMAN/srw-pvision01, WSMAN/srw-pvision01.bancocorrientes.local
+    SRW-PVMAIL01 (SRW-PVMAIL01$): WSMAN/srw-pvmail01, WSMAN/srw-pvmail01.bancocorrientes.local
+    SRW-PVONE01 (SRW-PVONE01$): WSMAN/srw-pvone01, WSMAN/srw-pvone01.bancocorrientes.local
+    SRW-PVS18 (SRW-PVS18$): WSMAN/srw-pvs18.bancocorrientes.local, WSMAN/srw-pvs18
+    SRW-PVS20 (SRW-PVS20$): WSMAN/srw-pvs20, WSMAN/srw-pvs20.bancocorrientes.local
+    SRW-PVS21 (SRW-PVS21$): WSMAN/srw-pvs21.bancocorrientes.local, WSMAN/srw-pvs21
+    SRW-PWEBREDES01 (SRW-PWEBREDES01$): WSMAN/srw-pwebredes01, WSMAN/srw-pwebredes01.bancocorrientes.local
+    SRW-TAPP01 (SRW-TAPP01$): WSMAN/srw-tapp01, WSMAN/srw-tapp01.bancocorrientes.local
+    SRW-TAUTO01 (SRW-TAUTO01$): WSMAN/srw-tauto01, WSMAN/srw-tauto01.bancocorrientes.local
+    SRW-TBT01 (SRW-TBT01$): WSMAN/srw-tbt01.bancocorrientes.local, WSMAN/srw-tbt01
+    SRW-TBT02 (SRW-TBT02$): WSMAN/srw-tbt02, WSMAN/srw-tbt02.bancocorrientes.local
+    SRW-TBT03 (SRW-TBT03$): WSMAN/srw-tbt03.bancocorrientes.local, WSMAN/srw-tbt03
+    SRW-TBT04 (SRW-TBT04$): WSMAN/srw-tbt04, WSMAN/srw-tbt04.bancocorrientes.local
+    SRW-TBT05 (SRW-TBT05$): WSMAN/srw-tbt05, WSMAN/srw-tbt05.bancocorrientes.local
+    SRW-TBT06 (SRW-TBT06$): WSMAN/srw-tbt06, WSMAN/srw-tbt06.bancocorrientes.local
+    SRW-TCTM01 (SRW-TCTM01$): WSMAN/srw-tctm01, WSMAN/srw-tctm01.bancocorrientes.local
+    SRW-TCTM02 (SRW-TCTM02$): WSMAN/SRW-TCTM02, WSMAN/SRW-TCTM02.bancocorrientes.local
+    SRW-TDB01 (SRW-TDB01$): WSMAN/srw-tdb01, WSMAN/srw-tdb01.bancocorrientes.local
+    SRW-TDOM01 (SRW-TDOM01$): WSMAN/srw-tdom01, WSMAN/srw-tdom01.bancocorrientes.local
+    SRW-TISOL01 (SRW-TISOL01$): WSMAN/srw-tisol01, WSMAN/srw-tisol01.bancocorrientes.local
+    SRW-TRRHH01 (SRW-TRRHH01$): WSMAN/srw-trrhh01.bancocorrientes.local, WSMAN/srw-trrhh01
+    SRW-TSHA01 (SRW-TSHA01$): WSMAN/srw-tsha01, WSMAN/srw-tsha01.bancocorrientes.local
+    SRW-TVU01 (SRW-TVU01$): WSMAN/srw-tvu01, WSMAN/srw-tvu01.bancocorrientes.local
+    VOPER01 (VOPER01$): WSMAN/voper01, WSMAN/voper01.bancocorrientes.local
+    VOPER01DC (VOPER01DC$): WSMAN/voper01dc, WSMAN/voper01dc.bancocorrientes.local
+
+================================================================
+  RECON COMPLETADO: 2026-08-11 13:47:18
+  Reporte guardado en: C:\Users\amarinos\Documents\recon\recon_20260811_134659.txt
+================================================================
